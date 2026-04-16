@@ -55,7 +55,7 @@
 
         data.forEach(item => {
             const color = item.sev > 1.5 ? '#ef4444' : (item.sev > 1.0 ? '#eab308' : '#22c55e');
-            const radius = 8; // Uniform size for all markers
+            const radius = 4; // Smaller uniform size for all markers
 
             L.circleMarker([item.lat, item.lng], {
                 radius: radius,
