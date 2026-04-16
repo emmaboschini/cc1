@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flooding Events in Egypt</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body { margin: 0; padding: 0; background: #0f172a; font-family: sans-serif; }
+        #map { height: 100vh; width: 100%; }
+        .info-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(30, 41, 59, 0.9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 1000;
+            border: 1px solid #334155;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="info-panel">
+        <h3 style="margin-top:0; color:#3b82f6;">Floods in Egypt</h3>
+        <p style="font-size:0.9rem; color:#94a3b8;">Visualizing historical flood events from the Global Flood Archive.</p>
+        <div id="stats" style="font-size:0.8rem;"></div>
+    </div>
+    <div id="map"></div>
+
+    <script>
+        const data = [
+            {id:602, year:1991, lng:30.049, lat:30.7101, dead:0, displaced:6000, cause:"Infrastructure Failure", sev:1.0},
+            {id:915, year:1994, lng:31.925, lat:26.3341, dead:593, displaced:100000, cause:"Heavy Rain", sev:2.0},
+            {id:1131, year:1996, lng:32.7554, lat:25.8386, dead:23, displaced:1050, cause:"Heavy Rain", sev:1.0},
+            {id:1217, year:1997, lng:30.6766, lat:30.4282, dead:4, displaced:0, cause:"Heavy Rain", sev:1.0},
+            {id:1278, year:1997, lng:32.5751, lat:26.5269, dead:12, displaced:0, cause:"Heavy Rain", sev:1.0},
+            {id:1294, year:1997, lng:32.2236, lat:29.6688, dead:4, displaced:0, cause:"Heavy Rain", sev:1.0},
+            {id:1891, year:2002, lng:35.4677, lat:23.1932, dead:4, displaced:800, cause:"Heavy Rain", sev:1.0},
+            {id:3594, year:2010, lng:31.0895, lat:28.077, dead:10, displaced:7000, cause:"Heavy Rain", sev:1.5},
+            {id:4305, year:2015, lng:30.4819, lat:31.0422, dead:0, displaced:6, cause:"Heavy Rain", sev:1.5},
+            {id:4411, year:2016, lng:34.7625, lat:24.3954, dead:22, displaced:0, cause:"Heavy Rain", sev:1.5},
+            {id:4881, year:2020, lng:30.7541, lat:29.0213, dead:5, displaced:0, cause:"Heavy Rain", sev:1.0}
+        ];
+
+        const map = L.map('map').setView([26.8206, 30.8025], 6);
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap &copy; CARTO'
+        }).addTo(map);
+
+        data.forEach(item => {
+            const color = item.sev > 1.5 ? '#ef4444' : (item.sev > 1.0 ? '#eab308' : '#22c55e');
+            const radius = Math.sqrt(item.displaced || 100) * 0.5 + 5;
+
+            L.circleMarker([item.lat, item.lng], {
+                radius: radius,
+                fillColor: color,
+                color: "#fff",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.8
+            })
+            .bindPopup(`
+                <div style="color:#1e293b">
+                    <strong>Year:</strong> ${item.year}<br>
+                    <strong>Cause:</strong> ${item.cause}<br>
+                    <strong>Deaths:</strong> ${item.dead}<br>
+                    <strong>Displaced:</strong> ${item.displaced}
+                </div>
+            `)
+            .addTo(map);
+        });
+
+        document.getElementById('stats').innerHTML = `
+            <hr style="border:0; border-top:1px solid #334155; margin:10px 0;">
+            Total Events: ${data.length}<br>
+            Total Deaths: ${data.reduce((a, b) => a + b.dead, 0)}<br>
+            Total Displaced: ${data.reduce((a, b) => a + b.displaced, 0).toLocaleString()}
+        `;
+    </script>
+</body>
+</html>
