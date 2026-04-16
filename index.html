@@ -57,6 +57,86 @@
       padding: 20px;
     }
 
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #666;
+      margin: 24px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #2d2d4a;
+    }
+
+    .filter-group {
+      margin-bottom: 16px;
+    }
+
+    .filter-group label {
+      display: block;
+      font-size: 0.875rem;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .select-input {
+      width: 100%;
+      padding: 10px;
+      background: #252542;
+      border: 1px solid #3d3d5c;
+      border-radius: 6px;
+      color: #e8e8e8;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+
+    .select-input:focus {
+      outline: none;
+      border-color: #f0c674;
+    }
+
+    .legend {
+      margin-top: 20px;
+      padding: 16px;
+      background: #252542;
+      border: 1px solid #2d2d4a;
+      border-radius: 8px;
+    }
+
+    .legend-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #888;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+      font-size: 0.875rem;
+    }
+
+    .legend-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .legend-color {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
     .drop-zone {
       border: 2px dashed #3d3d5c;
       border-radius: 8px;
@@ -340,6 +420,7 @@
         <p>Drag & drop or paste CSV data</p>
       </div>
       <div class="sidebar-content">
+        <div class="section-title">Data Input</div>
         <div class="drop-zone" id="dropZone">
           <svg class="drop-zone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
@@ -356,7 +437,43 @@
           <button class="btn btn-primary" id="exampleBtn">Load Example</button>
         </div>
 
+        <div id="filterSection" style="display: none;">
+          <div class="section-title">Filters</div>
+          <div class="filter-group">
+            <label for="countryFilter">Filter by Country</label>
+            <select id="countryFilter" class="select-input">
+              <option value="all">All Countries</option>
+            </select>
+          </div>
+          <div class="button-group">
+            <button class="btn" id="resetFilters">Reset Filters</button>
+          </div>
+        </div>
+
         <div id="statsContainer"></div>
+        
+        <div id="legendContainer" style="display: none;">
+          <div class="section-title">Map Legend</div>
+          <div class="legend">
+            <div class="legend-title">Severity Level</div>
+            <div class="legend-item">
+              <div class="legend-color" style="background: #ef4444;"></div>
+              <span>High Severity (> 2.0)</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background: #fbbf24;"></div>
+              <span>Medium Severity (1.1 - 2.0)</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background: #4ade80;"></div>
+              <span>Low Severity (≤ 1.0)</span>
+            </div>
+            <div style="margin-top: 12px; font-size: 0.75rem; color: #666;">
+              * Marker size indicates number of displaced people.
+            </div>
+          </div>
+        </div>
+
         <div id="selectedEvent"></div>
       </div>
     </aside>
@@ -408,9 +525,11 @@
 25,FL-2023-025,Egypt,Single,31.2,30.0,42000,45295,45302,FloodList,8,3500,Flash flood,1,Flash Flood`;
 
     // State
-    let data = [];
+    let allData = [];
+    let filteredData = [];
     let markers = [];
     let selectedEvent = null;
+    let selectedCountry = 'all';
     let map = null;
     let markersLayer = null;
 
@@ -534,7 +653,7 @@
 
       markers = [];
 
-      data.forEach(item => {
+      filteredData.forEach(item => {
         const marker = L.marker([item.lat, item.lng], {
           icon: createMarkerIcon(item)
         });
@@ -558,35 +677,67 @@
         markers.push(marker);
       });
 
-      if (data.length > 0) {
-        const bounds = L.latLngBounds(data.map(d => [d.lat, d.lng]));
+      if (filteredData.length > 0) {
+        const bounds = L.latLngBounds(filteredData.map(d => [d.lat, d.lng]));
         map.fitBounds(bounds, { padding: [50, 50] });
       }
 
       renderStats();
     }
 
+    function populateFilters() {
+      const countryFilter = document.getElementById('countryFilter');
+      const countries = [...new Set(allData.map(d => d.name))].sort();
+      
+      countryFilter.innerHTML = '<option value="all">All Countries</option>';
+      countries.forEach(country => {
+        const option = document.createElement('option');
+        option.value = country;
+        option.textContent = country;
+        countryFilter.appendChild(option);
+      });
+      
+      countryFilter.value = selectedCountry;
+      document.getElementById('filterSection').style.display = allData.length > 0 ? 'block' : 'none';
+      document.getElementById('legendContainer').style.display = allData.length > 0 ? 'block' : 'none';
+    }
+
+    function applyFilters() {
+      selectedCountry = document.getElementById('countryFilter').value;
+      
+      if (selectedCountry === 'all') {
+        filteredData = [...allData];
+      } else {
+        filteredData = allData.filter(d => d.name === selectedCountry);
+      }
+      
+      selectedEvent = null;
+      renderSelectedEvent();
+      updateMap();
+    }
+
     function renderStats() {
       const container = document.getElementById('statsContainer');
       
-      if (data.length === 0) {
-        container.innerHTML = '';
+      if (filteredData.length === 0) {
+        container.innerHTML = allData.length > 0 ? '<div class="empty-state">No events match the current filter</div>' : '';
         return;
       }
 
-      const countries = new Set(data.map(d => d.name)).size;
-      const totalDead = data.reduce((sum, d) => sum + d.dead, 0);
-      const totalDisplaced = data.reduce((sum, d) => sum + d.displaced, 0);
+      const locations = new Set(filteredData.map(d => d.name)).size;
+      const totalDead = filteredData.reduce((sum, d) => sum + d.dead, 0);
+      const totalDisplaced = filteredData.reduce((sum, d) => sum + d.displaced, 0);
 
       container.innerHTML = `
+        <div class="section-title">Statistics</div>
         <div class="stats-grid">
           <div class="stat-card">
-            <div class="label">Total Events</div>
-            <div class="value">${data.length}</div>
+            <div class="label">Events</div>
+            <div class="value">${filteredData.length}</div>
           </div>
           <div class="stat-card">
             <div class="label">Locations</div>
-            <div class="value">${countries}</div>
+            <div class="value">${locations}</div>
           </div>
           <div class="stat-card">
             <div class="label">Total Deaths</div>
@@ -597,7 +748,7 @@
             <div class="value">${totalDisplaced.toLocaleString()}</div>
           </div>
         </div>
-        <button class="btn clear-btn" onclick="clearData()">Clear Data</button>
+        <button class="btn clear-btn" onclick="clearData()">Clear All Data</button>
       `;
     }
 
@@ -627,19 +778,27 @@
     }
 
     function loadData(csvText) {
-      data = parseCSV(csvText);
-      if (data.length > 0) {
+      const parsed = parseCSV(csvText);
+      if (parsed.length > 0) {
+        allData = parsed;
+        filteredData = [...allData];
+        selectedCountry = 'all';
         selectedEvent = null;
+        populateFilters();
         updateMap();
       }
     }
 
     function clearData() {
-      data = [];
+      allData = [];
+      filteredData = [];
       selectedEvent = null;
+      selectedCountry = 'all';
       if (markersLayer) markersLayer.clearLayers();
       document.getElementById('statsContainer').innerHTML = '';
       document.getElementById('selectedEvent').innerHTML = '';
+      document.getElementById('filterSection').style.display = 'none';
+      document.getElementById('legendContainer').style.display = 'none';
       map.setView([0, 20], 2);
     }
 
@@ -724,6 +883,13 @@
           pasteModal.classList.remove('active');
           pasteTextarea.value = '';
         }
+      });
+
+      // Filters
+      document.getElementById('countryFilter').addEventListener('change', applyFilters);
+      document.getElementById('resetFilters').addEventListener('click', () => {
+        document.getElementById('countryFilter').value = 'all';
+        applyFilters();
       });
 
       // Example data
