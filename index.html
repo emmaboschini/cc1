@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoData Visualizer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a2e;
+      color: #e8e8e8;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 380px;
+      background: #1f1f38;
+      border-right: 1px solid #2d2d4a;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .sidebar-header {
+      padding: 20px;
+      border-bottom: 1px solid #2d2d4a;
+    }
+
+    .sidebar-header h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #f0c674;
+      margin-bottom: 4px;
+    }
+
+    .sidebar-header p {
+      font-size: 0.875rem;
+      color: #888;
+    }
+
+    .sidebar-content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .drop-zone {
+      border: 2px dashed #3d3d5c;
+      border-radius: 8px;
+      padding: 32px 20px;
+      text-align: center;
+      transition: all 0.2s;
+      cursor: pointer;
+      background: #252542;
+    }
+
+    .drop-zone:hover, .drop-zone.dragover {
+      border-color: #f0c674;
+      background: #2a2a4a;
+    }
+
+    .drop-zone-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 12px;
+      color: #666;
+    }
+
+    .drop-zone h3 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .drop-zone p {
+      font-size: 0.75rem;
+      color: #666;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 20px 0;
+      color: #666;
+      font-size: 0.75rem;
+    }
+
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #2d2d4a;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: 1px solid #3d3d5c;
+      background: #252542;
+      color: #e8e8e8;
+    }
+
+    .btn:hover {
+      background: #2d2d4a;
+      border-color: #4d4d6c;
+    }
+
+    .btn-primary {
+      background: #f0c674;
+      color: #1a1a2e;
+      border-color: #f0c674;
+    }
+
+    .btn-primary:hover {
+      background: #e5b85f;
+      border-color: #e5b85f;
+    }
+
+    .paste-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .paste-modal.active {
+      display: flex;
+    }
+
+    .paste-modal-content {
+      background: #1f1f38;
+      border: 1px solid #2d2d4a;
+      border-radius: 12px;
+      padding: 24px;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .paste-modal h3 {
+      margin-bottom: 12px;
+    }
+
+    .paste-modal textarea {
+      width: 100%;
+      height: 200px;
+      background: #252542;
+      border: 1px solid #3d3d5c;
+      border-radius: 6px;
+      padding: 12px;
+      color: #e8e8e8;
+      font-family: monospace;
+      font-size: 0.75rem;
+      resize: vertical;
+      margin-bottom: 16px;
+    }
+
+    .paste-modal textarea:focus {
+      outline: none;
+      border-color: #f0c674;
+    }
+
+    .paste-modal-buttons {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .stat-card {
+      background: #252542;
+      border: 1px solid #2d2d4a;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .stat-card .label {
+      font-size: 0.75rem;
+      color: #666;
+      margin-bottom: 4px;
+    }
+
+    .stat-card .value {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #f0c674;
+    }
+
+    .selected-event {
+      margin-top: 20px;
+      background: #252542;
+      border: 1px solid #2d2d4a;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .selected-event h4 {
+      font-size: 0.875rem;
+      color: #f0c674;
+      margin-bottom: 12px;
+    }
+
+    .selected-event .field {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #2d2d4a;
+      font-size: 0.875rem;
+    }
+
+    .selected-event .field:last-child {
+      border-bottom: none;
+    }
+
+    .selected-event .field-label {
+      color: #888;
+    }
+
+    .selected-event .field-value {
+      color: #e8e8e8;
+      font-weight: 500;
+    }
+
+    .map-container {
+      flex: 1;
+      position: relative;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+
+    .leaflet-container {
+      background: #1a1a2e !important;
+    }
+
+    .leaflet-popup-content-wrapper {
+      background: #1f1f38 !important;
+      color: #e8e8e8 !important;
+      border-radius: 8px !important;
+      border: 1px solid #2d2d4a !important;
+    }
+
+    .leaflet-popup-tip {
+      background: #1f1f38 !important;
+    }
+
+    .leaflet-popup-close-button {
+      color: #888 !important;
+    }
+
+    .popup-content h4 {
+      color: #f0c674;
+      margin-bottom: 8px;
+    }
+
+    .popup-content p {
+      font-size: 0.875rem;
+      margin: 4px 0;
+    }
+
+    .popup-content .highlight {
+      color: #f0c674;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+    }
+
+    .empty-state svg {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 16px;
+      opacity: 0.5;
+    }
+
+    .file-input {
+      display: none;
+    }
+
+    .clear-btn {
+      margin-top: 12px;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        height: auto;
+        max-height: 40vh;
+      }
+      .map-container {
+        height: 60vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>GeoData Visualizer</h1>
+        <p>Drag & drop or paste CSV data</p>
+      </div>
+      <div class="sidebar-content">
+        <div class="drop-zone" id="dropZone">
+          <svg class="drop-zone-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+          </svg>
+          <h3>Drop CSV file here</h3>
+          <p>or click to select a file</p>
+        </div>
+        <input type="file" id="fileInput" class="file-input" accept=".csv,.txt">
+
+        <div class="divider">or</div>
+
+        <div class="button-group">
+          <button class="btn" id="pasteBtn">Paste CSV Data</button>
+          <button class="btn btn-primary" id="exampleBtn">Load Example</button>
+        </div>
+
+        <div id="statsContainer"></div>
+        <div id="selectedEvent"></div>
+      </div>
+    </aside>
+
+    <main class="map-container">
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <!-- Paste Modal -->
+  <div class="paste-modal" id="pasteModal">
+    <div class="paste-modal-content">
+      <h3>Paste CSV Data</h3>
+      <textarea id="pasteTextarea" placeholder="Paste your CSV data here...&#10;&#10;Example:&#10;lat,lng,name,value&#10;51.5,-0.1,London,100&#10;48.8,2.3,Paris,200"></textarea>
+      <div class="paste-modal-buttons">
+        <button class="btn" id="cancelPaste">Cancel</button>
+        <button class="btn btn-primary" id="confirmPaste">Load Data</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Sample data
+    const SAMPLE_DATA = `ID,GlideNumber,Country,multi_country,anonymous_long,anonymous_lat,Area,Began,Ended,Validation,Dead,Displaced,MainCause,Severity,categorised_cause
+1,FL-2023-001,Mozambique,Multi-country,35.5,-23.8,137205,44927,44938,News,45,12500,Heavy rain,1.5,Heavy Rain
+2,FL-2023-002,Madagascar,Single,47.5,-18.9,95000,44935,44942,FloodList,23,8700,Tropical Storm,2,Storm
+3,FL-2023-003,Kenya,Single,37.9,-1.3,42000,44950,44955,News,12,4200,Flash flood,1,Flash Flood
+4,FL-2023-004,Tanzania,Single,35.7,-6.2,78500,44960,44970,FloodList,31,15600,Heavy rain,1.5,Heavy Rain
+5,FL-2023-005,South Africa,Multi-country,28.2,-26.2,125000,44975,44985,News,67,28000,Severe storm,2.5,Storm
+6,FL-2023-006,Zimbabwe,Single,31.0,-17.8,58000,44990,44998,News,18,6800,River overflow,1,River Flood
+7,FL-2023-007,Malawi,Single,35.0,-13.9,36000,45005,45012,FloodList,9,3200,Heavy rain,1,Heavy Rain
+8,FL-2023-008,Zambia,Single,28.3,-15.4,89000,45020,45030,News,22,9500,Flash flood,1.5,Flash Flood
+9,FL-2023-009,Botswana,Single,25.9,-22.3,45000,45035,45042,FloodList,5,1800,Heavy rain,0.5,Heavy Rain
+10,FL-2023-010,Namibia,Multi-country,17.1,-22.6,115000,45050,45065,News,14,7200,River overflow,1.5,River Flood
+11,FL-2023-011,Angola,Single,13.2,-8.8,156000,45070,45082,News,38,18500,Tropical Storm,2,Storm
+12,FL-2023-012,DRC,Single,15.3,-4.3,245000,45085,45098,FloodList,56,32000,Heavy rain,2.5,Heavy Rain
+13,FL-2023-013,Uganda,Single,32.6,0.3,38000,45100,45108,News,11,4800,Flash flood,1,Flash Flood
+14,FL-2023-014,Rwanda,Single,29.9,-1.9,18000,45115,45120,FloodList,7,2100,Landslide,1,Landslide
+15,FL-2023-015,Burundi,Single,29.4,-3.4,15000,45125,45132,News,8,2800,Heavy rain,1,Heavy Rain
+16,FL-2023-016,Ethiopia,Single,38.7,9.0,125000,45140,45155,News,42,19000,Flash flood,2,Flash Flood
+17,FL-2023-017,Somalia,Single,45.3,2.0,68000,45160,45172,FloodList,28,11500,River overflow,1.5,River Flood
+18,FL-2023-018,Sudan,Single,32.5,15.6,185000,45175,45190,News,65,35000,Heavy rain,2.5,Heavy Rain
+19,FL-2023-019,Chad,Single,15.0,12.1,95000,45195,45208,FloodList,19,8200,Flash flood,1.5,Flash Flood
+20,FL-2023-020,Nigeria,Multi-country,7.5,9.1,320000,45210,45228,News,89,52000,Severe flooding,3,River Flood
+21,FL-2023-021,Cameroon,Single,11.5,3.9,78000,45230,45242,FloodList,24,10500,Heavy rain,1.5,Heavy Rain
+22,FL-2023-022,Ghana,Single,-1.0,7.9,45000,45245,45255,News,16,6200,Flash flood,1,Flash Flood
+23,FL-2023-023,Senegal,Single,-14.4,14.7,55000,45260,45270,FloodList,13,5400,Heavy rain,1,Heavy Rain
+24,FL-2023-024,Mali,Single,-4.0,17.6,125000,45275,45290,News,21,9800,River overflow,1.5,River Flood
+25,FL-2023-025,Egypt,Single,31.2,30.0,42000,45295,45302,FloodList,8,3500,Flash flood,1,Flash Flood`;
+
+    // State
+    let data = [];
+    let markers = [];
+    let selectedEvent = null;
+    let map = null;
+    let markersLayer = null;
+
+    // Column name mappings
+    const LAT_COLUMNS = ['lat', 'latitude', 'anonymous_lat', 'y', 'lat_dd', 'latitude_dd'];
+    const LNG_COLUMNS = ['lng', 'lon', 'long', 'longitude', 'anonymous_long', 'anonymous_lon', 'x', 'lon_dd', 'long_dd', 'longitude_dd'];
+    const NAME_COLUMNS = ['name', 'title', 'country', 'location', 'place', 'city', 'region', 'area_name'];
+    const DEAD_COLUMNS = ['dead', 'deaths', 'fatalities', 'casualties', 'killed'];
+    const DISPLACED_COLUMNS = ['displaced', 'affected', 'evacuated', 'homeless'];
+    const CAUSE_COLUMNS = ['cause', 'maincause', 'main_cause', 'reason', 'type', 'categorised_cause'];
+    const SEVERITY_COLUMNS = ['severity', 'magnitude', 'intensity', 'level', 'scale'];
+
+    function findColumn(headers, possibilities) {
+      const lowerHeaders = headers.map(h => h.toLowerCase().trim());
+      for (const col of possibilities) {
+        const idx = lowerHeaders.indexOf(col.toLowerCase());
+        if (idx !== -1) return headers[idx];
+      }
+      return null;
+    }
+
+    function parseCSV(text) {
+      const lines = text.trim().split('\n');
+      if (lines.length < 2) return [];
+
+      const headers = lines[0].split(',').map(h => h.trim().replace(/^["']|["']$/g, ''));
+      
+      const latCol = findColumn(headers, LAT_COLUMNS);
+      const lngCol = findColumn(headers, LNG_COLUMNS);
+
+      if (!latCol || !lngCol) {
+        alert('Could not find latitude/longitude columns. Please ensure your CSV has columns like "lat", "latitude", "lng", "longitude", etc.');
+        return [];
+      }
+
+      const nameCol = findColumn(headers, NAME_COLUMNS);
+      const deadCol = findColumn(headers, DEAD_COLUMNS);
+      const displacedCol = findColumn(headers, DISPLACED_COLUMNS);
+      const causeCol = findColumn(headers, CAUSE_COLUMNS);
+      const severityCol = findColumn(headers, SEVERITY_COLUMNS);
+
+      const results = [];
+
+      for (let i = 1; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+
+        const values = line.split(',').map(v => v.trim().replace(/^["']|["']$/g, ''));
+        const row = {};
+        headers.forEach((h, idx) => {
+          row[h] = values[idx] || '';
+        });
+
+        const lat = parseFloat(row[latCol]);
+        const lng = parseFloat(row[lngCol]);
+
+        if (!isNaN(lat) && !isNaN(lng) && lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180) {
+          results.push({
+            id: i,
+            lat,
+            lng,
+            name: nameCol ? row[nameCol] : `Point ${i}`,
+            dead: deadCol ? parseInt(row[deadCol]) || 0 : 0,
+            displaced: displacedCol ? parseInt(row[displacedCol]) || 0 : 0,
+            cause: causeCol ? row[causeCol] : 'Unknown',
+            severity: severityCol ? parseFloat(row[severityCol]) || 1 : 1,
+            raw: row
+          });
+        }
+      }
+
+      return results;
+    }
+
+    function getSeverityColor(severity) {
+      if (severity <= 1) return '#4ade80';
+      if (severity <= 2) return '#fbbf24';
+      return '#ef4444';
+    }
+
+    function getMarkerSize(displaced) {
+      const base = 24;
+      if (displaced > 50000) return base + 16;
+      if (displaced > 20000) return base + 12;
+      if (displaced > 10000) return base + 8;
+      if (displaced > 5000) return base + 4;
+      return base;
+    }
+
+    function createMarkerIcon(item) {
+      const color = getSeverityColor(item.severity);
+      const size = getMarkerSize(item.displaced);
+      
+      return L.divIcon({
+        className: 'custom-marker-wrapper',
+        html: `<div style="
+          width: ${size}px;
+          height: ${size}px;
+          background: ${color};
+          border-radius: 50%;
+          border: 2px solid #1a1a2e;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          font-size: 10px;
+          color: #1a1a2e;
+        ">${item.severity.toFixed(1)}</div>`,
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2]
+      });
+    }
+
+    function updateMap() {
+      if (markersLayer) {
+        markersLayer.clearLayers();
+      } else {
+        markersLayer = L.layerGroup().addTo(map);
+      }
+
+      markers = [];
+
+      data.forEach(item => {
+        const marker = L.marker([item.lat, item.lng], {
+          icon: createMarkerIcon(item)
+        });
+
+        marker.bindPopup(`
+          <div class="popup-content">
+            <h4>${item.name}</h4>
+            <p><strong>Cause:</strong> ${item.cause}</p>
+            <p><strong>Severity:</strong> <span class="highlight">${item.severity.toFixed(1)}</span></p>
+            <p><strong>Deaths:</strong> ${item.dead.toLocaleString()}</p>
+            <p><strong>Displaced:</strong> ${item.displaced.toLocaleString()}</p>
+          </div>
+        `);
+
+        marker.on('click', () => {
+          selectedEvent = item;
+          renderSelectedEvent();
+        });
+
+        marker.addTo(markersLayer);
+        markers.push(marker);
+      });
+
+      if (data.length > 0) {
+        const bounds = L.latLngBounds(data.map(d => [d.lat, d.lng]));
+        map.fitBounds(bounds, { padding: [50, 50] });
+      }
+
+      renderStats();
+    }
+
+    function renderStats() {
+      const container = document.getElementById('statsContainer');
+      
+      if (data.length === 0) {
+        container.innerHTML = '';
+        return;
+      }
+
+      const countries = new Set(data.map(d => d.name)).size;
+      const totalDead = data.reduce((sum, d) => sum + d.dead, 0);
+      const totalDisplaced = data.reduce((sum, d) => sum + d.displaced, 0);
+
+      container.innerHTML = `
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="label">Total Events</div>
+            <div class="value">${data.length}</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Locations</div>
+            <div class="value">${countries}</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Total Deaths</div>
+            <div class="value">${totalDead.toLocaleString()}</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Total Displaced</div>
+            <div class="value">${totalDisplaced.toLocaleString()}</div>
+          </div>
+        </div>
+        <button class="btn clear-btn" onclick="clearData()">Clear Data</button>
+      `;
+    }
+
+    function renderSelectedEvent() {
+      const container = document.getElementById('selectedEvent');
+      
+      if (!selectedEvent) {
+        container.innerHTML = '';
+        return;
+      }
+
+      const fields = Object.entries(selectedEvent.raw)
+        .filter(([key]) => !['id'].includes(key.toLowerCase()))
+        .slice(0, 10);
+
+      container.innerHTML = `
+        <div class="selected-event">
+          <h4>Selected Event</h4>
+          ${fields.map(([key, value]) => `
+            <div class="field">
+              <span class="field-label">${key}</span>
+              <span class="field-value">${value || '-'}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function loadData(csvText) {
+      data = parseCSV(csvText);
+      if (data.length > 0) {
+        selectedEvent = null;
+        updateMap();
+      }
+    }
+
+    function clearData() {
+      data = [];
+      selectedEvent = null;
+      if (markersLayer) markersLayer.clearLayers();
+      document.getElementById('statsContainer').innerHTML = '';
+      document.getElementById('selectedEvent').innerHTML = '';
+      map.setView([0, 20], 2);
+    }
+
+    // Initialize map
+    document.addEventListener('DOMContentLoaded', () => {
+      map = L.map('map', {
+        center: [0, 20],
+        zoom: 2,
+        zoomControl: true
+      });
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      }).addTo(map);
+
+      // Drop zone events
+      const dropZone = document.getElementById('dropZone');
+      const fileInput = document.getElementById('fileInput');
+
+      dropZone.addEventListener('click', () => fileInput.click());
+
+      dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.classList.add('dragover');
+      });
+
+      dropZone.addEventListener('dragleave', () => {
+        dropZone.classList.remove('dragover');
+      });
+
+      dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('dragover');
+        const file = e.dataTransfer.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = (e) => loadData(e.target.result);
+          reader.readAsText(file);
+        }
+      });
+
+      fileInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = (e) => loadData(e.target.result);
+          reader.readAsText(file);
+        }
+      });
+
+      // Paste modal
+      const pasteModal = document.getElementById('pasteModal');
+      const pasteTextarea = document.getElementById('pasteTextarea');
+
+      document.getElementById('pasteBtn').addEventListener('click', async () => {
+        pasteModal.classList.add('active');
+        try {
+          const text = await navigator.clipboard.readText();
+          if (text) pasteTextarea.value = text;
+        } catch (e) {}
+        pasteTextarea.focus();
+      });
+
+      document.getElementById('cancelPaste').addEventListener('click', () => {
+        pasteModal.classList.remove('active');
+        pasteTextarea.value = '';
+      });
+
+      document.getElementById('confirmPaste').addEventListener('click', () => {
+        const text = pasteTextarea.value.trim();
+        if (text) {
+          loadData(text);
+          pasteModal.classList.remove('active');
+          pasteTextarea.value = '';
+        }
+      });
+
+      pasteModal.addEventListener('click', (e) => {
+        if (e.target === pasteModal) {
+          pasteModal.classList.remove('active');
+          pasteTextarea.value = '';
+        }
+      });
+
+      // Example data
+      document.getElementById('exampleBtn').addEventListener('click', () => {
+        loadData(SAMPLE_DATA);
+      });
+    });
+  </script>
+</body>
+</html>
