@@ -200,6 +200,41 @@
       font-weight: 600;
     }
 
+    /* Map Section */
+    .featured-map {
+      margin-top: 4rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    .map-header {
+      padding: 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .map-header h3 {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    .map-iframe-container {
+      width: 100%;
+      height: 500px;
+      position: relative;
+    }
+
+    .map-iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     footer {
       text-align: center;
       padding: 4rem 2rem;
@@ -277,6 +312,20 @@
             <span class="metadata-value">April 16, 2026</span>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="section-title">Featured Visualizations</div>
+    <div class="featured-map">
+      <div class="map-header">
+        <div>
+          <h3>Egypt Flood Analysis</h3>
+          <p style="color: var(--text-dim); font-size: 0.875rem;">Interactive visualization of historical flooding events across Egypt (1991 - 2020).</p>
+        </div>
+        <a href="egypt_floods.html" class="btn btn-outline">Full Screen</a>
+      </div>
+      <div class="map-iframe-container">
+        <iframe src="egypt_floods.html" title="Egypt Flood Map"></iframe>
       </div>
     </div>
   </main>
