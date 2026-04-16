@@ -12,7 +12,7 @@
             --card-bg: #ffffff;
             --text: #0f172a;
             --dim: #475569;
-            --accent: #2563eb;
+            --accent: #ef4444;
             --border: #e2e8f0;
         }
 
@@ -214,7 +214,7 @@
                     datasets: [{
                         label: 'Number of Events',
                         data: sorted.map(d => d[1]),
-                        backgroundColor: '#3b82f6'
+                        backgroundColor: '#ef4444'
                     }]
                 },
                 options: { maintainAspectRatio: false, plugins: { legend: { display: false } } }
@@ -231,10 +231,10 @@
                     datasets: [{
                         label: 'Events',
                         data: sortedYears.map(y => data[y]),
-                        borderColor: '#2563eb',
+                        borderColor: '#ef4444',
                         tension: 0.3,
                         fill: true,
-                        backgroundColor: 'rgba(37, 99, 235, 0.1)'
+                        backgroundColor: 'rgba(239, 68, 68, 0.1)'
                     }]
                 },
                 options: { maintainAspectRatio: false, plugins: { legend: { display: false } } }
@@ -266,7 +266,7 @@
                     datasets: [{
                         label: 'Total Displaced',
                         data: Object.values(data),
-                        backgroundColor: ['#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8', '#1e40af']
+                        backgroundColor: ['#fca5a5', '#f87171', '#ef4444', '#dc2626', '#b91c1c']
                     }]
                 },
                 options: { maintainAspectRatio: false, plugins: { legend: { display: false } } }
