@@ -234,8 +234,9 @@
     }
 
     function parseWKTPoint(wkt) {
-      // Extract first coordinate from MULTIPOLYGON (((8.9 39.6, ...)))
-      const match = wkt.match(/(\d+\.\d+)\s+(\d+\.\d+)/);
+      if (!wkt) return null;
+      // Robust regex for coordinates (handles integers, decimals, and optional negatives)
+      const match = wkt.match(/(-?\d+\.?\d*)\s+(-?\d+\.?\d*)/);
       if (match) {
         return [parseFloat(match[2]), parseFloat(match[1])]; // [lat, lng]
       }
@@ -243,11 +244,15 @@
     }
 
     async function loadData() {
+      console.log("Loading data...");
       try {
         const response = await fetch('sardinia_fires_mini.csv');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        
         const text = await response.text();
-        const lines = text.trim().split('\n');
-        const headers = lines[0].split(',');
+        const lines = text.trim().split(/\r?\n/);
+        const headers = lines[0].split(',').map(h => h.trim());
+        console.log("Headers:", headers);
         
         const annoIdx = headers.indexOf('anno');
         const areaIdx = headers.indexOf('sup_tot');
@@ -255,34 +260,46 @@
         const dateIdx = headers.indexOf('dt_ince');
         const comuneIdx = headers.indexOf('comune');
 
-        allData = lines.slice(1).map(line => {
-          // Simple CSV parser that handles quotes for geom
-          const parts = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+        allData = lines.slice(1).map((line, i) => {
+          // Since geom is POINT(x y) and has no commas, simple split is safe
+          const parts = line.split(',');
+          if (parts.length < 5) return null;
+
           const areaSqM = parseFloat(parts[areaIdx]) || 0;
           const areaHa = areaSqM / 10000;
-          const geom = parts[geomIdx] ? parts[geomIdx].replace(/^"|"$/g, '') : '';
+          const geom = parts[geomIdx] ? parts[geomIdx].trim() : '';
           const latlng = parseWKTPoint(geom);
 
           return {
-            year: parts[annoIdx],
-            date: parts[dateIdx],
-            comune: parts[comuneIdx],
+            year: parts[annoIdx] ? parts[annoIdx].trim() : '',
+            date: parts[dateIdx] ? parts[dateIdx].trim() : '',
+            comune: parts[comuneIdx] ? parts[comuneIdx].trim() : '',
             areaHa: areaHa,
             latlng: latlng
           };
-        }).filter(d => d.latlng);
+        }).filter(d => d && d.latlng);
+
+        console.log(`Loaded ${allData.length} valid records.`);
+        if (allData.length > 0) {
+            console.log("First record:", allData[0]);
+        } else {
+            console.warn("No valid records found! Check CSV format and geom column.");
+        }
 
         document.getElementById('loading').style.display = 'none';
         updateDisplay();
       } catch (err) {
         console.error('Failed to load CSV:', err);
-        alert('Could not load data. Please ensure sardinia_wildfires_2017_2023.csv exists.');
+        document.getElementById('loading').innerHTML = `<div style="padding: 20px; text-align: center;"><p style="color: #ef4444; font-weight: 800;">ERROR LOADING DATA</p><p style="font-size: 0.875rem; margin-top: 8px;">${err.message}</p></div>`;
       }
     }
 
     function updateDisplay() {
       const year = document.getElementById('yearFilter').value;
+      console.log(`Filtering for year: ${year}`);
+      
       const filtered = year === 'all' ? allData : allData.filter(d => d.year === year);
+      console.log(`Found ${filtered.length} matches.`);
       
       markersLayer.clearLayers();
       
