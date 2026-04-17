@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEODATA | TWIN DEMO</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+    :root {
+      --bg: #ffffff;
+      --accent-1: #bef264;
+      --accent-2: #f472b6;
+      --accent-3: #22d3ee;
+      --text: #000000;
+      --border: 3px solid #000000;
+      --shadow: 4px 4px 0px #000000;
+      --nav-height: 80px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.2;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: var(--nav-height);
+      background: var(--accent-1);
+      border-bottom: var(--border);
+      display: flex; justify-content: center; align-items: center;
+      z-index: 1000;
+    }
+
+    .nav-container { width: 100%; max-width: 1200px; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; }
+    .nav-brand { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--text); text-decoration: none; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 15px; }
+    .nav-links a { color: var(--text); text-decoration: none; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; padding: 6px 12px; border: var(--border); background: #fff; box-shadow: 3px 3px 0px #000; transition: all 0.1s; }
+    .nav-links a:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0px #000; background: var(--accent-2); }
+
+    .main-demo {
+      margin-top: var(--nav-height);
+      flex: 1;
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      height: calc(100vh - var(--nav-height));
+    }
+
+    .dashboard {
+      background: #fff;
+      border-right: var(--border);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      overflow-y: auto;
+    }
+
+    .status-box {
+      border: var(--border);
+      padding: 16px;
+      background: #f0f0f0;
+      box-shadow: 4px 4px 0px #000;
+    }
+
+    .status-header {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .status-indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #22c55e;
+      border: 1px solid #000;
+    }
+
+    .status-indicator.risk { background: #ef4444; animation: pulse 1s infinite; }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+
+    .stat-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding: 4px 0;
+    }
+
+    .map-area { position: relative; background: #eee; }
+    #map { width: 100%; height: 100%; }
+
+    .sim-overlay {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: var(--accent-2);
+      padding: 20px;
+      border: var(--border);
+      box-shadow: 8px 8px 0px #000;
+      max-width: 250px;
+      display: none;
+    }
+
+    .sim-overlay h4 { font-family: 'Bricolage Grotesque', sans-serif; margin-bottom: 10px; text-transform: uppercase; }
+    .sim-overlay p { font-size: 0.8rem; font-weight: 600; margin-bottom: 15px; }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      border: var(--border);
+      background: var(--accent-1);
+      box-shadow: 5px 5px 0px #000;
+      cursor: pointer;
+      transition: all 0.1s;
+    }
+    .btn:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0px #000; }
+    .btn:active { transform: translate(4px, 4px); box-shadow: 1px 1px 0px #000; }
+
+    .log-box {
+      flex: 1;
+      border: var(--border);
+      background: #000;
+      color: #00ff00;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 0.75rem;
+      overflow-y: auto;
+    }
+
+    /* Embedded Mode */
+    body.is-embedded nav { display: none; }
+    body.is-embedded .main-demo { margin-top: 0; height: 100vh; }
+
+    @media (max-width: 768px) {
+      .main-demo { grid-template-columns: 1fr; }
+      .dashboard { height: 40vh; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">GEODATA</a>
+      <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="map.html">MAP</a>
+        <a href="response.html">RESPONSE</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-demo">
+    <div class="dashboard">
+      <h2 style="font-family:'Bricolage Grotesque'; font-size: 1.5rem; line-height: 1;">CAIRO UNIVERSITY HOSPITAL TWIN</h2>
+      
+      <div class="status-box">
+        <div class="status-header">
+          <span>SYSTEM STATUS</span>
+          <div class="status-indicator" id="mainStatus"></div>
+        </div>
+        <div class="stat-line"><span>Structural Integrity</span> <span style="color: #22c55e;">98%</span></div>
+        <div class="stat-line"><span>Power Grid</span> <span style="color: #22c55e;">STABLE</span></div>
+        <div class="stat-line"><span>Oxygen Plant</span> <span style="color: #22c55e;">OPTIMAL</span></div>
+      </div>
+
+      <div class="status-box" style="background: var(--accent-3);">
+        <div class="status-header">PINN SIMULATION PARAMETERS</div>
+        <div class="stat-line"><span>Nile Level</span> <span>+0.2m</span></div>
+        <div class="stat-line"><span>Precipitation</span> <span>12mm/hr</span></div>
+      </div>
+
+      <button class="btn" onclick="runSim()">RUN "WHAT-IF" SIMULATION</button>
+
+      <div class="log-box" id="log">
+        > System Initialized...<br>
+        > Digital Twin Linked (ID: EGY-CAI-01)...<br>
+        > Awaiting manual override...
+      </div>
+    </div>
+
+    <div class="map-area">
+      <div id="map"></div>
+      <div class="sim-overlay" id="simOverlay">
+        <h4>CASCADE FAILURE DETECTED</h4>
+        <p>Simulation predicts ground-level breach in 45 minutes. Oxygen plant risk: HIGH.</p>
+        <div class="stat-line"><span>EVAC ROUTE</span> <span>CALCULATED</span></div>
+        <div class="stat-line"><span>BARRIERS</span> <span>AUTO-TRIGGERED</span></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    window.onload = () => {
+      if (window.self !== window.top) {
+        document.body.classList.add('is-embedded');
+      }
+    };
+
+    const map = L.map('map').setView([30.0314, 31.2274], 16);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; CARTO'
+    }).addTo(map);
+
+    const hospitalIcon = L.divIcon({
+      className: 'custom-div-icon',
+      html: `<div style="background-color:var(--accent-2); border:2px solid #000; width:30px; height:30px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:16px; box-shadow: 3px 3px 0px #000;">H</div>`,
+      iconSize: [30, 30]
+    });
+
+    L.marker([30.0314, 31.2274], { icon: hospitalIcon }).addTo(map)
+      .bindPopup("<b>Cairo University Hospital</b><br>Digital Twin Master Hub")
+      .openPopup();
+
+    // Add dummy "vulnerable zones"
+    const waterLayer = L.layerGroup();
+    const floodZone = L.polygon([
+      [30.035, 31.220],
+      [30.035, 31.230],
+      [30.025, 31.230],
+      [30.025, 31.220]
+    ], { color: 'blue', fillOpacity: 0.2, weight: 1 });
+
+    function addLog(msg) {
+      const log = document.getElementById('log');
+      log.innerHTML += `<br>> ${msg}`;
+      log.scrollTop = log.scrollHeight;
+    }
+
+    function runSim() {
+      addLog("Initializing Neural Network...");
+      addLog("Running Physics-Informed Simulation...");
+      
+      setTimeout(() => {
+        waterLayer.addLayer(floodZone).addTo(map);
+        map.flyTo([30.0314, 31.2274], 15);
+        
+        document.getElementById('mainStatus').classList.add('risk');
+        document.getElementById('simOverlay').style.display = 'block';
+        
+        addLog("CRITICAL: Basement flooding predicted at T+45m.");
+        addLog("Action: Auto-triggering basement barriers.");
+        addLog("Route: Calculating load-balancing to Ain Shams...");
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
