@@ -321,10 +321,10 @@
         header: true,
         dynamicTyping: true,
         complete: function(results) {
-          allData = results.data.filter(d => d.anonymous_lat && d.anonymous_long).map(d => ({
+          allData = results.data.filter(d => d.lat && d.long).map(d => ({
             ...d,
-            lat: d.anonymous_lat,
-            lng: d.anonymous_long,
+            lat: d.lat,
+            lng: d.long,
             Cause: d.categorised_reason || d.MainCause
           }));
           filteredData = [...allData];
