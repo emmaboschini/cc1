@@ -422,7 +422,7 @@
     </main>
   </div>
 
-  <!-- Paste Modal (Redesigning to Neo-Brutalist) -->
+  <!-- Paste Modal -->
   <div class="paste-modal" id="pasteModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); z-index:2000; align-items:center; justify-content:center;">
     <div style="background:#fff; border:var(--border); padding:32px; width:90%; max-width:650px; box-shadow:10px 10px 0px #000;">
       <h3 style="font-family:'Bricolage Grotesque'; text-transform:uppercase; margin-bottom:20px">PASTE CSV DATA</h3>
@@ -435,7 +435,6 @@
   </div>
 
   <script>
-    // ... State and logic ...
     let allData = [];
     let filteredData = [];
     let markers = [];
@@ -444,7 +443,6 @@
     let map = null;
     let markersLayer = null;
 
-    // Column name mappings
     const LAT_COLUMNS = ['lat', 'latitude', 'anonymous_lat', 'y', 'lat_dd', 'latitude_dd'];
     const LNG_COLUMNS = ['lng', 'lon', 'long', 'longitude', 'anonymous_long', 'anonymous_lon', 'x', 'lon_dd', 'long_dd', 'longitude_dd'];
     const NAME_COLUMNS = ['name', 'title', 'country', 'location', 'place', 'city', 'region', 'area_name'];
@@ -465,17 +463,13 @@
     function parseCSV(text) {
       const lines = text.trim().split('\n');
       if (lines.length < 2) return [];
-
       const headers = lines[0].split(',').map(h => h.trim().replace(/^["']|["']$/g, ''));
-      
       const latCol = findColumn(headers, LAT_COLUMNS);
       const lngCol = findColumn(headers, LNG_COLUMNS);
-
       if (!latCol || !lngCol) {
         alert('Missing Lat/Lng columns.');
         return [];
       }
-
       const nameCol = findColumn(headers, NAME_COLUMNS);
       const deadCol = findColumn(headers, DEAD_COLUMNS);
       const displacedCol = findColumn(headers, DISPLACED_COLUMNS);
@@ -483,25 +477,17 @@
       const severityCol = findColumn(headers, SEVERITY_COLUMNS);
 
       const results = [];
-
       for (let i = 1; i < lines.length; i++) {
         const line = lines[i].trim();
         if (!line) continue;
-
         const values = line.split(',').map(v => v.trim().replace(/^["']|["']$/g, ''));
         const row = {};
-        headers.forEach((h, idx) => {
-          row[h] = values[idx] || '';
-        });
-
+        headers.forEach((h, idx) => { row[h] = values[idx] || ''; });
         const lat = parseFloat(row[latCol]);
         const lng = parseFloat(row[lngCol]);
-
         if (!isNaN(lat) && !isNaN(lng)) {
           results.push({
-            id: i,
-            lat,
-            lng,
+            id: i, lat, lng,
             name: nameCol ? row[nameCol] : `Point ${i}`,
             dead: deadCol ? parseInt(row[deadCol]) || 0 : 0,
             displaced: displacedCol ? parseInt(row[displacedCol]) || 0 : 0,
@@ -511,7 +497,6 @@
           });
         }
       }
-
       return results;
     }
 
@@ -524,16 +509,9 @@
     function createMarkerIcon(item) {
       const color = getSeverityColor(item.severity);
       const size = 16 + (item.severity * 4);
-      
       return L.divIcon({
         className: 'custom-marker',
-        html: `<div style="
-          width: ${size}px;
-          height: ${size}px;
-          background: ${color};
-          border: 3px solid #000;
-          box-shadow: 3px 3px 0px #000;
-        "></div>`,
+        html: `<div style="width: ${size}px; height: ${size}px; background: ${color}; border: 3px solid #000; box-shadow: 3px 3px 0px #000;"></div>`,
         iconSize: [size, size],
         iconAnchor: [size / 2, size / 2]
       });
@@ -542,24 +520,12 @@
     function updateMap() {
       if (markersLayer) markersLayer.clearLayers();
       else markersLayer = L.layerGroup().addTo(map);
-
       filteredData.forEach(item => {
         const marker = L.marker([item.lat, item.lng], { icon: createMarkerIcon(item) });
-        marker.bindPopup(`
-          <div class="popup-content">
-            <h4>${item.name}</h4>
-            <p>CAUSE: ${item.cause}</p>
-            <p>SEVERITY: <span class="highlight">${item.severity.toFixed(1)}</span></p>
-            <p>DEATHS: ${item.dead.toLocaleString()}</p>
-          </div>
-        `);
-        marker.on('click', () => {
-          selectedEvent = item;
-          renderSelectedEvent();
-        });
+        marker.bindPopup(`<div class="popup-content"><h4>${item.name}</h4><p>CAUSE: ${item.cause}</p><p>SEVERITY: <span class="highlight">${item.severity.toFixed(1)}</span></p><p>DEATHS: ${item.dead.toLocaleString()}</p></div>`);
+        marker.on('click', () => { selectedEvent = item; renderSelectedEvent(); });
         marker.addTo(markersLayer);
       });
-
       if (filteredData.length > 0) {
         const bounds = L.latLngBounds(filteredData.map(d => [d.lat, d.lng]));
         map.fitBounds(bounds, { padding: [50, 50] });
@@ -589,32 +555,16 @@
 
     function renderStats() {
       const container = document.getElementById('statsContainer');
-      if (filteredData.length === 0) {
-        container.innerHTML = '';
-        return;
-      }
+      if (filteredData.length === 0) { container.innerHTML = ''; return; }
       const dead = filteredData.reduce((sum, d) => sum + d.dead, 0);
-      const disp = filteredData.reduce((sum, d) => sum + d.displaced, 0);
-      container.innerHTML = `
-        <div class="section-title">STATS</div>
-        <div class="stats-grid">
-          <div class="stat-card"><div class="label">EVENTS</div><div class="value">${filteredData.length}</div></div>
-          <div class="stat-card"><div class="label">DEATHS</div><div class="value">${dead.toLocaleString()}</div></div>
-        </div>
-        <button class="btn clear-btn" onclick="clearData()">WIPE DATA</button>
-      `;
+      container.innerHTML = `<div class="section-title">STATS</div><div class="stats-grid"><div class="stat-card"><div class="label">EVENTS</div><div class="value">${filteredData.length}</div></div><div class="stat-card"><div class="label">DEATHS</div><div class="value">${dead.toLocaleString()}</div></div></div><button class="btn clear-btn" onclick="clearData()">WIPE DATA</button>`;
     }
 
     function renderSelectedEvent() {
       const container = document.getElementById('selectedEvent');
       if (!selectedEvent) { container.innerHTML = ''; return; }
       const fields = Object.entries(selectedEvent.raw).slice(0, 6);
-      container.innerHTML = `
-        <div class="selected-event">
-          <h4>DETAILS</h4>
-          ${fields.map(([k, v]) => `<div class="field"><span class="field-label">${k}</span><span class="field-value">${v}</span></div>`).join('')}
-        </div>
-      `;
+      container.innerHTML = `<div class="selected-event"><h4>DETAILS</h4>${fields.map(([k, v]) => `<div class="field"><span class="field-label">${k}</span><span class="field-value">${v}</span></div>`).join('')}</div>`;
     }
 
     function loadData(csvText) {
@@ -628,7 +578,7 @@
     }
 
     function clearData() {
-      allData = []; filteredData = []; markersLayer.clearLayers();
+      allData = []; filteredData = []; if (markersLayer) markersLayer.clearLayers();
       document.getElementById('statsContainer').innerHTML = '';
       document.getElementById('selectedEvent').innerHTML = '';
       document.getElementById('filterSection').style.display = 'none';
@@ -642,14 +592,12 @@
         subdomains: 'abcd',
         maxZoom: 20
       }).addTo(map);
-
       document.getElementById('dropZone').onclick = () => document.getElementById('fileInput').click();
       document.getElementById('fileInput').onchange = (e) => {
         const reader = new FileReader();
         reader.onload = (ev) => loadData(ev.target.result);
         reader.readAsText(e.target.files[0]);
       };
-      
       const modal = document.getElementById('pasteModal');
       document.getElementById('pasteBtn').onclick = () => modal.style.display = 'flex';
       document.getElementById('cancelPaste').onclick = () => modal.style.display = 'none';
@@ -657,14 +605,9 @@
         loadData(document.getElementById('pasteTextarea').value);
         modal.style.display = 'none';
       };
-      
       document.getElementById('countryFilter').onchange = applyFilters;
-      document.getElementById('resetFilters').onclick = () => {
-        document.getElementById('countryFilter').value = 'all';
-        applyFilters();
-      };
-      
-      document.getElementById('exampleBtn').onclick = () => loadData(`ID,lat,lng,name,Dead,Severity\n1,0,0,TEST,10,2.5`);
+      document.getElementById('resetFilters').onclick = () => { document.getElementById('countryFilter').value = 'all'; applyFilters(); };
+      document.getElementById('exampleBtn').onclick = () => loadData(`ID,lat,lng,name,Dead,Severity\n1,30.0,31.2,TEST EVENT,10,2.5`);
     };
   </script>
 </body>
