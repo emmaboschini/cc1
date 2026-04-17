@@ -49,11 +49,19 @@
         height: var(--nav-height);
         background: var(--accent-1);
         border-bottom: var(--border);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .nav-container {
+        width: 100%;
+        max-width: 1200px;
         padding: 0 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 1000;
     }
 
     .nav-brand {
@@ -155,7 +163,7 @@
             .container { grid-template-columns: 1fr; padding: 20px; }
             .header { padding: calc(var(--nav-height) + 20px) 20px 20px; }
             .header h1 { font-size: 2.5rem; }
-            nav { padding: 0 20px; }
+            .nav-container { padding: 0 20px; }
             .nav-brand { font-size: 1.2rem; }
             .nav-links { gap: 8px; }
             .nav-links a { padding: 4px 8px; font-size: 0.75rem; }
@@ -164,11 +172,14 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="nav-brand">GEODATA</a>
-        <div class="nav-links">
-            <a href="map.html">MAP</a>
-            <a href="charts.html" class="active">CHARTS</a>
-            <a href="upload.html">UPLOAD</a>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">GEODATA</a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="map.html">MAP</a>
+                <a href="charts.html" class="active">CHARTS</a>
+                <a href="upload.html">UPLOAD</a>
+            </div>
         </div>
     </nav>
 
