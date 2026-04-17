@@ -192,6 +192,11 @@
             <select id="causeFilter" class="select-input">
               <option value="all">ALL CAUSES</option>
             </select>
+
+            <label for="yearFilter">YEAR</label>
+            <select id="yearFilter" class="select-input">
+              <option value="all">ALL YEARS</option>
+            </select>
           </div>
           <button class="btn btn-primary" id="resetFilters">RESET FILTERS</button>
         </div>
@@ -283,9 +288,11 @@
     function populateFilters() {
       const countries = [...new Set(allData.map(d => d.Country))].sort();
       const causes = [...new Set(allData.map(d => d.categorised_reason || d.MainCause))].filter(Boolean).sort();
+      const years = [...new Set(allData.map(d => d.Year))].filter(Boolean).sort((a, b) => b - a);
       
       const cFilter = document.getElementById('countryFilter');
       const csFilter = document.getElementById('causeFilter');
+      const yFilter = document.getElementById('yearFilter');
       
       countries.forEach(c => {
         const opt = document.createElement('option');
@@ -298,16 +305,24 @@
         opt.value = cs; opt.textContent = cs.toUpperCase();
         csFilter.appendChild(opt);
       });
+
+      years.forEach(y => {
+        const opt = document.createElement('option');
+        opt.value = y; opt.textContent = y;
+        yFilter.appendChild(opt);
+      });
     }
 
     function applyFilters() {
       const country = document.getElementById('countryFilter').value;
       const cause = document.getElementById('causeFilter').value;
+      const year = document.getElementById('yearFilter').value;
       
       filteredData = allData.filter(d => {
         const matchCountry = country === 'all' || d.Country === country;
         const matchCause = cause === 'all' || (d.categorised_reason || d.MainCause) === cause;
-        return matchCountry && matchCause;
+        const matchYear = year === 'all' || d.Year.toString() === year;
+        return matchCountry && matchCause && matchYear;
       });
       
       updateMarkers();
@@ -335,9 +350,11 @@
 
       document.getElementById('countryFilter').onchange = applyFilters;
       document.getElementById('causeFilter').onchange = applyFilters;
+      document.getElementById('yearFilter').onchange = applyFilters;
       document.getElementById('resetFilters').onclick = () => {
         document.getElementById('countryFilter').value = 'all';
         document.getElementById('causeFilter').value = 'all';
+        document.getElementById('yearFilter').value = 'all';
         applyFilters();
       };
     };
