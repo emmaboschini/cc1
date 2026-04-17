@@ -110,6 +110,9 @@
     }
     .bento-card:hover { transform: translate(3px, 3px); box-shadow: 1px 1px 0px #000; }
 
+    .map-card { grid-column: span 12; padding: 0; overflow: hidden; height: 600px; border: var(--border); box-shadow: var(--shadow); margin-bottom: 20px; }
+    .map-card iframe { width: 100%; height: 100%; border: none; display: block; }
+
     .vulnerability-card { grid-column: span 12; background: var(--accent-1); display: flex; flex-direction: column; height: auto; border: var(--border); box-shadow: var(--shadow); }
     .vulnerability-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; border-bottom: 2px solid #000; padding-bottom: 5px; }
     .vulnerability-card h3 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.25rem; font-weight: 800; text-transform: uppercase; margin: 0; border: none; padding: 0; }
@@ -132,7 +135,8 @@
 
     @media (max-width: 768px) {
       .header h1 { font-size: 2.5rem; }
-      .feature-card, .hero-card, .full-card, .vulnerability-card { grid-column: span 12; height: auto; }
+      .feature-card, .hero-card, .full-card, .vulnerability-card, .map-card { grid-column: span 12; height: auto; }
+      .map-card { height: 400px; }
       .nav-container { padding: 0 20px; }
       .nav-links { gap: 8px; }
       .nav-links a { padding: 4px 8px; font-size: 0.75rem; }
@@ -159,6 +163,11 @@
   </div>
 
   <main class="main-grid">
+    <!-- EGYPT MAP EMBED -->
+    <div class="bento-card map-card">
+      <iframe src="egypt_map.html" title="Egypt Flood Map"></iframe>
+    </div>
+
     <!-- CRITICAL VULNERABILITIES -->
     <div class="bento-card vulnerability-card">
       <div class="vulnerability-header">
