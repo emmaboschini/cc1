@@ -97,6 +97,9 @@
     .method-card h2 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.5rem; font-weight: 800; text-transform: uppercase; background: var(--accent-1); display: inline-block; padding: 4px 10px; border: var(--border); margin-bottom: 15px; align-self: flex-start; }
     .method-card p { font-size: 1.1rem; font-weight: 500; line-height: 1.5; }
 
+    .map-card { grid-column: span 12; padding: 0; overflow: hidden; height: 550px; border: var(--border); box-shadow: var(--shadow); }
+    .map-card iframe { width: 100%; height: 100%; border: none; display: block; }
+
     .archive-card { grid-column: span 6; }
     .layers-card { grid-column: span 6; background: var(--accent-2); }
     
@@ -110,7 +113,7 @@
     footer p { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1rem; font-weight: 800; text-transform: uppercase; }
 
     @media (max-width: 900px) {
-      .hero-card, .cta-card, .method-card, .archive-card, .layers-card { grid-column: span 12; }
+      .hero-card, .method-card, .archive-card, .layers-card, .map-card { grid-column: span 12; }
       .nav-container { padding: 0 20px; }
       .nav-brand { font-size: 1.2rem; }
       .nav-links { gap: 8px; }
@@ -143,6 +146,11 @@
     <div class="bento-card method-card">
       <h2>Methodologies</h2>
       <p>Data is collected via a multi-modal approach combining **MODIS and Landsat satellite imagery**, orbital radar sensors, and ground-based instrumental records. By integrating high-resolution spectral bands with synthetic aperture radar (SAR), the archive captures flood extents even through dense cloud cover and nocturnal cycles. This geospatial raw data is supplemented by cross-referenced governmental reports and international news archives to ensure high-fidelity spatial and casualty metrics across every documented event.</p>
+    </div>
+
+    <!-- EGYPT MAP EMBED -->
+    <div class="bento-card map-card">
+      <iframe src="egypt_map.html" title="Egypt Flood Map"></iframe>
     </div>
 
     <!-- ARCHIVE -->

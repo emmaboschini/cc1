@@ -173,6 +173,11 @@
     .popup-content p { font-weight: 700; margin: 4px 0; font-size: 0.9rem; }
     .popup-content .highlight { background: var(--accent-1); padding: 0 4px; }
 
+    /* Embedded Mode */
+    body.is-embedded nav { display: none; }
+    body.is-embedded .container { margin-top: 0; height: 100vh; }
+    body.is-embedded .sidebar { height: 100vh; }
+
     @media (max-width: 768px) {
       .container { flex-direction: column; }
       .sidebar { width: 100%; max-height: 40vh; }
@@ -395,6 +400,9 @@
     }
 
     window.onload = () => {
+      if (window.self !== window.top) {
+        document.body.classList.add('is-embedded');
+      }
       initMap();
       
       Papa.parse('egypt_floods.csv', {
