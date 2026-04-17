@@ -94,7 +94,11 @@
         ];
 
         const map = L.map('map').setView([26.8206, 30.8025], 6);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png').addTo(map);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }).addTo(map);
 
         data.forEach(item => {
             const color = item.sev > 1.5 ? '#ef4444' : (item.sev > 1.0 ? '#fbbf24' : '#bef264');
