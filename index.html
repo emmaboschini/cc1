@@ -98,12 +98,12 @@
     .btn:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0px #000; background: var(--accent-1); }
     .btn:active { transform: translate(6px, 6px); box-shadow: 0px 0px 0px #000; }
 
-    .method-card { grid-column: span 5; }
+    .method-card { grid-column: span 4; }
     .method-card h2 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.25rem; font-weight: 800; text-transform: uppercase; background: var(--accent-1); display: inline-block; padding: 4px 10px; border: var(--border); margin-bottom: 15px; align-self: flex-start; }
     .method-card p { font-size: 0.9375rem; font-weight: 500; line-height: 1.4; }
 
-    .archive-card { grid-column: span 3.5; }
-    .layers-card { grid-column: span 3.5; background: var(--accent-2); }
+    .archive-card { grid-column: span 4; }
+    .layers-card { grid-column: span 4; background: var(--accent-2); }
     
     .card-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.25rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; border-bottom: 2px solid #000; padding-bottom: 5px; }
     .card-desc { font-size: 0.875rem; font-weight: 500; margin-bottom: 20px; flex-grow: 1; }
@@ -149,12 +149,6 @@
       <a href="https://ckan.rimes.int/sv/dataset/global-active-archive-of-large-flood-events" target="_blank" class="btn">FLOOD ARCHIVE</a>
     </div>
 
-    <!-- METHODOLOGIES -->
-    <div class="bento-card method-card">
-      <h2>Methodologies</h2>
-      <p>Data is collected via a multi-modal approach combining **MODIS and Landsat satellite imagery**, orbital radar sensors, and ground-based instrumental records. By integrating high-resolution spectral bands with synthetic aperture radar (SAR), the archive captures flood extents even through dense cloud cover and nocturnal cycles. This geospatial raw data is supplemented by cross-referenced governmental reports and international news archives to ensure high-fidelity spatial and casualty metrics across every documented event.</p>
-    </div>
-
     <!-- ARCHIVE -->
     <div class="bento-card archive-card">
       <div class="card-title">FLOOD ARCHIVE</div>
@@ -175,6 +169,12 @@
         <div class="meta-row"><span>FORMAT</span> <span>GEOJSON</span></div>
         <div class="meta-row"><span>RES</span> <span>CITY LEVEL</span></div>
       </div>
+    </div>
+
+    <!-- METHODOLOGIES -->
+    <div class="bento-card method-card">
+      <h2>Methodologies</h2>
+      <p>Data is collected via a multi-modal approach combining **MODIS and Landsat satellite imagery**, orbital radar sensors, and ground-based instrumental records. By integrating high-resolution spectral bands with synthetic aperture radar (SAR), the archive captures flood extents even through dense cloud cover and nocturnal cycles. This geospatial raw data is supplemented by cross-referenced governmental reports and international news archives to ensure high-fidelity spatial and casualty metrics across every documented event.</p>
     </div>
   </main>
 
