@@ -221,12 +221,16 @@
         </div>
 
         <div id="statsContainer"></div>
+
+        <div class="section-title">LAYERS</div>
+        <button class="btn" id="toggleHealth" style="background: var(--accent-3); margin-top: 0;">SHOW HEALTH FACILITIES</button>
         
         <div class="section-title">LEGEND</div>
         <div class="legend">
           <div class="legend-item"><div class="legend-color" style="background: #ef4444;"></div><span>HIGH SEVERITY</span></div>
           <div class="legend-item"><div class="legend-color" style="background: #fbbf24;"></div><span>MEDIUM SEVERITY</span></div>
           <div class="legend-item"><div class="legend-color" style="background: #bef264;"></div><span>LOW SEVERITY</span></div>
+          <div class="legend-item"><div class="legend-color" style="background: #ffffff; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 800;">H</div><span>HEALTH FACILITY</span></div>
         </div>
       </div>
     </aside>
@@ -242,6 +246,22 @@
     let filteredData = [];
     let map = null;
     let markersLayer = null;
+    let healthLayer = null;
+    let healthVisible = false;
+
+    // Sample Health Facilities (Hospitals) in Egypt
+    const healthFacilities = [
+      { name: "Cairo University Hospital (Qasr Al-Ainy)", lat: 30.0314, lng: 31.2274, type: "General Hospital" },
+      { name: "Ain Shams University Hospital", lat: 30.0768, lng: 31.2845, type: "University Hospital" },
+      { name: "Alexandria University Hospital", lat: 31.1994, lng: 29.9149, type: "General Hospital" },
+      { name: "Luxor International Hospital", lat: 25.6811, lng: 32.6322, type: "International Hospital" },
+      { name: "Aswan University Hospital", lat: 24.0889, lng: 32.8998, type: "General Hospital" },
+      { name: "Assiut University Hospital", lat: 27.1855, lng: 31.1685, type: "Teaching Hospital" },
+      { name: "Mansoura University Hospital", lat: 31.0429, lng: 31.3594, type: "University Hospital" },
+      { name: "Children's Cancer Hospital Egypt (57357)", lat: 30.0215, lng: 31.2359, type: "Specialized Hospital" },
+      { name: "El Salam International Hospital", lat: 29.9875, lng: 31.2311, type: "Private Hospital" },
+      { name: "Anglo-American Hospital", lat: 30.0463, lng: 31.2248, type: "Private Hospital" }
+    ];
 
     function initMap() {
       map = L.map('map').setView([26.8206, 30.8025], 6);
@@ -251,6 +271,40 @@
         maxZoom: 20
       }).addTo(map);
       markersLayer = L.layerGroup().addTo(map);
+      healthLayer = L.layerGroup();
+      
+      // Initialize health markers
+      healthFacilities.forEach(h => {
+        const marker = L.marker([h.lat, h.lng], {
+          icon: L.divIcon({
+            className: 'custom-div-icon',
+            html: `<div style="background-color:#fff; border:2px solid #000; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px; box-shadow: 2px 2px 0px #000;">H</div>`,
+            iconSize: [24, 24],
+            iconAnchor: [12, 12]
+          })
+        });
+        marker.bindPopup(`
+          <div class="popup-content">
+            <h4>${h.name}</h4>
+            <p>TYPE: <span class="highlight">${h.type}</span></p>
+          </div>
+        `);
+        marker.addTo(healthLayer);
+      });
+    }
+
+    function toggleHealthLayer() {
+      healthVisible = !healthVisible;
+      const btn = document.getElementById('toggleHealth');
+      if (healthVisible) {
+        healthLayer.addTo(map);
+        btn.textContent = "HIDE HEALTH FACILITIES";
+        btn.style.background = "#fff";
+      } else {
+        map.removeLayer(healthLayer);
+        btn.textContent = "SHOW HEALTH FACILITIES";
+        btn.style.background = "var(--accent-3)";
+      }
     }
 
     function getSeverityColor(severity) {
@@ -362,6 +416,7 @@
 
       document.getElementById('causeFilter').onchange = applyFilters;
       document.getElementById('yearFilter').onchange = applyFilters;
+      document.getElementById('toggleHealth').onclick = toggleHealthLayer;
       document.getElementById('resetFilters').onclick = () => {
         document.getElementById('causeFilter').value = 'all';
         document.getElementById('yearFilter').value = 'all';
