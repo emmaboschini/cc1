@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GeoData Visualizer | Insight Platform</title>
+  <title>FLOOD DATA | INSIGHT PLATFORM</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Space+Grotesk:wght@400;500;700&display=swap');
 
     :root {
-      --bg: #f8fafc;
-      --accent: #ef4444;
-      --accent-glow: rgba(239, 68, 68, 0.15);
-      --text: #0f172a;
-      --text-muted: #64748b;
-      --glass-bg: rgba(255, 255, 255, 0.7);
-      --glass-border: rgba(255, 255, 255, 0.4);
-      --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
-      --nav-height: 72px;
+      --bg: #ffffff;
+      --accent-1: #bef264; /* Lime */
+      --accent-2: #f472b6; /* Pink */
+      --accent-3: #22d3ee; /* Cyan */
+      --text: #000000;
+      --border: 3px solid #000000;
+      --shadow: 6px 6px 0px #000000;
+      --shadow-hover: 2px 2px 0px #000000;
+      --nav-height: 80px;
     }
 
     * {
@@ -26,342 +26,303 @@
     }
 
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Space Grotesk', sans-serif;
       background: var(--bg);
       color: var(--text);
       overflow-x: hidden;
-      line-height: 1.5;
+      line-height: 1.2;
     }
 
-    /* Background Blobs */
-    .blob {
+    /* Grid Background */
+    body::before {
+      content: '';
       position: fixed;
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, var(--accent-glow) 0%, rgba(255,255,255,0) 70%);
-      filter: blur(40px);
+      inset: 0;
+      background-image: linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(90deg, #f0f0f0 1px, transparent 1px);
+      background-size: 40px 40px;
       z-index: -1;
-      border-radius: 50%;
-      animation: float 20s infinite alternate;
-    }
-
-    .blob-1 { top: -200px; right: -100px; background-color: rgba(239, 68, 68, 0.1); }
-    .blob-2 { bottom: -200px; left: -100px; background-color: rgba(147, 51, 234, 0.08); }
-
-    @keyframes float {
-      from { transform: translate(0, 0); }
-      to { transform: translate(50px, 100px); }
     }
 
     /* Navigation */
     nav {
       position: fixed;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: calc(100% - 40px);
-      max-width: 1000px;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: var(--nav-height);
-      background: var(--glass-bg);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid var(--glass-border);
-      border-radius: 20px;
-      padding: 0 24px;
+      background: var(--accent-1);
+      border-bottom: var(--border);
+      padding: 0 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
     }
 
     .nav-brand {
-      font-size: 1.25rem;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 1.75rem;
       font-weight: 800;
-      color: var(--accent);
+      color: var(--text);
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      text-transform: uppercase;
     }
 
     .nav-links {
       display: flex;
-      gap: 32px;
+      gap: 20px;
     }
 
     .nav-links a {
-      color: var(--text-muted);
+      color: var(--text);
       text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 600;
-      transition: all 0.2s ease;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border: var(--border);
+      background: #fff;
+      box-shadow: 4px 4px 0px #000;
+      transition: all 0.1s;
     }
 
     .nav-links a:hover, .nav-links a.active {
-      color: var(--accent);
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px #000;
+      background: var(--accent-2);
     }
 
     /* Hero Section */
     .hero {
-      padding: calc(var(--nav-height) + 120px) 24px 80px;
-      text-align: center;
-      max-width: 900px;
+      padding: calc(var(--nav-height) + 80px) 40px 80px;
+      text-align: left;
+      max-width: 1200px;
       margin: 0 auto;
-      animation: fadeIn 1s ease-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: clamp(3.5rem, 12vw, 8rem);
       font-weight: 800;
-      line-height: 1.1;
-      margin-bottom: 24px;
+      line-height: 0.9;
+      margin-bottom: 32px;
+      text-transform: uppercase;
       letter-spacing: -0.04em;
-      background: linear-gradient(135deg, #1e293b 0%, #ef4444 50%, #1e293b 100%);
-      background-size: 200% auto;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: shine 8s linear infinite;
-    }
-
-    @keyframes shine {
-      to { background-position: 200% center; }
     }
 
     .hero p {
-      font-size: 1.25rem;
-      color: var(--text-muted);
+      font-size: 1.5rem;
       max-width: 600px;
-      margin: 0 auto 40px;
+      margin-bottom: 48px;
       font-weight: 500;
+      background: #fff;
+      padding: 10px;
+      border: var(--border);
+      display: inline-block;
     }
 
     .cta-group {
       display: flex;
-      gap: 16px;
-      justify-content: center;
+      gap: 24px;
       flex-wrap: wrap;
     }
 
     .btn {
-      padding: 14px 28px;
-      border-radius: 14px;
-      font-weight: 700;
+      padding: 20px 40px;
+      border: var(--border);
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800;
       text-decoration: none;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      font-size: 0.9375rem;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      box-shadow: var(--shadow);
+      transition: all 0.1s;
+      display: inline-block;
     }
 
     .btn-primary {
-      background: var(--accent);
-      color: white;
-      box-shadow: 0 10px 20px -5px rgba(239, 68, 68, 0.4);
+      background: var(--accent-1);
+      color: var(--text);
     }
 
     .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 15px 30px -5px rgba(239, 68, 68, 0.5);
+      transform: translate(4px, 4px);
+      box-shadow: 2px 2px 0px #000;
+      background: var(--accent-2);
     }
 
     .btn-outline {
-      background: white;
+      background: #fff;
       color: var(--text);
-      border: 1px solid var(--glass-border);
-      box-shadow: var(--card-shadow);
     }
 
     .btn-outline:hover {
-      background: #f1f5f9;
-      transform: translateY(-2px);
+      transform: translate(4px, 4px);
+      box-shadow: 2px 2px 0px #000;
+      background: var(--accent-3);
     }
 
     /* Container */
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 60px 24px 120px;
+      padding: 80px 40px 120px;
     }
 
     .section-title {
-      font-size: 0.75rem;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 2.5rem;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--accent);
-      margin-bottom: 40px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .section-title::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(to right, var(--border), transparent);
+      margin-bottom: 60px;
+      background: var(--accent-3);
+      display: inline-block;
+      padding: 10px 20px;
+      border: var(--border);
+      box-shadow: 6px 6px 0px #000;
     }
 
     /* Grid & Cards */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 40px;
     }
 
     .card {
-      background: var(--glass-bg);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid var(--glass-border);
-      border-radius: 24px;
-      padding: 32px;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      overflow: hidden;
+      background: #ffffff;
+      border: var(--border);
+      padding: 40px;
+      box-shadow: var(--shadow);
+      transition: all 0.1s;
     }
 
-    .card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, var(--accent) 0%, transparent 100%);
-      opacity: 0;
-      transition: opacity 0.4s;
-      z-index: -1;
+    .card:nth-child(2) {
+      background: var(--accent-2);
     }
 
     .card:hover {
-      transform: translateY(-8px);
-      border-color: var(--accent);
-      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.1);
+      transform: translate(4px, 4px);
+      box-shadow: 2px 2px 0px #000;
     }
 
     .card h3 {
-      font-size: 1.5rem;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 2rem;
       font-weight: 800;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
     }
 
     .card p {
-      color: var(--text-muted);
-      font-size: 0.9375rem;
-      margin-bottom: 24px;
+      font-size: 1.125rem;
+      margin-bottom: 32px;
+      font-weight: 500;
     }
 
     .metadata {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 16px;
     }
 
     .metadata-item {
       display: flex;
       justify-content: space-between;
-      font-size: 0.8125rem;
+      font-size: 1rem;
       padding-bottom: 8px;
-      border-bottom: 1px dashed #e2e8f0;
+      border-bottom: 2px solid #000;
     }
 
     .metadata-label {
-      font-weight: 600;
-      color: var(--text-muted);
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
     .metadata-value {
-      font-weight: 700;
-      color: var(--text);
+      font-weight: 800;
     }
 
     footer {
       text-align: center;
-      padding: 80px 24px;
-      border-top: 1px solid var(--glass-border);
-      background: white;
-      color: var(--text-muted);
-      font-size: 0.875rem;
-      font-weight: 500;
+      padding: 80px 40px;
+      border-top: var(--border);
+      background: var(--text);
+      color: #fff;
+    }
+
+    footer p {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-transform: uppercase;
     }
 
     @media (max-width: 768px) {
       .nav-links { display: none; }
-      .hero { padding-top: 140px; }
+      .hero h1 { font-size: 4rem; }
       .grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-
   <nav>
-    <a href="index.html" class="nav-brand">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
-      GeoData
-    </a>
+    <a href="index.html" class="nav-brand">GEODATA</a>
     <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="map.html">Map</a>
-      <a href="charts.html">Charts</a>
-      <a href="upload.html">Upload</a>
+      <a href="index.html" class="active">HOME</a>
+      <a href="map.html">MAP</a>
+      <a href="charts.html">CHARTS</a>
+      <a href="upload.html">UPLOAD</a>
     </div>
   </nav>
 
   <section class="hero">
-    <h1>Global Insight Platform</h1>
-    <p>A sophisticated suite for exploring, analyzing, and visualizing geospatial flood archives and historical impact data.</p>
+    <h1>FLOOD DATA.<br>RAW & UNFILTERED.</h1>
+    <p>Track historical floods globally. No fluff, just hard numbers.</p>
     <div class="cta-group">
-      <a href="map.html" class="btn btn-primary">Launch Visualizer</a>
-      <a href="egypt_floods.html" class="btn btn-outline">Egypt Analysis</a>
-      <a href="upload.html" class="btn btn-outline">Custom Upload</a>
+      <a href="map.html" class="btn btn-primary">THE MAP</a>
+      <a href="egypt_floods.html" class="btn btn-outline">EGYPT DIVE</a>
+      <a href="upload.html" class="btn btn-outline">UPLOAD CSV</a>
     </div>
   </section>
 
   <main class="container">
-    <div class="section-title">Core Datasets</div>
+    <div class="section-title">THE ARCHIVE</div>
     <div class="grid">
       <div class="card">
-        <h3>Flood Archive</h3>
-        <p>A high-fidelity dataset tracking historical flood events globally, optimized for spatial analysis and casualty reporting.</p>
+        <h3>FLOOD ARCHIVE</h3>
+        <p>A high-fidelity dataset tracking historical flood events globally. Built for spatial analysis.</p>
         <div class="metadata">
           <div class="metadata-item">
             <span class="metadata-label">Type</span>
-            <span class="metadata-value">Historical Archive</span>
+            <span class="metadata-value">HISTORY</span>
           </div>
           <div class="metadata-item">
             <span class="metadata-label">Format</span>
-            <span class="metadata-value">Standardized CSV</span>
+            <span class="metadata-value">CSV</span>
           </div>
           <div class="metadata-item">
             <span class="metadata-label">Status</span>
-            <span class="metadata-value">Cleaned & Verified</span>
+            <span class="metadata-value">VERIFIED</span>
           </div>
         </div>
       </div>
 
       <div class="card">
-        <h3>Spatial Indicators</h3>
-        <p>Curated administrative data and regional indicators used for generating heatmaps and vulnerability assessments.</p>
+        <h3>SPATIAL LAYERS</h3>
+        <p>Curated administrative data for heatmaps and vulnerability assessments. GeoJSON ready.</p>
         <div class="metadata">
           <div class="metadata-item">
             <span class="metadata-label">Type</span>
-            <span class="metadata-value">Geospatial Layer</span>
+            <span class="metadata-value">GEOSPATIAL</span>
           </div>
           <div class="metadata-item">
             <span class="metadata-label">Format</span>
-            <span class="metadata-value">GeoJSON Ready</span>
+            <span class="metadata-value">GEOJSON</span>
           </div>
           <div class="metadata-item">
             <span class="metadata-label">Resolution</span>
-            <span class="metadata-value">Regional/City</span>
+            <span class="metadata-value">CITY LEVEL</span>
           </div>
         </div>
       </div>
@@ -369,7 +330,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 GeoData Insight Platform. Modernized Analytics for Global Impact.</p>
+    <p>GEODATA INSIGHT PLATFORM &copy; 2026</p>
   </footer>
 </body>
 </html>
