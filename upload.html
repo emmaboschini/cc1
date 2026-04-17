@@ -17,7 +17,7 @@
       --text: #000000;
       --border: 3px solid #000000;
       --shadow: 4px 4px 0px #000000;
-      --nav-height: 60px;
+      --nav-height: 80px;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -32,14 +32,18 @@
     }
 
     nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--nav-height);
       background: var(--accent-1);
       border-bottom: var(--border);
-      padding: 0 2rem;
+      padding: 0 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       z-index: 1000;
-      height: var(--nav-height);
     }
 
     .nav-brand {
@@ -51,11 +55,13 @@
       text-transform: uppercase;
     }
 
-    .nav-links { display: flex; gap: 1.5rem; }
-    .nav-links a { color: var(--text); text-decoration: none; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; }
-    .nav-links a:hover, .nav-links a.active { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 3px; }
+    .nav-links { display: flex; gap: 15px; }
+    .nav-links a, .nav-links a:visited { color: var(--text); text-decoration: none; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; padding: 6px 12px; border: var(--border); background: #fff; box-shadow: 3px 3px 0px #000; transition: all 0.1s; }
+    .nav-links a:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0px #000; background: var(--accent-2); }
+    .nav-links a.active { background: var(--accent-2); transform: translate(2px, 2px); box-shadow: 1px 1px 0px #000; }
+    .nav-links a:active { transform: translate(3px, 3px); box-shadow: 0px 0px 0px #000; }
 
-    .container { display: flex; flex: 1; height: calc(100vh - var(--nav-height)); }
+    .container { display: flex; flex: 1; margin-top: var(--nav-height); height: calc(100vh - var(--nav-height)); }
 
     .sidebar {
       width: 400px;
@@ -143,7 +149,6 @@
   <nav>
     <a href="index.html" class="nav-brand">GEODATA</a>
     <div class="nav-links">
-      <a href="index.html">HOME</a>
       <a href="map.html">MAP</a>
       <a href="charts.html">CHARTS</a>
       <a href="upload.html" class="active">UPLOAD</a>
