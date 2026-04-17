@@ -101,7 +101,24 @@
     .map-card iframe { width: 100%; height: 100%; border: none; display: block; }
 
     .vulnerability-card { grid-column: span 4; background: var(--accent-1); display: flex; flex-direction: column; height: 550px; border: var(--border); box-shadow: var(--shadow); }
-    .vulnerability-card h3 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.25rem; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; border-bottom: 2px solid #000; padding-bottom: 5px; }
+    .vulnerability-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; border-bottom: 2px solid #000; padding-bottom: 5px; }
+    .vulnerability-card h3 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.25rem; font-weight: 800; text-transform: uppercase; margin: 0; border: none; padding: 0; }
+    
+    .read-more-btn { 
+      font-family: 'Bricolage Grotesque', sans-serif; 
+      font-weight: 800; 
+      font-size: 0.75rem; 
+      text-transform: uppercase; 
+      text-decoration: none; 
+      color: #000; 
+      background: #fff; 
+      padding: 4px 8px; 
+      border: 2px solid #000; 
+      box-shadow: 2px 2px 0px #000;
+      transition: all 0.1s;
+    }
+    .read-more-btn:hover { transform: translate(1px, 1px); box-shadow: 1px 1px 0px #000; background: var(--accent-2); }
+
     .vulnerability-list { overflow-y: auto; flex: 1; padding-right: 10px; }
     .vulnerability-item { margin-bottom: 12px; font-size: 0.875rem; line-height: 1.3; }
     .vulnerability-item strong { text-transform: uppercase; display: block; margin-bottom: 2px; }
@@ -163,7 +180,10 @@
 
     <!-- CRITICAL VULNERABILITIES -->
     <div class="bento-card vulnerability-card">
-      <h3>CRITICAL VULNERABILITIES</h3>
+      <div class="vulnerability-header">
+        <h3>CRITICAL VULNERABILITIES</h3>
+        <a href="#" class="read-more-btn">READ MORE</a>
+      </div>
       <div class="vulnerability-list">
         <div class="vulnerability-item"><strong>Delta Submergence</strong>Rising sea levels and land subsidence threaten to inundate nearly 20% of the Nile Delta, where a significant portion of the country's clinics are located.</div>
         <div class="vulnerability-item"><strong>Infrastructure Vulnerability</strong>Many older medical buildings lack the modern retrofitting needed to withstand structural damage from prolonged water exposure.</div>
