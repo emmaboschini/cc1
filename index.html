@@ -54,8 +54,9 @@
 
     .nav-brand { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--text); text-decoration: none; text-transform: uppercase; }
     .nav-links { display: flex; gap: 15px; }
-    .nav-links a { color: var(--text); text-decoration: none; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; padding: 6px 12px; border: var(--border); background: #fff; box-shadow: 3px 3px 0px #000; transition: all 0.1s; }
-    .nav-links a:hover { transform: translate(2px, 2px); box-shadow: 1px 1px 0px #000; background: var(--accent-2); }
+    .nav-links a, .nav-links a:visited { color: var(--text); text-decoration: none; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; padding: 6px 12px; border: var(--border); background: #fff; box-shadow: 3px 3px 0px #000; transition: all 0.1s; }
+    .nav-links a:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0px #000; background: var(--accent-2); }
+    .nav-links a:active { transform: translate(3px, 3px); box-shadow: 0px 0px 0px #000; }
 
     .main-grid {
       max-width: 1300px;
@@ -84,8 +85,9 @@
     .hero-card p { font-size: 1.125rem; font-weight: 500; margin-bottom: 30px; max-width: 600px; }
 
     .cta-card { grid-column: span 4; background: var(--accent-3); justify-content: center; align-items: center; gap: 20px; }
-    .btn { width: 100%; text-align: center; padding: 16px; border: var(--border); font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; text-decoration: none; text-transform: uppercase; font-size: 1.125rem; box-shadow: var(--shadow); background: #fff; color: #000; transition: all 0.1s; }
-    .btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0px #000; background: var(--accent-1); }
+    .btn, .btn:visited { width: 100%; text-align: center; padding: 16px; border: var(--border); font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; text-decoration: none; text-transform: uppercase; font-size: 1.125rem; box-shadow: var(--shadow); background: #fff; color: #000; transition: all 0.1s; }
+    .btn:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0px #000; background: var(--accent-1); }
+    .btn:active { transform: translate(6px, 6px); box-shadow: 0px 0px 0px #000; }
 
     .method-card { grid-column: span 5; }
     .method-card h2 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.25rem; font-weight: 800; text-transform: uppercase; background: var(--accent-1); display: inline-block; padding: 4px 10px; border: var(--border); margin-bottom: 15px; align-self: flex-start; }
