@@ -239,13 +239,13 @@
       markersLayer.clearLayers();
       filteredData.forEach(item => {
         const color = getSeverityColor(item.Severity);
-        const size = 10 + (item.Severity * 2);
+        const size = 5; // Uniform small dot size
         
         const marker = L.circleMarker([item.lat, item.lng], {
           radius: size,
           fillColor: color,
           color: "#000",
-          weight: 2,
+          weight: 1, // Thinner border
           opacity: 1,
           fillOpacity: 1
         });
