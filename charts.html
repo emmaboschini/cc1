@@ -20,6 +20,8 @@
         --nav-height: 80px;
     }
 
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
         font-family: 'Space Grotesk', sans-serif;
         background-color: var(--bg);
@@ -100,7 +102,7 @@
             margin: 0 auto;
             padding: 20px 40px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 20px;
         }
 
@@ -129,7 +131,7 @@
 
         .chart-container {
             position: relative;
-            height: 350px;
+            height: 400px;
             width: 100%;
         }
 
@@ -150,8 +152,13 @@
         }
 
         @media (max-width: 768px) {
-            .container { grid-template-columns: 1fr; }
-            .header h1 { font-size: 3rem; }
+            .container { grid-template-columns: 1fr; padding: 20px; }
+            .header { padding: calc(var(--nav-height) + 20px) 20px 20px; }
+            .header h1 { font-size: 2.5rem; }
+            nav { padding: 0 20px; }
+            .nav-brand { font-size: 1.2rem; }
+            .nav-links { gap: 8px; }
+            .nav-links a { padding: 4px 8px; font-size: 0.75rem; }
         }
     </style>
 </head>
@@ -262,7 +269,7 @@
                         borderWidth: 3
                     }]
                 },
-                options: { maintainAspectRatio: false, plugins: { legend: { display: false } } }
+                options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false } } }
             });
         }
 
