@@ -20,11 +20,7 @@
       --nav-height: 60px;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Space Grotesk', sans-serif;
@@ -35,7 +31,6 @@
       flex-direction: column;
     }
 
-    /* Navigation */
     nav {
       background: var(--accent-1);
       border-bottom: var(--border);
@@ -56,30 +51,11 @@
       text-transform: uppercase;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-    }
+    .nav-links { display: flex; gap: 1.5rem; }
+    .nav-links a { color: var(--text); text-decoration: none; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; }
+    .nav-links a:hover, .nav-links a.active { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 3px; }
 
-    .nav-links a {
-      color: var(--text);
-      text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    .nav-links a:hover, .nav-links a.active {
-      text-decoration: underline;
-      text-underline-offset: 4px;
-      text-decoration-thickness: 3px;
-    }
-
-    .container {
-      display: flex;
-      flex: 1;
-      height: calc(100vh - var(--nav-height));
-    }
+    .container { display: flex; flex: 1; height: calc(100vh - var(--nav-height)); }
 
     .sidebar {
       width: 400px;
@@ -105,10 +81,7 @@
       text-transform: uppercase;
     }
 
-    .sidebar-header p {
-      font-size: 0.875rem;
-      font-weight: 500;
-    }
+    .sidebar-header p { font-size: 0.875rem; font-weight: 500; }
 
     .sidebar-content {
       flex: 1;
@@ -131,17 +104,8 @@
       border: var(--border);
     }
 
-    .filter-group {
-      margin-bottom: 20px;
-    }
-
-    .filter-group label {
-      display: block;
-      font-size: 0.875rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-    }
+    .filter-group { margin-bottom: 20px; }
+    .filter-group label { display: block; font-size: 0.875rem; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; }
 
     .select-input {
       width: 100%;
@@ -153,80 +117,17 @@
       font-weight: 700;
       cursor: pointer;
       box-shadow: 4px 4px 0px #000;
-    }
-
-    .select-input:focus {
-      outline: none;
-      transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px #000;
-    }
-
-    .legend {
-      margin-top: 20px;
-      padding: 20px;
-      background: #fff;
-      border: var(--border);
-      box-shadow: var(--shadow);
-    }
-
-    .legend-title {
-      font-weight: 800;
-      font-size: 0.75rem;
-      margin-bottom: 16px;
-      text-transform: uppercase;
-    }
-
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
       margin-bottom: 12px;
-      font-size: 0.875rem;
-      font-weight: 700;
     }
 
-    .legend-color {
-      width: 16px;
-      height: 16px;
-      border: 2px solid #000;
-    }
+    .select-input:focus { outline: none; transform: translate(2px, 2px); box-shadow: 2px 2px 0px #000; }
 
-    .drop-zone {
-      border: 3px dashed #000;
-      background: #fff;
-      padding: 40px 24px;
-      text-align: center;
-      cursor: pointer;
-      box-shadow: var(--shadow);
-      transition: all 0.1s;
-    }
-
-    .drop-zone:hover {
-      background: var(--accent-1);
-      transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px #000;
-    }
-
-    .drop-zone h3 {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      text-transform: uppercase;
-      font-size: 1.25rem;
-    }
-
-    .divider {
-      text-align: center;
-      margin: 24px 0;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .button-group {
-      display: flex;
-      gap: 10px;
-    }
+    .legend { margin-top: 20px; padding: 20px; background: #fff; border: var(--border); box-shadow: var(--shadow); }
+    .legend-item { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 0.875rem; font-weight: 700; }
+    .legend-color { width: 16px; height: 16px; border: 2px solid #000; }
 
     .btn {
-      flex: 1;
+      width: 100%;
       padding: 12px 16px;
       font-size: 0.875rem;
       font-weight: 800;
@@ -236,113 +137,24 @@
       background: #fff;
       box-shadow: var(--shadow);
       transition: all 0.1s;
+      margin-top: 10px;
     }
 
-    .btn:hover {
-      transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px #000;
-      background: var(--accent-2);
-    }
+    .btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0px #000; background: var(--accent-2); }
+    .btn-primary { background: var(--accent-1); }
 
-    .btn-primary {
-      background: var(--accent-1);
-    }
+    .stats-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    .stat-card { background: #fff; border: var(--border); padding: 16px; box-shadow: var(--shadow); }
+    .stat-card .label { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; }
+    .stat-card .value { font-size: 1.5rem; font-weight: 800; font-family: 'Bricolage Grotesque', sans-serif; }
 
-    .btn-primary:hover {
-      background: var(--accent-2);
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    .stat-card {
-      background: #fff;
-      border: var(--border);
-      padding: 16px;
-      box-shadow: var(--shadow);
-    }
-
-    .stat-card .label {
-      font-size: 0.75rem;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .stat-card .value {
-      font-size: 1.5rem;
-      font-weight: 800;
-      font-family: 'Bricolage Grotesque', sans-serif;
-    }
-
-    .selected-event {
-      margin-top: 24px;
-      background: #fff;
-      border: var(--border);
-      padding: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    .selected-event h4 {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .field {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-      border-bottom: 2px solid #000;
-      font-size: 0.875rem;
-    }
-
-    .field-label { font-weight: 700; text-transform: uppercase; }
-    .field-value { font-weight: 800; }
-
-    .map-container {
-      flex: 1;
-      background: #eee;
-      border-left: var(--border);
-    }
-
+    .map-container { flex: 1; background: #eee; border-left: var(--border); }
     #map { width: 100%; height: 100%; }
 
-    .leaflet-popup-content-wrapper {
-      background: #fff !important;
-      border: var(--border) !important;
-      border-radius: 0 !important;
-      box-shadow: 6px 6px 0px #000 !important;
-    }
-
-    .leaflet-popup-tip { display: none; }
-
-    .popup-content h4 {
-      font-family: 'Bricolage Grotesque', sans-serif;
-      text-transform: uppercase;
-      border-bottom: 2px solid #000;
-      margin-bottom: 10px;
-    }
-
-    .popup-content p {
-      font-weight: 700;
-      margin: 4px 0;
-      font-size: 0.9rem;
-    }
-
-    .popup-content .highlight {
-      background: var(--accent-1);
-      padding: 0 4px;
-    }
-
-    .clear-btn {
-      margin-top: 24px;
-      width: 100%;
-      background: #ff4d4d;
-      color: #fff;
-    }
+    .leaflet-popup-content-wrapper { background: #fff !important; border: var(--border) !important; border-radius: 0 !important; box-shadow: 6px 6px 0px #000 !important; }
+    .popup-content h4 { font-family: 'Bricolage Grotesque', sans-serif; text-transform: uppercase; border-bottom: 2px solid #000; margin-bottom: 10px; }
+    .popup-content p { font-weight: 700; margin: 4px 0; font-size: 0.9rem; }
+    .popup-content .highlight { background: var(--accent-1); padding: 0 4px; }
 
     @media (max-width: 768px) {
       .container { flex-direction: column; }
@@ -364,56 +176,34 @@
   <div class="container">
     <aside class="sidebar">
       <div class="sidebar-header">
-        <h1>MAP VIEW</h1>
-        <p>Drop CSV data below</p>
+        <h1>THE ARCHIVE</h1>
+        <p>Exploring global flood events</p>
       </div>
       <div class="sidebar-content">
-        <div class="section-title">INPUT</div>
-        <div class="drop-zone" id="dropZone">
-          <h3>DROP CSV</h3>
-          <p>OR CLICK TO BROWSE</p>
-        </div>
-        <input type="file" id="fileInput" class="file-input" style="display:none" accept=".csv,.txt">
-
-        <div class="divider">OR</div>
-
-        <div class="button-group">
-          <button class="btn" id="pasteBtn">PASTE</button>
-          <button class="btn btn-primary" id="exampleBtn">EXAMPLE</button>
-        </div>
-
-        <div id="filterSection" style="display: none;">
+        <div id="filterSection">
           <div class="section-title">FILTERS</div>
           <div class="filter-group">
             <label for="countryFilter">COUNTRY</label>
             <select id="countryFilter" class="select-input">
               <option value="all">ALL COUNTRIES</option>
             </select>
+            
+            <label for="causeFilter">CAUSE</label>
+            <select id="causeFilter" class="select-input">
+              <option value="all">ALL CAUSES</option>
+            </select>
           </div>
-          <button class="btn" id="resetFilters">RESET</button>
+          <button class="btn btn-primary" id="resetFilters">RESET FILTERS</button>
         </div>
 
-        <div id="statsContainer"></div>
+        <div id="statsContainer" style="margin-top:32px"></div>
         
-        <div id="legendContainer" style="display: none;">
-          <div class="section-title">LEGEND</div>
-          <div class="legend">
-            <div class="legend-item">
-              <div class="legend-color" style="background: #ef4444;"></div>
-              <span>HIGH SEVERITY</span>
-            </div>
-            <div class="legend-item">
-              <div class="legend-color" style="background: #fbbf24;"></div>
-              <span>MEDIUM SEVERITY</span>
-            </div>
-            <div class="legend-item">
-              <div class="legend-color" style="background: #bef264;"></div>
-              <span>LOW SEVERITY</span>
-            </div>
-          </div>
+        <div class="section-title">LEGEND</div>
+        <div class="legend">
+          <div class="legend-item"><div class="legend-color" style="background: #ef4444;"></div><span>HIGH SEVERITY</span></div>
+          <div class="legend-item"><div class="legend-color" style="background: #fbbf24;"></div><span>MEDIUM SEVERITY</span></div>
+          <div class="legend-item"><div class="legend-color" style="background: #bef264;"></div><span>LOW SEVERITY</span></div>
         </div>
-
-        <div id="selectedEvent"></div>
       </div>
     </aside>
 
@@ -422,82 +212,21 @@
     </main>
   </div>
 
-  <!-- Paste Modal -->
-  <div class="paste-modal" id="pasteModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); z-index:2000; align-items:center; justify-content:center;">
-    <div style="background:#fff; border:var(--border); padding:32px; width:90%; max-width:650px; box-shadow:10px 10px 0px #000;">
-      <h3 style="font-family:'Bricolage Grotesque'; text-transform:uppercase; margin-bottom:20px">PASTE CSV DATA</h3>
-      <textarea id="pasteTextarea" style="width:100%; height:250px; border:var(--border); padding:16px; font-family:monospace; margin-bottom:20px" placeholder="lat,lng,name,value..."></textarea>
-      <div style="display:flex; gap:12px; justify-content:flex-end">
-        <button class="btn" id="cancelPaste">CANCEL</button>
-        <button class="btn btn-primary" id="confirmPaste">LOAD</button>
-      </div>
-    </div>
-  </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
   <script>
     let allData = [];
     let filteredData = [];
-    let markers = [];
-    let selectedEvent = null;
-    let selectedCountry = 'all';
     let map = null;
     let markersLayer = null;
 
-    const LAT_COLUMNS = ['lat', 'latitude', 'anonymous_lat', 'y', 'lat_dd', 'latitude_dd'];
-    const LNG_COLUMNS = ['lng', 'lon', 'long', 'longitude', 'anonymous_long', 'anonymous_lon', 'x', 'lon_dd', 'long_dd', 'longitude_dd'];
-    const NAME_COLUMNS = ['name', 'title', 'country', 'location', 'place', 'city', 'region', 'area_name'];
-    const DEAD_COLUMNS = ['dead', 'deaths', 'fatalities', 'casualties', 'killed'];
-    const DISPLACED_COLUMNS = ['displaced', 'affected', 'evacuated', 'homeless'];
-    const CAUSE_COLUMNS = ['cause', 'maincause', 'main_cause', 'reason', 'type', 'categorised_cause'];
-    const SEVERITY_COLUMNS = ['severity', 'magnitude', 'intensity', 'level', 'scale'];
-
-    function findColumn(headers, possibilities) {
-      const lowerHeaders = headers.map(h => h.toLowerCase().trim());
-      for (const col of possibilities) {
-        const idx = lowerHeaders.indexOf(col.toLowerCase());
-        if (idx !== -1) return headers[idx];
-      }
-      return null;
-    }
-
-    function parseCSV(text) {
-      const lines = text.trim().split('\n');
-      if (lines.length < 2) return [];
-      const headers = lines[0].split(',').map(h => h.trim().replace(/^["']|["']$/g, ''));
-      const latCol = findColumn(headers, LAT_COLUMNS);
-      const lngCol = findColumn(headers, LNG_COLUMNS);
-      if (!latCol || !lngCol) {
-        alert('Missing Lat/Lng columns.');
-        return [];
-      }
-      const nameCol = findColumn(headers, NAME_COLUMNS);
-      const deadCol = findColumn(headers, DEAD_COLUMNS);
-      const displacedCol = findColumn(headers, DISPLACED_COLUMNS);
-      const causeCol = findColumn(headers, CAUSE_COLUMNS);
-      const severityCol = findColumn(headers, SEVERITY_COLUMNS);
-
-      const results = [];
-      for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        const values = line.split(',').map(v => v.trim().replace(/^["']|["']$/g, ''));
-        const row = {};
-        headers.forEach((h, idx) => { row[h] = values[idx] || ''; });
-        const lat = parseFloat(row[latCol]);
-        const lng = parseFloat(row[lngCol]);
-        if (!isNaN(lat) && !isNaN(lng)) {
-          results.push({
-            id: i, lat, lng,
-            name: nameCol ? row[nameCol] : `Point ${i}`,
-            dead: deadCol ? parseInt(row[deadCol]) || 0 : 0,
-            displaced: displacedCol ? parseInt(row[displacedCol]) || 0 : 0,
-            cause: causeCol ? row[causeCol] : 'Unknown',
-            severity: severityCol ? parseFloat(row[severityCol]) || 1 : 1,
-            raw: row
-          });
-        }
-      }
-      return results;
+    function initMap() {
+      map = L.map('map').setView([0, 20], 2);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 20
+      }).addTo(map);
+      markersLayer = L.layerGroup().addTo(map);
     }
 
     function getSeverityColor(severity) {
@@ -506,108 +235,111 @@
       return '#ef4444';
     }
 
-    function createMarkerIcon(item) {
-      const color = getSeverityColor(item.severity);
-      const size = 16 + (item.severity * 4);
-      return L.divIcon({
-        className: 'custom-marker',
-        html: `<div style="width: ${size}px; height: ${size}px; background: ${color}; border: 3px solid #000; box-shadow: 3px 3px 0px #000;"></div>`,
-        iconSize: [size, size],
-        iconAnchor: [size / 2, size / 2]
-      });
-    }
-
-    function updateMap() {
-      if (markersLayer) markersLayer.clearLayers();
-      else markersLayer = L.layerGroup().addTo(map);
+    function updateMarkers() {
+      markersLayer.clearLayers();
       filteredData.forEach(item => {
-        const marker = L.marker([item.lat, item.lng], { icon: createMarkerIcon(item) });
-        marker.bindPopup(`<div class="popup-content"><h4>${item.name}</h4><p>CAUSE: ${item.cause}</p><p>SEVERITY: <span class="highlight">${item.severity.toFixed(1)}</span></p><p>DEATHS: ${item.dead.toLocaleString()}</p></div>`);
-        marker.on('click', () => { selectedEvent = item; renderSelectedEvent(); });
+        const color = getSeverityColor(item.Severity);
+        const size = 10 + (item.Severity * 2);
+        
+        const marker = L.circleMarker([item.lat, item.lng], {
+          radius: size,
+          fillColor: color,
+          color: "#000",
+          weight: 2,
+          opacity: 1,
+          fillOpacity: 1
+        });
+
+        marker.bindPopup(`
+          <div class="popup-content">
+            <h4>${item.Country}</h4>
+            <p>YEAR: ${item.Year}</p>
+            <p>CAUSE: ${item.Cause || 'Unknown'}</p>
+            <p>SEVERITY: <span class="highlight">${parseFloat(item.Severity || 0).toFixed(1)}</span></p>
+            <p>DEATHS: ${parseInt(item.Dead || 0).toLocaleString()}</p>
+          </div>
+        `);
         marker.addTo(markersLayer);
       });
-      if (filteredData.length > 0) {
+
+      if (filteredData.length > 0 && filteredData.length < 500) {
         const bounds = L.latLngBounds(filteredData.map(d => [d.lat, d.lng]));
         map.fitBounds(bounds, { padding: [50, 50] });
       }
       renderStats();
     }
 
+    function renderStats() {
+      const dead = filteredData.reduce((sum, d) => sum + parseInt(d.Dead || 0), 0);
+      document.getElementById('statsContainer').innerHTML = `
+        <div class="section-title">STATS</div>
+        <div class="stats-grid">
+          <div class="stat-card"><div class="label">EVENTS</div><div class="value">${filteredData.length}</div></div>
+          <div class="stat-card" style="margin-top:10px"><div class="label">TOTAL DEATHS</div><div class="value">${dead.toLocaleString()}</div></div>
+        </div>
+      `;
+    }
+
     function populateFilters() {
-      const countryFilter = document.getElementById('countryFilter');
-      const countries = [...new Set(allData.map(d => d.name))].sort();
-      countryFilter.innerHTML = '<option value="all">ALL COUNTRIES</option>';
-      countries.forEach(country => {
+      const countries = [...new Set(allData.map(d => d.Country))].sort();
+      const causes = [...new Set(allData.map(d => d.categorised_reason || d.MainCause))].filter(Boolean).sort();
+      
+      const cFilter = document.getElementById('countryFilter');
+      const csFilter = document.getElementById('causeFilter');
+      
+      countries.forEach(c => {
         const opt = document.createElement('option');
-        opt.value = country;
-        opt.textContent = country.toUpperCase();
-        countryFilter.appendChild(opt);
+        opt.value = c; opt.textContent = c.toUpperCase();
+        cFilter.appendChild(opt);
       });
-      document.getElementById('filterSection').style.display = 'block';
-      document.getElementById('legendContainer').style.display = 'block';
+      
+      causes.forEach(cs => {
+        const opt = document.createElement('option');
+        opt.value = cs; opt.textContent = cs.toUpperCase();
+        csFilter.appendChild(opt);
+      });
     }
 
     function applyFilters() {
-      selectedCountry = document.getElementById('countryFilter').value;
-      filteredData = selectedCountry === 'all' ? [...allData] : allData.filter(d => d.name === selectedCountry);
-      updateMap();
-    }
-
-    function renderStats() {
-      const container = document.getElementById('statsContainer');
-      if (filteredData.length === 0) { container.innerHTML = ''; return; }
-      const dead = filteredData.reduce((sum, d) => sum + d.dead, 0);
-      container.innerHTML = `<div class="section-title">STATS</div><div class="stats-grid"><div class="stat-card"><div class="label">EVENTS</div><div class="value">${filteredData.length}</div></div><div class="stat-card"><div class="label">DEATHS</div><div class="value">${dead.toLocaleString()}</div></div></div><button class="btn clear-btn" onclick="clearData()">WIPE DATA</button>`;
-    }
-
-    function renderSelectedEvent() {
-      const container = document.getElementById('selectedEvent');
-      if (!selectedEvent) { container.innerHTML = ''; return; }
-      const fields = Object.entries(selectedEvent.raw).slice(0, 6);
-      container.innerHTML = `<div class="selected-event"><h4>DETAILS</h4>${fields.map(([k, v]) => `<div class="field"><span class="field-label">${k}</span><span class="field-value">${v}</span></div>`).join('')}</div>`;
-    }
-
-    function loadData(csvText) {
-      const parsed = parseCSV(csvText);
-      if (parsed.length > 0) {
-        allData = parsed;
-        filteredData = [...allData];
-        populateFilters();
-        updateMap();
-      }
-    }
-
-    function clearData() {
-      allData = []; filteredData = []; if (markersLayer) markersLayer.clearLayers();
-      document.getElementById('statsContainer').innerHTML = '';
-      document.getElementById('selectedEvent').innerHTML = '';
-      document.getElementById('filterSection').style.display = 'none';
-      document.getElementById('legendContainer').style.display = 'none';
+      const country = document.getElementById('countryFilter').value;
+      const cause = document.getElementById('causeFilter').value;
+      
+      filteredData = allData.filter(d => {
+        const matchCountry = country === 'all' || d.Country === country;
+        const matchCause = cause === 'all' || (d.categorised_reason || d.MainCause) === cause;
+        return matchCountry && matchCause;
+      });
+      
+      updateMarkers();
     }
 
     window.onload = () => {
-      map = L.map('map').setView([0, 20], 2);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 20
-      }).addTo(map);
-      document.getElementById('dropZone').onclick = () => document.getElementById('fileInput').click();
-      document.getElementById('fileInput').onchange = (e) => {
-        const reader = new FileReader();
-        reader.onload = (ev) => loadData(ev.target.result);
-        reader.readAsText(e.target.files[0]);
-      };
-      const modal = document.getElementById('pasteModal');
-      document.getElementById('pasteBtn').onclick = () => modal.style.display = 'flex';
-      document.getElementById('cancelPaste').onclick = () => modal.style.display = 'none';
-      document.getElementById('confirmPaste').onclick = () => {
-        loadData(document.getElementById('pasteTextarea').value);
-        modal.style.display = 'none';
-      };
+      initMap();
+      
+      Papa.parse('floodarchive_cleaned.csv', {
+        download: true,
+        header: true,
+        dynamicTyping: true,
+        complete: function(results) {
+          allData = results.data.filter(d => d.anonymous_lat && d.anonymous_long).map(d => ({
+            ...d,
+            lat: d.anonymous_lat,
+            lng: d.anonymous_long,
+            Cause: d.categorised_reason || d.MainCause
+          }));
+          filteredData = [...allData];
+          populateFilters();
+          updateMarkers();
+        }
+      });
+
       document.getElementById('countryFilter').onchange = applyFilters;
-      document.getElementById('resetFilters').onclick = () => { document.getElementById('countryFilter').value = 'all'; applyFilters(); };
-      document.getElementById('exampleBtn').onclick = () => loadData(`ID,lat,lng,name,Dead,Severity\n1,30.0,31.2,TEST EVENT,10,2.5`);
+      document.getElementById('causeFilter').onchange = applyFilters;
+      document.getElementById('resetFilters').onclick = () => {
+        document.getElementById('countryFilter').value = 'all';
+        document.getElementById('causeFilter').value = 'all';
+        applyFilters();
+      };
     };
   </script>
 </body>
