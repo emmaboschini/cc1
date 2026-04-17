@@ -26,6 +26,8 @@
         color: var(--text);
         margin: 0;
         padding: 0;
+        line-height: 1.2;
+        overflow-x: hidden;
     }
 
     body::before {
@@ -74,22 +76,24 @@
         margin: 0 auto;
     }
 
-        .header h1 {
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-size: 3rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
+    .header h1 {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        line-height: 0.9;
+    }
 
-        .header p {
-            font-size: 1.5rem;
-            font-weight: 500;
-            background: #fff;
-            padding: 10px;
-            border: var(--border);
-            display: inline-block;
-        }
+    .header p {
+        font-size: 1.125rem;
+        font-weight: 500;
+        background: #fff;
+        padding: 8px 12px;
+        border: var(--border);
+        display: inline-block;
+        max-width: 800px;
+    }
 
         .container {
             max-width: 1200px;
