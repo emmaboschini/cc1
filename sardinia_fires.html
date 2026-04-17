@@ -246,7 +246,7 @@
     async function loadData() {
       console.log("Loading data...");
       try {
-        const response = await fetch('sardinia_fires_mini.csv');
+        const response = await fetch('sardinia_fires_mini.csv?v=' + Date.now());
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         
         const text = await response.text();
