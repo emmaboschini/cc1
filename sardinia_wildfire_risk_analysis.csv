@@ -1,0 +1,1291 @@
+Municipality,Fire_Frequency,Total_Burned_Area_HA,Avg_Area_Per_Fire,Primary_Land_Type,Risk_Level,Forecast_Notes
+SU,491,3203.68,6.52,ALTRO,EXTREME,High seasonal risk in Summer.
+SERRAMANNA,226,806.64,3.57,0,EXTREME,High seasonal risk in Summer.
+VILLASOR,190,709.67,3.74,ALTRO,EXTREME,High seasonal risk in Summer.
+SANLURI,179,567.50,3.17,ALTRO,EXTREME,High seasonal risk in Summer.
+SAMASSI,136,335.74,2.47,ALTRO,EXTREME,High seasonal risk in Summer.
+SERRENTI,127,391.72,3.08,ALTRO,EXTREME,High seasonal risk in Summer.
+SS,127,3078.49,24.24,ALTRO,EXTREME,High seasonal risk in Summer. Propensity for large-scale events detected.
+NU,115,947.43,8.24,ALTRO,EXTREME,High seasonal risk in Summer.
+CA,108,262.84,2.43,ALTRO,EXTREME,High seasonal risk in Summer.
+VILLACIDRO,97,177.10,1.83,ALTRO,EXTREME,High seasonal risk in Summer.
+CAPOTERRA,97,287.52,2.96,ALTRO,EXTREME,High seasonal risk in Summer.
+ASSEMINI,96,148.61,1.55,0,EXTREME,High seasonal risk in Summer.
+SASSARI,95,339.92,3.58,ALTRO,EXTREME,High seasonal risk in Summer.
+SAN GAVINO MONREALE,92,753.49,8.19,ALTRO,EXTREME,High seasonal risk in Summer.
+OR,91,492.64,5.41,ALTRO,EXTREME,High seasonal risk in Summer.
+DOLIANOVA,88,191.19,2.17,ALTRO,EXTREME,High seasonal risk in Summer.
+UTA,86,386.42,4.49,ALTRO,EXTREME,High seasonal risk in Summer.
+SINNAI,75,384.09,5.12,ALTRO,EXTREME,High seasonal risk in Summer.
+NURAMINIS,75,396.56,5.29,0,EXTREME,High seasonal risk in Summer.
+SENORBI',73,229.37,3.14,ALTRO,EXTREME,High seasonal risk in Summer.
+SERDIANA,72,169.13,2.35,ALTRO,EXTREME,High seasonal risk in Summer.
+DECIMOPUTZU,63,122.15,1.94,0,EXTREME,High seasonal risk in Summer.
+SESTU,61,163.35,2.68,ALTRO,EXTREME,High seasonal risk in Summer.
+SARDARA,59,117.17,1.99,ALTRO,EXTREME,High seasonal risk in Summer.
+VILLAMAR,57,494.90,8.68,ALTRO,EXTREME,High seasonal risk in Summer.
+CARBONIA,54,89.70,1.66,0,EXTREME,High seasonal risk in Summer.
+NURRI,53,147.56,2.78,0,EXTREME,High seasonal risk in Summer.
+QUARTU SANT'ELENA,52,147.95,2.85,ALTRO,EXTREME,High seasonal risk in Summer.
+OLBIA,48,93.49,1.95,0,HIGH,High seasonal risk in Summer.
+VILLANOVAFRANCA,46,367.67,7.99,ALTRO,HIGH,High seasonal risk in Summer.
+BARUMINI,45,246.16,5.47,0,HIGH,High seasonal risk in Summer.
+GUAMAGGIORE,43,251.43,5.85,0,HIGH,High seasonal risk in Summer.
+SELEGAS,43,221.69,5.16,ALTRO,HIGH,High seasonal risk in Summer.
+SILANUS,43,108.06,2.51,0,HIGH,High seasonal risk in Summer.
+MONASTIR,42,531.02,12.64,ALTRO,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+VILLASPECIOSA,41,211.63,5.16,0,HIGH,High seasonal risk in Summer.
+CAGLIARI,41,145.71,3.55,ALTRO,HIGH,High seasonal risk in Summer.
+GERGEI,40,104.80,2.62,0,HIGH,High seasonal risk in Summer.
+SILIQUA,39,336.20,8.62,ALTRO,HIGH,High seasonal risk in Summer.
+SORSO,38,61.82,1.63,ALTRO,HIGH,High seasonal risk in Summer.
+BOTTIDDA,37,74.86,2.02,0,HIGH,High seasonal risk in Summer.
+DECIMOMANNU,36,134.74,3.74,ALTRO,HIGH,High seasonal risk in Summer.
+SUELLI,36,250.12,6.95,ALTRO,HIGH,High seasonal risk in Summer.
+FURTEI,35,79.31,2.27,ALTRO,HIGH,High seasonal risk in Summer.
+MARACALAGONIS,34,58.88,1.73,ALTRO,HIGH,High seasonal risk in Summer.
+MANDAS,33,253.30,7.68,0,HIGH,High seasonal risk in Summer.
+PABILLONIS,32,247.42,7.73,ALTRO,HIGH,High seasonal risk in Summer.
+NUORO,32,35.69,1.12,0,HIGH,High seasonal risk in Summer.
+QUARTUCCIU,31,67.22,2.17,ALTRO,HIGH,High seasonal risk in Summer.
+GUASILA,30,167.87,5.60,0,HIGH,High seasonal risk in Summer.
+SIURGUS DONIGALA,29,77.17,2.66,ALTRO,HIGH,High seasonal risk in Summer.
+BOLOTANA,29,68.44,2.36,0,HIGH,High seasonal risk in Summer.
+GUSPINI,28,270.06,9.65,0,HIGH,High seasonal risk in Summer.
+SAN SPERATE,28,99.81,3.56,0,HIGH,High seasonal risk in Summer.
+IGLESIAS,27,274.39,10.16,ALTRO,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+TORPE',26,284.34,10.94,BOSCO,HIGH,High seasonal risk in Summer. Forest density increases crown fire risk. Propensity for large-scale events detected.
+SAN GIOVANNI SUERGIU,26,477.84,18.38,0,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+PULA,25,43.82,1.75,ALTRO,HIGH,High seasonal risk in Summer.
+SINDIA,25,89.07,3.56,0,HIGH,High seasonal risk in Summer.
+USSANA,24,143.52,5.98,ALTRO,HIGH,High seasonal risk in Summer.
+SETTIMO SAN PIETRO,24,53.76,2.24,ALTRO,HIGH,High seasonal risk in Summer.
+SANTA GIUSTA,24,139.19,5.80,ALTRO,HIGH,High seasonal risk in Summer.
+BONO,24,98.10,4.09,ALTRO,HIGH,High seasonal risk in Summer.
+ORISTANO,23,89.85,3.91,0,HIGH,High seasonal risk in Summer.
+ITTIRI,23,76.14,3.31,0,HIGH,High seasonal risk in Summer.
+ALGHERO,23,26.80,1.17,ALTRO,HIGH,High seasonal risk in Summer.
+TERRALBA,22,75.59,3.44,ALTRO,HIGH,High seasonal risk in Summer.
+MACOMER,22,485.90,22.09,"BOSCO, ALTRO",HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+LOIRI PORTO SAN PAOLO,22,17.89,0.81,0,HIGH,High seasonal risk in Summer.
+SAMATZAI,21,59.09,2.81,ALTRO,HIGH,High seasonal risk in Summer.
+TORTOLI',21,569.31,27.11,0,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+SINISCOLA,21,590.59,28.12,0,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+OROSEI,21,43.87,2.09,0,HIGH,High seasonal risk in Summer.
+OTTANA,20,121.38,6.07,0,MEDIUM,High seasonal risk in Summer.
+GONNOSFANADIGA,19,2789.28,146.80,0,EXTREME,High seasonal risk in Summer. Propensity for large-scale events detected.
+SELARGIUS,19,62.04,3.27,ALTRO,MEDIUM,High seasonal risk in Summer.
+ORTACESUS,18,102.56,5.70,0,MEDIUM,High seasonal risk in Summer.
+SAN NICOLO' D'ARCIDANO,18,212.46,11.80,ALTRO,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+USINI,18,135.70,7.54,0,MEDIUM,High seasonal risk in Summer.
+ISILI,17,326.40,19.20,ALTRO,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+BURGOS,17,32.64,1.92,PASCOLO,MEDIUM,High seasonal risk in Summer.
+NARCAO,17,21.28,1.25,ALTRO,MEDIUM,High seasonal risk in Summer.
+BORORE,17,87.47,5.15,ALTRO,MEDIUM,High seasonal risk in Summer.
+USELLUS,17,99.73,5.87,ALTRO,MEDIUM,High seasonal risk in Summer.
+OZIERI,17,12.63,0.74,0,MEDIUM,High seasonal risk in Summer.
+SEGARIU,16,226.47,14.15,ALTRO,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+SANTADI,16,51.57,3.22,ALTRO,MEDIUM,High seasonal risk in Summer.
+BONORVA,16,23.48,1.47,0,MEDIUM,High seasonal risk in Summer.
+ELMAS,15,20.26,1.35,0,MEDIUM,High seasonal risk in Summer.
+PIMENTEL,15,70.00,4.67,ALTRO,MEDIUM,High seasonal risk in Summer.
+SERRI,15,129.28,8.62,ALTRO,MEDIUM,High seasonal risk in Summer.
+SANT'ANDREA FRIUS,15,19.27,1.28,0,MEDIUM,High seasonal risk in Summer.
+CABRAS,15,19.26,1.28,ALTRO,MEDIUM,High seasonal risk in Summer.
+SANTU LUSSURGIU,15,106.53,7.10,ALTRO,MEDIUM,High seasonal risk in Summer.
+CASTELSARDO,15,17.17,1.14,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+SAN VITO,14,128.09,9.15,0,MEDIUM,High seasonal risk in Summer.
+DONORI,14,21.49,1.53,0,MEDIUM,High seasonal risk in Summer.
+GESICO,14,54.11,3.87,0,MEDIUM,High seasonal risk in Summer.
+SOLARUSSA,14,20.78,1.48,0,MEDIUM,High seasonal risk in Summer.
+PATTADA,14,25.04,1.79,0,MEDIUM,High seasonal risk in Summer.
+BITTI,13,466.75,35.90,"BOSCO, ALTRO",HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+VILLAMASSARGIA,13,210.69,16.21,ALTRO,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+FONNI,13,67.58,5.20,"BOSCO, ALTRO",MEDIUM,High seasonal risk in Summer.
+PALMAS ARBOREA,13,8.78,0.68,0,MEDIUM,High seasonal risk in Summer.
+BOSA,13,125.54,9.66,0,MEDIUM,High seasonal risk in Summer.
+LAS PLASSAS,12,137.11,11.43,ALTRO,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+TUILI,12,33.26,2.77,ALTRO,MEDIUM,High seasonal risk in Summer.
+GESTURI,12,21.58,1.80,ALTRO,MEDIUM,High seasonal risk in Summer.
+SAN BASILIO,12,92.07,7.67,0,MEDIUM,High seasonal risk in Summer.
+SUNI,12,47.03,3.92,PASCOLO,MEDIUM,High seasonal risk in Summer.
+ZERFALIU,12,36.55,3.05,ALTRO,MEDIUM,High seasonal risk in Summer.
+SANT'ANTIOCO,12,130.67,10.89,ALTRO,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+GALTELLI',12,5.70,0.47,0,MEDIUM,High seasonal risk in Summer.
+PAULILATINO,12,20.07,1.67,0,MEDIUM,High seasonal risk in Summer.
+SIMAXIS,12,17.08,1.42,ALTRO,MEDIUM,High seasonal risk in Summer.
+PLOAGHE,12,65.12,5.43,0,MEDIUM,High seasonal risk in Summer.
+ORROLI,11,14.01,1.27,0,MEDIUM,High seasonal risk in Summer.
+TEULADA,11,11.19,1.02,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+BARI SARDO,11,78.93,7.18,ALTRO,MEDIUM,High seasonal risk in Summer.
+POZZOMAGGIORE,11,243.73,22.16,0,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+SAN VERO MILIS,11,24.06,2.19,0,MEDIUM,High seasonal risk in Summer.
+VILLAURBANA,11,108.76,9.89,ALTRO,MEDIUM,High seasonal risk in Summer.
+ARZACHENA,11,14.14,1.29,ALTRO,MEDIUM,High seasonal risk in Summer.
+OSCHIRI,11,8.48,0.77,0,MEDIUM,High seasonal risk in Summer.
+COLLINAS,10,91.76,9.18,PASCOLO,MEDIUM,High seasonal risk in Summer.
+NUXIS,10,14.03,1.40,ALTRO,MEDIUM,High seasonal risk in Summer.
+GAIRO,10,16.52,1.65,0,MEDIUM,High seasonal risk in Summer.
+ORANI,10,22.58,2.26,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+NURAGUS,10,10.38,1.04,ALTRO,MEDIUM,High seasonal risk in Summer.
+SARULE,10,36.49,3.65,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+MAMOIADA,10,10.46,1.05,ALTRO,MEDIUM,High seasonal risk in Summer.
+SIAMAGGIORE,10,37.64,3.76,0,MEDIUM,High seasonal risk in Summer.
+MARRUBIU,10,92.96,9.30,ALTRO,MEDIUM,High seasonal risk in Summer.
+BUDDUSO',10,50.19,5.02,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+VILLANOVA MONTELEONE,10,40.08,4.01,"BOSCO, PASCOLO",MEDIUM,High seasonal risk in Summer.
+TEMPIO PAUSANIA,10,18.11,1.81,ALTRO,MEDIUM,High seasonal risk in Summer.
+MURAVERA,10,88.18,8.82,0,MEDIUM,High seasonal risk in Summer.
+VILLAPUTZU,10,31.16,3.12,0,MEDIUM,High seasonal risk in Summer.
+IS PAULIS,10,21.68,2.17,30676.8,MEDIUM,High seasonal risk in Summer.
+BURCEI,9,9.74,1.08,0,MEDIUM,High seasonal risk in Summer.
+VILLAGRANDE STRISAILI,9,510.07,56.67,0,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+SEUI,9,97.08,10.79,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk. Propensity for large-scale events detected.
+ORUNE,9,24.86,2.76,0,MEDIUM,High seasonal risk in Summer.
+GIBA,9,13.13,1.46,0,MEDIUM,High seasonal risk in Summer.
+GIRASOLE,9,64.68,7.19,ALTRO,MEDIUM,High seasonal risk in Summer.
+LULA,9,17.85,1.98,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+DORGALI,9,9.01,1.00,0,MEDIUM,High seasonal risk in Summer.
+ARBOREA,9,159.31,17.70,ALTRO,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+OROTELLI,9,61.92,6.88,"BOSCO, ALTRO",MEDIUM,High seasonal risk in Summer.
+RIOLA SARDO,9,58.49,6.50,0,MEDIUM,High seasonal risk in Summer.
+GHILARZA,9,51.23,5.69,"BOSCO, PASCOLO, ALTRO",MEDIUM,High seasonal risk in Summer.
+NULVI,9,57.41,6.38,ALTRO,MEDIUM,High seasonal risk in Summer.
+BERCHIDDA,9,45.69,5.08,0,MEDIUM,High seasonal risk in Summer.
+SAGAMA,9,29.40,3.27,PASCOLO,MEDIUM,High seasonal risk in Summer.
+MONSERRATO,8,7.00,0.88,ALTRO,MEDIUM,High seasonal risk in Summer.
+PAULI ARBAREI,8,46.14,5.77,ALTRO,MEDIUM,High seasonal risk in Summer.
+ESCALAPLANO,8,31.22,3.90,ALTRO,MEDIUM,High seasonal risk in Summer.
+SADALI,8,192.33,24.04,0,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+VALLERMOSA,8,5.59,0.70,0,MEDIUM,High seasonal risk in Summer.
+GENONI,8,31.81,3.98,ALTRO,MEDIUM,High seasonal risk in Summer.
+MASULLAS,8,95.18,11.90,0,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+PORTOSCUSO,8,23.04,2.88,ALTRO,MEDIUM,High seasonal risk in Summer.
+IRGOLI,8,217.55,27.19,"BOSCO, ALTRO",HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+SIAMANNA,8,21.91,2.74,ALTRO,MEDIUM,High seasonal risk in Summer.
+SENNORI,8,53.23,6.65,ALTRO,MEDIUM,High seasonal risk in Summer.
+SILIGO,8,40.08,5.01,ALTRO,MEDIUM,High seasonal risk in Summer.
+MORES,8,13.42,1.68,0,MEDIUM,High seasonal risk in Summer.
+NULE,8,44.31,5.54,PASCOLO,MEDIUM,High seasonal risk in Summer.
+CARLOFORTE,8,23.43,2.93,0,MEDIUM,High seasonal risk in Summer.
+ESCOLCA,7,72.09,10.30,ALTRO,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+SARROCH,7,10.53,1.50,ALTRO,MEDIUM,High seasonal risk in Summer.
+CASTIADAS,7,175.66,25.09,0,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+SOLEMINIS,7,18.84,2.69,0,MEDIUM,High seasonal risk in Summer.
+VILLASIMIUS,7,2.08,0.30,0,MEDIUM,High seasonal risk in Summer.
+ORGOSOLO,7,17.14,2.45,0,MEDIUM,High seasonal risk in Summer.
+PERDAXIUS,7,5.02,0.72,ALTRO,MEDIUM,High seasonal risk in Summer.
+SEDILO,7,13.65,1.95,ALTRO,MEDIUM,High seasonal risk in Summer.
+DUALCHI,7,455.24,65.03,0,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+LOCULI,7,7.26,1.04,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+URAS,7,81.18,11.60,0,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+TRAMATZA,7,17.83,2.55,0,MEDIUM,High seasonal risk in Summer.
+ILLORAI,7,30.47,4.35,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+NUGHEDU SAN NICOLO',7,69.69,9.96,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+PALAU,7,1.01,0.14,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+SAMUGHEO,7,4.79,0.68,0,MEDIUM,High seasonal risk in Summer.
+POSADA,7,506.93,72.42,0,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+OLIENA,7,4.53,0.65,0,MEDIUM,High seasonal risk in Summer.
+ARZANA,6,42.98,7.16,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+GONI,6,3.98,0.66,PASCOLO,MEDIUM,High seasonal risk in Summer.
+AGGIUS,6,13.07,2.18,"BOSCO, ALTRO",MEDIUM,High seasonal risk in Summer.
+CALASETTA,6,10.24,1.71,ALTRO,MEDIUM,High seasonal risk in Summer.
+JERZU,6,66.53,11.09,0,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+ONIFAI,6,11.68,1.95,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+SORGONO,6,58.01,9.67,ALTRO,MEDIUM,High seasonal risk in Summer.
+BUDONI,6,319.32,53.22,BOSCO,HIGH,High seasonal risk in Summer. Forest density increases crown fire risk. Propensity for large-scale events detected.
+SAN TEODORO,6,25.18,4.20,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+DESULO,6,6.18,1.03,"BOSCO, ALTRO",MEDIUM,High seasonal risk in Summer.
+ZEDDIANI,6,7.00,1.17,ALTRO,MEDIUM,High seasonal risk in Summer.
+FLUSSIO,6,38.12,6.35,"BOSCO, PASCOLO, ALTRO",MEDIUM,High seasonal risk in Summer.
+PORTO TORRES,6,10.50,1.75,ALTRO,MEDIUM,High seasonal risk in Summer.
+PERFUGAS,6,2.99,0.50,ALTRO,MEDIUM,High seasonal risk in Summer.
+MONTI,6,2.78,0.46,BOSCO,MEDIUM,High seasonal risk in Summer. Forest density increases crown fire risk.
+ARBUS,6,3.94,0.66,0,MEDIUM,High seasonal risk in Summer.
+OLLOLAI,6,10.59,1.77,ALTRO,MEDIUM,High seasonal risk in Summer.
+SA SERRA,6,16.85,2.81,6871.13,MEDIUM,High seasonal risk in Summer.
+PARDU,6,15.59,2.60,11637.7,MEDIUM,High seasonal risk in Summer.
+S.S. 197,6,10.14,1.69,6074.51,MEDIUM,High seasonal risk in Summer.
+VILLASALTO,5,37.78,7.56,ALTRO,LOW,High seasonal risk in Summer.
+DOMUS DE MARIA,5,8.15,1.63,"BOSCO, ALTRO",LOW,High seasonal risk in Summer.
+CALANGIANUS,5,101.01,20.20,ALTRO,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+VILLAPERUCCIO,5,0.65,0.13,0,LOW,High seasonal risk in Summer.
+OLLASTRA,5,13.94,2.79,0,LOW,High seasonal risk in Summer.
+TRATALIAS,5,6.98,1.40,ALTRO,LOW,High seasonal risk in Summer.
+BIRORI,5,7.47,1.49,0,LOW,High seasonal risk in Summer.
+ORTUERI,5,3.50,0.70,ALTRO,LOW,High seasonal risk in Summer.
+SENEGHE,5,6.34,1.27,0,LOW,High seasonal risk in Summer.
+NURACHI,5,4.83,0.97,ALTRO,LOW,High seasonal risk in Summer.
+ABBASANTA,5,10.61,2.12,"PASCOLO, ALTRO",LOW,High seasonal risk in Summer.
+ESPORLATU,5,4.16,0.83,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+ANELA,5,39.83,7.97,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+TORRALBA,5,51.41,10.28,PASCOLO,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+SANTA MARIA COGHINAS,5,9.85,1.97,ALTRO,LOW,High seasonal risk in Summer.
+BONNANARO,5,5.42,1.08,PASCOLO,LOW,High seasonal risk in Summer.
+VALLEDORIA,5,2.10,0.42,0,LOW,High seasonal risk in Summer.
+URI,5,11.65,2.33,"BOSCO, PASCOLO",LOW,High seasonal risk in Summer.
+LURAS,5,1.50,0.30,ALTRO,LOW,High seasonal risk in Summer.
+ILBONO,5,11.83,2.37,"BOSCO, PASCOLO, ALTRO",LOW,High seasonal risk in Summer.
+TALANA,5,4.38,0.88,ALTRO,LOW,High seasonal risk in Summer.
+OLZAI,5,17.76,3.55,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+BUSACHI,5,11.72,2.34,0,LOW,High seasonal risk in Summer.
+IS CRABILIS,5,6.07,1.21,12159.9,LOW,High seasonal risk in Summer.
+CODRONGIANOS,5,85.53,17.11,0,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+ALES,5,9.51,1.90,0,LOW,High seasonal risk in Summer.
+LUNAMATRONA,4,9.35,2.34,ALTRO,LOW,High seasonal risk in Summer.
+SIDDI,4,3.81,0.95,ALTRO,LOW,High seasonal risk in Summer.
+ESTERZILI,4,15.13,3.78,ALTRO,LOW,High seasonal risk in Summer.
+LOTZORAI,4,4.46,1.11,0,LOW,High seasonal risk in Summer.
+TURRI,4,2.03,0.51,ALTRO,LOW,High seasonal risk in Summer.
+GONNESA,4,29.28,7.32,ALTRO,LOW,High seasonal risk in Summer.
+SANT'ANNA ARRESI,4,1.84,0.46,ALTRO,LOW,High seasonal risk in Summer.
+LANUSEI,4,5.67,1.42,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+ULASSAI,4,1.80,0.45,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+NORBELLO,4,4.18,1.04,PASCOLO,LOW,High seasonal risk in Summer.
+GONNOSNO',4,21.84,5.46,"PASCOLO, ALTRO",LOW,High seasonal risk in Summer.
+BULTEI,4,2.94,0.74,PASCOLO,LOW,High seasonal risk in Summer.
+LA MADDALENA,4,1.55,0.39,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+MAGOMADAS,4,14.14,3.54,ALTRO,LOW,High seasonal risk in Summer.
+BORTIGALI,4,23.26,5.81,"BOSCO, PASCOLO",LOW,High seasonal risk in Summer.
+C. SANNA,4,4.66,1.17,10126.4,LOW,High seasonal risk in Summer.
+BAU S'ULMU,4,14.66,3.67,15108.6,LOW,High seasonal risk in Summer.
+S. GIORGIO,4,27.87,6.97,1559.14,LOW,High seasonal risk in Summer.
+CUCCURU S'ARRIU,4,13.05,3.26,1684.21,LOW,High seasonal risk in Summer.
+CORTE BACCAS,4,26.83,6.71,18675.4,LOW,High seasonal risk in Summer.
+S'UTTURU BREBEI,4,18.45,4.61,4360.76,LOW,High seasonal risk in Summer.
+ULA TIRSO,4,2.14,0.53,0,LOW,High seasonal risk in Summer.
+USSARAMANNA,3,6.13,2.04,ALTRO,LOW,High seasonal risk in Summer.
+SETZU,3,47.49,15.83,ALTRO,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+MUSEI,3,3.05,1.02,ALTRO,LOW,High seasonal risk in Summer.
+AIDOMAGGIORE,3,3.97,1.32,PASCOLO,LOW,High seasonal risk in Summer.
+DOMUSNOVAS,3,1.46,0.49,ALTRO,LOW,High seasonal risk in Summer.
+CARDEDU,3,3.90,1.30,0,LOW,High seasonal risk in Summer.
+LACONI,3,1.92,0.64,ALTRO,LOW,High seasonal risk in Summer.
+MOGORELLA,3,142.58,47.53,ALTRO,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+ATZARA,3,13.69,4.56,"BOSCO, ALTRO",LOW,High seasonal risk in Summer.
+OSIDDA,3,6.99,2.33,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+RUINAS,3,8.19,2.73,"BOSCO, PASCOLO",LOW,High seasonal risk in Summer.
+TETI,3,3.85,1.28,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+MOGORO,3,2.48,0.83,ALTRO,LOW,High seasonal risk in Summer.
+NARBOLIA,3,1.53,0.51,ALTRO,LOW,High seasonal risk in Summer.
+MILIS,3,2.53,0.84,0,LOW,High seasonal risk in Summer.
+SINI,3,1.16,0.39,0,LOW,High seasonal risk in Summer.
+SANTA TERESA GALLURA,3,1.85,0.62,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+BONARCADO,3,6.37,2.12,"PASCOLO, ALTRO",LOW,High seasonal risk in Summer.
+BAULADU,3,12.99,4.33,"PASCOLO, ALTRO",LOW,High seasonal risk in Summer.
+BARESSA,3,15.61,5.20,ALTRO,LOW,High seasonal risk in Summer.
+SIRIS,3,5.37,1.79,"PASCOLO, ALTRO",LOW,High seasonal risk in Summer.
+GIAVE,3,2.68,0.89,0,LOW,High seasonal risk in Summer.
+ALA' DEI SARDI,3,1710.83,570.28,"BOSCO, PASCOLO, ALTRO",EXTREME,High seasonal risk in Summer. Propensity for large-scale events detected.
+CHIARAMONTI,3,4.72,1.57,"BOSCO, PASCOLO",LOW,High seasonal risk in Summer.
+TRINITA' D'AGULTU,3,0.76,0.25,375,LOW,High seasonal risk in Summer.
+VILLA SAN PIETRO,3,1.96,0.65,0,LOW,High seasonal risk in Summer.
+BALLAO,3,2.73,0.91,ALTRO,LOW,High seasonal risk in Summer.
+MONTRESTA,3,3.46,1.15,PASCOLO,LOW,High seasonal risk in Summer.
+SEMESTENE,3,81.87,27.29,"BOSCO, PASCOLO, ALTRO",MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+NURALLAO,3,5.50,1.83,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+THIESI,3,2.71,0.90,0,LOW,High seasonal risk in Summer.
+OLMEDO,3,4.24,1.41,0,LOW,High seasonal risk in Summer.
+BIA CASTEDDU,3,4.04,1.35,21008.9,LOW,High seasonal risk in Summer.
+C. MANCOSU,3,1.50,0.50,11038.5,LOW,High seasonal risk in Summer.
+BRUNCU ARRUBIU,3,3.41,1.14,13211.2,LOW,High seasonal risk in Summer.
+SANTUS ANGIUS,3,9.93,3.31,44946.4,LOW,High seasonal risk in Summer.
+C. PORCU,3,10.39,3.46,95147.4,LOW,High seasonal risk in Summer.
+CANT.RA MASAINAS,3,48.83,16.28,404108,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+S. GIOVANNI,3,4.46,1.49,36548.5,LOW,High seasonal risk in Summer.
+CORANDUEDDA,3,39.98,13.33,3594.88,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BACCA MANAGUS,3,1.63,0.54,3987.04,LOW,High seasonal risk in Summer.
+PAULI ONIGUS,3,3.87,1.29,30998,LOW,High seasonal risk in Summer.
+MURTAXIU,3,11.36,3.79,12367.8,LOW,High seasonal risk in Summer.
+SERRA SIBIOLA,3,9.54,3.18,9525.45,LOW,High seasonal risk in Summer.
+ROIA PIBERA,3,36.35,12.12,340923,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CAMPU FRASSOLIS,3,21.82,7.27,169736,LOW,High seasonal risk in Summer.
+MONTAGUDU,3,53.62,17.87,42414.95162459,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+TONARA,3,0.48,0.16,1552,LOW,High seasonal risk in Summer.
+POMPU,3,3.07,1.02,0,LOW,High seasonal risk in Summer.
+LODE',3,0.69,0.23,0,LOW,High seasonal risk in Summer.
+ITTIREDDU,3,16.66,5.55,0,LOW,High seasonal risk in Summer.
+FLORINAS,3,46.75,15.58,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+VILLANOVATULO,3,0.06,0.02,0,LOW,High seasonal risk in Summer.
+OSINI,3,3.77,1.26,0,LOW,High seasonal risk in Summer.
+PERDASDEFOGU,2,8.45,4.22,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+PADRIA,2,131.50,65.75,"BOSCO, PASCOLO, ALTRO",MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+BAUNEI,2,2.83,1.42,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+GAVOI,2,5.67,2.84,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+MEANA SARDO,2,0.95,0.48,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+ARITZO,2,0.27,0.14,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+BELVI',2,25.97,12.98,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk. Propensity for large-scale events detected.
+AUSTIS,2,17.65,8.83,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+ULA' TIRSO,2,0.56,0.28,ALTRO,LOW,High seasonal risk in Summer.
+ONANI',2,1.50,0.75,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+FORDONGIANUS,2,0.54,0.27,PASCOLO,LOW,High seasonal risk in Summer.
+ALBAGIARA,2,3.96,1.98,ALTRO,LOW,High seasonal risk in Summer.
+ARDAULI,2,0.55,0.28,PASCOLO,LOW,High seasonal risk in Summer.
+COSSOINE,2,20.17,10.09,ALTRO,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PUTIFIGARI,2,64.02,32.01,"BOSCO, PASCOLO",MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+OSSI,2,9.97,4.99,ALTRO,LOW,High seasonal risk in Summer.
+LUOGOSANTO,2,4.60,2.30,"BOSCO, ALTRO",LOW,High seasonal risk in Summer.
+GOLFO ARANCI,2,0.55,0.28,ALTRO,LOW,High seasonal risk in Summer.
+BORTIGIADAS,2,0.40,0.20,ALTRO,LOW,High seasonal risk in Summer.
+MASAINAS,2,1.10,0.55,ALTRO,LOW,High seasonal risk in Summer.
+URZULEI,2,2.04,1.02,PASCOLO,LOW,High seasonal risk in Summer.
+GONNOSTRAMATZA,2,3.08,1.54,PASCOLO,LOW,High seasonal risk in Summer.
+MODOLO,2,2.37,1.19,"BOSCO, ALTRO",LOW,High seasonal risk in Summer.
+TADASUNI,2,1.53,0.77,"PASCOLO, ALTRO",LOW,High seasonal risk in Summer.
+ARDARA,2,0.66,0.33,ALTRO,LOW,High seasonal risk in Summer.
+SA RUINA,2,2.20,1.10,10252.9,LOW,High seasonal risk in Summer.
+F.TA DI UTA,2,1.73,0.86,12179.6,LOW,High seasonal risk in Summer.
+RIU SA RUTTA,2,0.50,0.25,0,LOW,High seasonal risk in Summer.
+SA GIARRA,2,6.61,3.30,62852.1,LOW,High seasonal risk in Summer.
+S.S. 196,2,83.53,41.77,10800.6,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+PERDALBA,2,2.35,1.17,9977.44,LOW,High seasonal risk in Summer.
+BIA MONASTIR,2,0.72,0.36,3405.89,LOW,High seasonal risk in Summer.
+SANTA MARIA,2,1.31,0.65,4880.09,LOW,High seasonal risk in Summer.
+PUZZU LOIA,2,1.74,0.87,10431,LOW,High seasonal risk in Summer.
+MENDULEDDAS,2,3.92,1.96,2025.11,LOW,High seasonal risk in Summer.
+CRABIOLI E STORI,2,2.97,1.48,16760.4,LOW,High seasonal risk in Summer.
+SU PRANU,2,2.12,1.06,5455.38,LOW,High seasonal risk in Summer.
+IS GIBAS,2,1.11,0.55,2886.75,LOW,High seasonal risk in Summer.
+BASANALI,2,1.60,0.80,13069.9,LOW,High seasonal risk in Summer.
+PAULE FENU,2,2.30,1.15,15037,LOW,High seasonal risk in Summer.
+S. BARBARA,2,4.17,2.09,1718.32,LOW,High seasonal risk in Summer.
+PERDA BOGADA,2,15.61,7.80,154228,LOW,High seasonal risk in Summer.
+C. SCALAS,2,16.76,8.38,45756,LOW,High seasonal risk in Summer.
+STANI DI S. LORENZO,2,9.35,4.68,53181.5,LOW,High seasonal risk in Summer.
+SANT'ANDREA,2,3.24,1.62,21962.1,LOW,High seasonal risk in Summer.
+N.GHE TUPPEDILI,2,14.37,7.19,106594,LOW,High seasonal risk in Summer.
+S. MARIA,2,0.92,0.46,6379.37,LOW,High seasonal risk in Summer.
+N.GHE AUREDDUS,2,4.41,2.20,33013.6,LOW,High seasonal risk in Summer.
+BAU TRIGA,2,15.54,7.77,98360.7,LOW,High seasonal risk in Summer.
+BAU DEXIMU,2,1.92,0.96,7705.92,LOW,High seasonal risk in Summer.
+COSTERA SILVANU,2,7.91,3.96,28958.6,LOW,High seasonal risk in Summer.
+BAU SA PIRA,2,12.28,6.14,102141,LOW,High seasonal risk in Summer.
+S.S. DI SEUI E LANUSEI,2,5.13,2.56,38309.5,LOW,High seasonal risk in Summer.
+RIU PEIS,2,1.21,0.60,10748.2,LOW,High seasonal risk in Summer.
+CUCCURU SA SPINADA,2,38.21,19.11,287476,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SUIDILLI,2,6.34,3.17,3835.03,LOW,High seasonal risk in Summer.
+ARGIOLAS,2,0.65,0.32,889.393,LOW,High seasonal risk in Summer.
+RIU SA NUXEDDA,2,5.84,2.92,9820.28,LOW,High seasonal risk in Summer.
+SENNURU,2,19.86,9.93,191521,LOW,High seasonal risk in Summer.
+IS NARBONIS,2,38.43,19.22,351197,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+GORA DE GURI,2,1.23,0.62,1732.26,LOW,High seasonal risk in Summer.
+GORA STAGNO,2,1.03,0.52,6592.46,LOW,High seasonal risk in Summer.
+NIU ARRUNDINIS,2,7.95,3.98,16176,LOW,High seasonal risk in Summer.
+S'ARRIXI,2,0.82,0.41,1942.08,LOW,High seasonal risk in Summer.
+CUC.RU TERRAFURCA,2,0.93,0.47,2969.03,LOW,High seasonal risk in Summer.
+BR.CU PERDU MURGIA,2,45.51,22.75,153706,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+FLUMINI BECCIU,2,12.87,6.44,57433.3,LOW,High seasonal risk in Summer.
+R. S. SIBIPPU,2,0.85,0.42,5048.57,LOW,High seasonal risk in Summer.
+CORONGIULEDDAS,2,0.23,0.12,1233.63,LOW,High seasonal risk in Summer.
+SU PARDU,2,2.15,1.07,17004.4,LOW,High seasonal risk in Summer.
+C. CABIDDU,2,1.31,0.66,9181.09,LOW,High seasonal risk in Summer.
+C.RA SANTA LUCIA,2,41.63,20.81,228014,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+M. OLLIONI,2,1.53,0.76,12937.7,LOW,High seasonal risk in Summer.
+S'ARUTTA,2,9.51,4.76,2656.21,LOW,High seasonal risk in Summer.
+SU FILIXI,2,2.16,1.08,17679.6,LOW,High seasonal risk in Summer.
+STAMPAXINU,2,1.01,0.51,2813.75,LOW,High seasonal risk in Summer.
+BR.CU SA CASA,2,11.00,5.50,17804.9,LOW,High seasonal risk in Summer.
+C. PERDU PULIXI,2,19.86,9.93,11347.3,LOW,High seasonal risk in Summer.
+AZIENDA PIMPISU,2,31.66,15.83,107293,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BANGIU,2,1.00,0.50,2542.724728,LOW,High seasonal risk in Summer.
+SA CONCA'E SU GIUDEU,2,3.00,1.50,16365,LOW,High seasonal risk in Summer.
+FOSSAUS,2,3.14,1.57,16678,LOW,High seasonal risk in Summer.
+S'ERA,2,5.87,2.93,41411.9,LOW,High seasonal risk in Summer.
+C.RA ISPOLOS,2,5.44,2.72,0,LOW,High seasonal risk in Summer.
+SA PERDERA,2,1.56,0.78,5168.63318756,LOW,High seasonal risk in Summer.
+FUNTANA CUMINA,2,1.19,0.59,10019.43700846,LOW,High seasonal risk in Summer.
+TRES MONTIS,2,22.47,11.24,211135.71188743,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE BIA,2,9.04,4.52,83232.09897771,LOW,High seasonal risk in Summer.
+S. LUCIA,2,5.19,2.59,7076.33382656,LOW,High seasonal risk in Summer.
+RIU S. GIOVANNI,2,1.31,0.65,6303.16,LOW,High seasonal risk in Summer.
+SERRA TUFFO,2,21.25,10.63,208973.37108733,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU ILAI,2,2.11,1.06,0,LOW,High seasonal risk in Summer.
+FUNT.NA MANUNTA,2,5.19,2.60,0,LOW,High seasonal risk in Summer.
+MONTEREGNU,2,75.03,37.52,6380.01,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+BISCOLLAI,2,7.69,3.85,40773.2,LOW,High seasonal risk in Summer.
+C. MEDADU,2,2.61,1.30,0,LOW,High seasonal risk in Summer.
+RIU CADDOS,2,30.74,15.37,25021.95727895,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SOS LAVROS,2,3.81,1.90,25536.68691903,LOW,High seasonal risk in Summer.
+CAMPO DE VORA,2,39.63,19.82,317009,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BORUTTA,2,0.16,0.08,1616.82,LOW,High seasonal risk in Summer.
+FUNT.NA ABBAIA,2,12.62,6.31,0,LOW,High seasonal risk in Summer.
+SA GAIPIDA,2,0.87,0.43,0,LOW,High seasonal risk in Summer.
+SOS BADDIGROS,2,5.04,2.52,0,LOW,High seasonal risk in Summer.
+ISCALA SELEI,2,36.85,18.43,23747,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PAULI PUTZU,2,4.05,2.02,29976.3,LOW,High seasonal risk in Summer.
+CODINAS,2,2.73,1.36,16811.3,LOW,High seasonal risk in Summer.
+CANALE ADDUTTORE TIRSO-ARB,2,1.30,0.65,12021.7364721,LOW,High seasonal risk in Summer.
+TANCA ROINADAS,2,1.39,0.70,5229.6,LOW,High seasonal risk in Summer.
+VILLA SANT'ANTONIO,2,0.48,0.24,0,LOW,High seasonal risk in Summer.
+FLUMINIMAGGIORE,2,0.60,0.30,2936,LOW,High seasonal risk in Summer.
+OVODDA,2,1.17,0.59,10344,LOW,High seasonal risk in Summer.
+NORAGUGUME,2,2.73,1.36,0,LOW,High seasonal risk in Summer.
+ONIFERI,2,0.00,0.00,0,LOW,High seasonal risk in Summer.
+SEDINI,2,6.84,3.42,0,LOW,High seasonal risk in Summer.
+TISSI,2,0.47,0.24,0,LOW,High seasonal risk in Summer.
+TINNURA,2,0.26,0.13,0,LOW,High seasonal risk in Summer.
+BADESI,2,1.42,0.71,0,LOW,High seasonal risk in Summer.
+PADRU,2,0.00,0.00,0,LOW,High seasonal risk in Summer.
+TERTENIA,2,0.80,0.40,0,LOW,High seasonal risk in Summer.
+BARATILI SAN PIETRO,2,2.79,1.40,0,LOW,High seasonal risk in Summer.
+GENURI,2,6.29,3.14,0,LOW,High seasonal risk in Summer.
+LODINE,1,1.83,1.83,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+SEULO,1,2.85,2.85,"BOSCO, ALTRO",LOW,High seasonal risk in Summer.
+SORRADILE,1,10.81,10.81,"BOSCO, PASCOLO, ALTRO",LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SIAPICCIA,1,0.34,0.34,ALTRO,LOW,High seasonal risk in Summer.
+NEONELI,1,3.66,3.66,"BOSCO, PASCOLO",LOW,High seasonal risk in Summer.
+SCANO DI MONTIFERRO,1,1.49,1.49,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+CHEREMULE,1,0.51,0.51,ALTRO,LOW,High seasonal risk in Summer.
+OSILO,1,27.89,27.89,"BOSCO, PASCOLO",LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BESSUDE,1,0.33,0.33,PASCOLO,LOW,High seasonal risk in Summer.
+TELTI,1,0.85,0.85,ALTRO,LOW,High seasonal risk in Summer.
+AGLIENTU,1,0.24,0.24,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+VIDDALBA,1,0.24,0.24,"BOSCO, ALTRO",LOW,High seasonal risk in Summer.
+SILIUS,1,0.30,0.30,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+BARADILI,1,0.25,0.25,ALTRO,LOW,High seasonal risk in Summer.
+TRIEI,1,0.15,0.15,ALTRO,LOW,High seasonal risk in Summer.
+LOCERI,1,0.64,0.64,ALTRO,LOW,High seasonal risk in Summer.
+ELINI,1,0.27,0.27,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+BUGGERRU,1,1.48,1.48,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+GADONI,1,0.82,0.82,BOSCO,LOW,High seasonal risk in Summer. Forest density increases crown fire risk.
+NURECI,1,3.40,3.40,"BOSCO, PASCOLO, ALTRO",LOW,High seasonal risk in Summer.
+CARGEGHE,1,0.92,0.92,ALTRO,LOW,High seasonal risk in Summer.
+MONTELEONE ROCCA DORIA,1,3.03,3.03,"PASCOLO, ALTRO",LOW,High seasonal risk in Summer.
+TRINITA' D'AGULTU E VIGNOLA,1,3.78,3.78,"BOSCO, ALTRO",LOW,High seasonal risk in Summer.
+TULA,1,9.41,9.41,ALTRO,LOW,High seasonal risk in Summer.
+SANT'ANTONIO DI GALLURA,1,3.21,3.21,"BOSCO, ALTRO",LOW,High seasonal risk in Summer.
+SAN GEROLAMO,1,0.64,0.64,6371.79,LOW,High seasonal risk in Summer.
+R. SU GIUNCU,1,0.73,0.73,7285.78,LOW,High seasonal risk in Summer.
+FREIZZU,1,1.93,1.93,19268.7,LOW,High seasonal risk in Summer.
+CUCCURU MATTONI,1,1.13,1.13,11278.7,LOW,High seasonal risk in Summer.
+SU SCUSORGIU,1,0.29,0.29,2925.26,LOW,High seasonal risk in Summer.
+SABIOI,1,2.19,2.19,21862.8,LOW,High seasonal risk in Summer.
+C.LE ACQUE ALTE,1,2.55,2.55,25503.7,LOW,High seasonal risk in Summer.
+CONV.TO S. LUCIA,1,0.16,0.16,1571.15,LOW,High seasonal risk in Summer.
+BAU ERBEIS,1,0.17,0.17,1717.47,LOW,High seasonal risk in Summer.
+OVILE SARDO,1,7.57,7.57,75726,LOW,High seasonal risk in Summer.
+MONTIXEDDU,1,0.01,0.01,0,LOW,High seasonal risk in Summer.
+SANTU MIALI,1,2.44,2.44,24432.6,LOW,High seasonal risk in Summer.
+MITZA PUDEXIA,1,6.44,6.44,64445,LOW,High seasonal risk in Summer.
+RIU SA UGA,1,0.74,0.74,7392.23,LOW,High seasonal risk in Summer.
+BENATZU CASULA,1,12.04,12.04,120367,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+IS CUCUREDDUS,1,2.69,2.69,26853.2,LOW,High seasonal risk in Summer.
+SU CODDU,1,8.84,8.84,88364.8,LOW,High seasonal risk in Summer.
+RIU GUIDEDDU,1,1.82,1.82,18218.8,LOW,High seasonal risk in Summer.
+SA ROIA,1,0.85,0.85,8545.18,LOW,High seasonal risk in Summer.
+A. A. MAMUSA,1,0.25,0.25,2460.1,LOW,High seasonal risk in Summer.
+SU  SCIOFFU,1,10.19,10.19,101888,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+MATTA TANAS,1,0.22,0.22,2158.04,LOW,High seasonal risk in Summer.
+MATTA DEIAS,1,0.23,0.23,2255.2,LOW,High seasonal risk in Summer.
+BROCCETTA,1,2.69,2.69,26931.7,LOW,High seasonal risk in Summer.
+C. MONTE ARRUBBIU,1,0.20,0.20,0,LOW,High seasonal risk in Summer.
+BAUSTELLA,1,1.11,1.11,11055.5,LOW,High seasonal risk in Summer.
+POD.E S. EFISIO,1,0.48,0.48,4761.08,LOW,High seasonal risk in Summer.
+PALAS DE LUA,1,1.63,1.63,16305.5,LOW,High seasonal risk in Summer.
+GORA SU CANI,1,0.83,0.83,8314.55,LOW,High seasonal risk in Summer.
+GORA SA DOMU,1,0.39,0.39,3914.12,LOW,High seasonal risk in Summer.
+PERDA SUEUS,1,0.50,0.50,5005.91,LOW,High seasonal risk in Summer.
+SU PAULI,1,1.09,1.09,10884.4,LOW,High seasonal risk in Summer.
+CUC.RU PONTIS,1,1.86,1.86,18583.8,LOW,High seasonal risk in Summer.
+PERDA ENATZA,1,6.02,6.02,60240.1,LOW,High seasonal risk in Summer.
+IS ISCAS,1,0.87,0.87,8690.75,LOW,High seasonal risk in Summer.
+BIA MORDEGUS,1,1.40,1.40,14011.5,LOW,High seasonal risk in Summer.
+MARGIANE 'E MURO,1,0.96,0.96,9578.95,LOW,High seasonal risk in Summer.
+IS TERRIXEDDAS,1,15.21,15.21,152140,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+IS ABETONIS,1,5.14,5.14,51367.1,LOW,High seasonal risk in Summer.
+BARCELLONA,1,0.48,0.48,4806.14,LOW,High seasonal risk in Summer.
+FUNT.NA MOTEGU,1,0.91,0.91,9132.62,LOW,High seasonal risk in Summer.
+SU STRINTU,1,4.64,4.64,46413.5,LOW,High seasonal risk in Summer.
+GUARDIA SU PREDI,1,0.19,0.19,1884.45,LOW,High seasonal risk in Summer.
+S. MICHELE,1,0.97,0.97,9678.71,LOW,High seasonal risk in Summer.
+BR.CU STANAS,1,0.35,0.35,3521.78,LOW,High seasonal risk in Summer.
+BINGIA PANEDDAS,1,0.81,0.81,8114.09,LOW,High seasonal risk in Summer.
+CAMPU 'E MESU,1,6.92,6.92,69172.2,LOW,High seasonal risk in Summer.
+SU CRACCHIRI,1,1.56,1.56,15616.5,LOW,High seasonal risk in Summer.
+SANTU DEU,1,0.19,0.19,1872.98,LOW,High seasonal risk in Summer.
+FL. MANNU,1,0.26,0.26,2620.7,LOW,High seasonal risk in Summer.
+CAMPU GUREUS,1,2.11,2.11,21073.1,LOW,High seasonal risk in Summer.
+BINGIAS MANNAS,1,0.73,0.73,7343.76,LOW,High seasonal risk in Summer.
+PALAXIRCA,1,0.45,0.45,4543.6,LOW,High seasonal risk in Summer.
+PRANU MURDEGU,1,0.56,0.56,5645.34,LOW,High seasonal risk in Summer.
+IS FUNTANAS,1,112.44,112.44,1124350,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+CUCCURU PERDASCENTA,1,2.07,2.07,20736.9,LOW,High seasonal risk in Summer.
+MITZA DE STANI,1,1.09,1.09,10850.1,LOW,High seasonal risk in Summer.
+BRUNCU MURUS',1,17.18,17.18,171808,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BIA IS OGUS,1,1.52,1.52,15215.8,LOW,High seasonal risk in Summer.
+BIA SA MANDRA,1,0.56,0.56,5582.41,LOW,High seasonal risk in Summer.
+CUCCURU IMBUDU,1,4.51,4.51,45101.2,LOW,High seasonal risk in Summer.
+CAN.LE RIU MALU,1,0.52,0.52,5178.49,LOW,High seasonal risk in Summer.
+CORTI BECCIAS,1,12.48,12.48,124796,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+C.LE TUVIXEDDU,1,1.02,1.02,10178.3,LOW,High seasonal risk in Summer.
+VILLA ARESU,1,7.54,7.54,75386.3,LOW,High seasonal risk in Summer.
+N.GHE MOLINU,1,2.05,2.05,20459.4,LOW,High seasonal risk in Summer.
+POD.E FIUME,1,4.00,4.00,39958.8,LOW,High seasonal risk in Summer.
+TRAMATZEDDUS,1,2.32,2.32,23182.3,LOW,High seasonal risk in Summer.
+ENNA SEDDUS,1,0.20,0.20,2024.69,LOW,High seasonal risk in Summer.
+S. PLATANO,1,9.48,9.48,94793.7,LOW,High seasonal risk in Summer.
+FONTE SA NUXEDDA,1,8.63,8.63,86309,LOW,High seasonal risk in Summer.
+M.ZA 'E CRUCULEU,1,6.56,6.56,65564.6,LOW,High seasonal risk in Summer.
+CORTE MARROCCU,1,0.78,0.78,7784.26,LOW,High seasonal risk in Summer.
+C.PO SPER.LE FLUMENDOSA,1,0.38,0.38,3772,LOW,High seasonal risk in Summer.
+MITZA SA CANNA,1,0.49,0.49,4936.95,LOW,High seasonal risk in Summer.
+FUNT.NA ISTEDDA,1,1.54,1.54,15382,LOW,High seasonal risk in Summer.
+TANCA DE PRAMMERI,1,2.83,2.83,28326.9,LOW,High seasonal risk in Summer.
+RIO BANGIUS,1,2.45,2.45,24517.5,LOW,High seasonal risk in Summer.
+POD.RE S. GIUSEPPE,1,1.75,1.75,17542.9,LOW,High seasonal risk in Summer.
+RIU DE GIACU MELONI,1,1.34,1.34,13434.2,LOW,High seasonal risk in Summer.
+SERRA ANTONI,1,129.80,129.80,1297981,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+GORA DE MATZEDDU,1,3.82,3.82,38216.2,LOW,High seasonal risk in Summer.
+FUNTANGIANO,1,1.90,1.90,18996.2,LOW,High seasonal risk in Summer.
+S'ISCHIXEDDA,1,98.48,98.48,984803,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+SA TANCA,1,8.62,8.62,86166.5,LOW,High seasonal risk in Summer.
+RIU BINGIAS,1,2.85,2.85,28453.8,LOW,High seasonal risk in Summer.
+MITZA CONILLUS,1,70.47,70.47,704705,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+R. BACCU'E FONNI,1,1.22,1.22,12197.5,LOW,High seasonal risk in Summer.
+SEDDA INTREZZA,1,0.49,0.49,4866.29,LOW,High seasonal risk in Summer.
+FATT.A SALV.E PINNA,1,11.24,11.24,112429,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+IS NUEDDAS,1,17.67,17.67,176700,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE COMAS DE PISU,1,0.24,0.24,2425.83,LOW,High seasonal risk in Summer.
+M. CUGUSSI',1,0.94,0.94,0,LOW,High seasonal risk in Summer.
+T. SEDDANUS,1,0.14,0.14,1375.75,LOW,High seasonal risk in Summer.
+S. SIMONE,1,16.79,16.79,167859,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CANALI DE PIRA,1,1.65,1.65,16544.8,LOW,High seasonal risk in Summer.
+R. CARRULO,1,0.66,0.66,6565.42,LOW,High seasonal risk in Summer.
+CAMPO S. GILLA,1,1.54,1.54,15431.3,LOW,High seasonal risk in Summer.
+SA GUARDIEDDA,1,89.77,89.77,897656,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+BRUSCHIADINU,1,1.14,1.14,11409.3,LOW,High seasonal risk in Summer.
+PONTI NOU,1,1.45,1.45,14542.7,LOW,High seasonal risk in Summer.
+C. CADEDDU,1,2.52,2.52,25150,LOW,High seasonal risk in Summer.
+IS GUARDIAS,1,1.52,1.52,15216.6,LOW,High seasonal risk in Summer.
+ARGIDAS,1,0.32,0.32,3223.54,LOW,High seasonal risk in Summer.
+N.GHE SARTARO,1,0.31,0.31,3079.11,LOW,High seasonal risk in Summer.
+N.GHE RIU ELIAS,1,0.64,0.64,6426.45,LOW,High seasonal risk in Summer.
+GORA PODDESU,1,42.30,42.30,423030,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SALTO DIVISO,1,2.72,2.72,27246.2,LOW,High seasonal risk in Summer.
+VACC.A MEDDA,1,105.76,105.76,1057551,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+RIU ESTIUS,1,0.57,0.57,5682.95,LOW,High seasonal risk in Summer.
+N.GHE POSADA,1,1.20,1.20,11995.4,LOW,High seasonal risk in Summer.
+MARINGIANU,1,5.00,5.00,50035.3,LOW,High seasonal risk in Summer.
+BR.CU SU PARU,1,2.99,2.99,0,LOW,High seasonal risk in Summer.
+CALAMATTA,1,18.40,18.40,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BAU SUEDDI,1,21.63,21.63,216288,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+FUNT.NA FANNI,1,7.03,7.03,70337.8,LOW,High seasonal risk in Summer.
+NURACI,1,1.52,1.52,15244.2,LOW,High seasonal risk in Summer.
+C. SENES,1,1.34,1.34,13436.5,LOW,High seasonal risk in Summer.
+IS BRUNCUS,1,5.12,5.12,51152.2,LOW,High seasonal risk in Summer.
+S. SEVERA,1,1.02,1.02,10228.9,LOW,High seasonal risk in Summer.
+PALA BOIS,1,5.05,5.05,50530.3,LOW,High seasonal risk in Summer.
+AZIENDA DI PENTA,1,2.17,2.17,21693.3,LOW,High seasonal risk in Summer.
+S. PIETRO,1,1.90,1.90,18970.6,LOW,High seasonal risk in Summer.
+SU NURAXEDDU,1,0.81,0.81,8098.63,LOW,High seasonal risk in Summer.
+RUINA DE LOGU,1,2.67,2.67,26694.7,LOW,High seasonal risk in Summer.
+MITZA PURRUS,1,0.52,0.52,5245.6,LOW,High seasonal risk in Summer.
+MADEPASCA,1,1.08,1.08,10789.2,LOW,High seasonal risk in Summer.
+R. MONTI,1,12.89,12.89,128873,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+FATT.A CUALBO,1,78.97,78.97,789690,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+RIU SCALA,1,0.46,0.46,4592.17,LOW,High seasonal risk in Summer.
+GUTTURADROXIU,1,0.50,0.50,4981.75,LOW,High seasonal risk in Summer.
+R. PISCINA LUDU,1,0.12,0.12,1153.42,LOW,High seasonal risk in Summer.
+CORTE MARGIANI,1,0.87,0.87,8712.04,LOW,High seasonal risk in Summer.
+C. PORRU,1,1.68,1.68,0,LOW,High seasonal risk in Summer.
+GEMILLONIS,1,1.64,1.64,16389.3,LOW,High seasonal risk in Summer.
+MITZA DI M. TRUXIONIS,1,0.44,0.44,4378.35,LOW,High seasonal risk in Summer.
+BIA SERRENTI,1,5.19,5.19,51865.09357902,LOW,High seasonal risk in Summer.
+TERRAS BARACCAS,1,1.09,1.09,10880.1,LOW,High seasonal risk in Summer.
+BRUNCU CONILLU,1,2.83,2.83,28345,LOW,High seasonal risk in Summer.
+PALA S'ARRIDELI,1,0.69,0.69,0,LOW,High seasonal risk in Summer.
+S.S. 128,1,3.72,3.72,37212.8,LOW,High seasonal risk in Summer.
+S'IBIXEDDA,1,1.98,1.98,19770.6,LOW,High seasonal risk in Summer.
+PESADROXIU,1,0.58,0.58,5810.86,LOW,High seasonal risk in Summer.
+GORA S. ANTONIO,1,0.69,0.69,6883.3,LOW,High seasonal risk in Summer.
+SA PIXINA,1,0.66,0.66,6552.57,LOW,High seasonal risk in Summer.
+PRANU SITO,1,3.45,3.45,34499.7,LOW,High seasonal risk in Summer.
+PONTE MANNU,1,2.69,2.69,26854.8,LOW,High seasonal risk in Summer.
+CORTE MELONIS,1,0.25,0.25,2544.61,LOW,High seasonal risk in Summer.
+PRUNI CRISTIS,1,0.22,0.22,2193.11,LOW,High seasonal risk in Summer.
+PERDAREGUS,1,1.14,1.14,11371.6,LOW,High seasonal risk in Summer.
+CUC.RU CASU,1,10.22,10.22,102172,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU CRABIOLEDDU,1,2.19,2.19,21942.9,LOW,High seasonal risk in Summer.
+MITZA SEUI,1,1.69,1.69,16919.3,LOW,High seasonal risk in Summer.
+RIU CIXERRI,1,1.93,1.93,19338.5,LOW,High seasonal risk in Summer.
+IS CUXINAS,1,5.23,5.23,52254,LOW,High seasonal risk in Summer.
+RIU SESI,1,1.46,1.46,14593.7,LOW,High seasonal risk in Summer.
+CAMPAIDALI,1,0.39,0.39,3895.65,LOW,High seasonal risk in Summer.
+PERDA ZOCCU,1,0.36,0.36,3585.56,LOW,High seasonal risk in Summer.
+LASCINEDDUS,1,9.35,9.35,93519.5,LOW,High seasonal risk in Summer.
+TUPPA PERTIA,1,2.06,2.06,20642.5,LOW,High seasonal risk in Summer.
+TANCA SERAPPIU,1,74.77,74.77,747727,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+T. LENI,1,2.82,2.82,28150.5,LOW,High seasonal risk in Summer.
+SCROCCHIOI,1,2.99,2.99,29874.3,LOW,High seasonal risk in Summer.
+FATT.A PIRAS,1,24.08,24.08,240834,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+C. PALMAS,1,7.85,7.85,78492.8,LOW,High seasonal risk in Summer.
+S.S. 126,1,8.76,8.76,87634.8,LOW,High seasonal risk in Summer.
+NURAXEU,1,3.38,3.38,33796.4,LOW,High seasonal risk in Summer.
+N.GHE FIGU,1,2.39,2.39,23943,LOW,High seasonal risk in Summer.
+IS ULMUS,1,0.64,0.64,6366.9,LOW,High seasonal risk in Summer.
+MONTEDDINI,1,3.89,3.89,38908.7,LOW,High seasonal risk in Summer.
+BAU SA CONCA,1,19.67,19.67,196736,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+C. FODDI,1,2.17,2.17,21724.4,LOW,High seasonal risk in Summer.
+BR.CU ABIS,1,0.19,0.19,1910.69,LOW,High seasonal risk in Summer.
+TERRA INTINI,1,1.44,1.44,14372.8,LOW,High seasonal risk in Summer.
+CORTE SINNADROXIU,1,1.15,1.15,11467.3,LOW,High seasonal risk in Summer.
+MITZA SU TRUNCU,1,0.80,0.80,8043.34,LOW,High seasonal risk in Summer.
+SA NARBEDDERA,1,8.08,8.08,80821.5,LOW,High seasonal risk in Summer.
+PRANU SPOLLA CAMISA,1,1.35,1.35,13515.5,LOW,High seasonal risk in Summer.
+S. ANTIOCO,1,10.94,10.94,109447,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU PRANU SU CANONIGU,1,41.12,41.12,411185,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+ZIPPIREDDU,1,22.41,22.41,224132,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BADDOI,1,0.55,0.55,5507.1,LOW,High seasonal risk in Summer.
+BR.CU 'E FRUCCAS,1,1.40,1.40,14005.8,LOW,High seasonal risk in Summer.
+STAINETTU,1,4.73,4.73,47283.6,LOW,High seasonal risk in Summer.
+R. DE S'ACQUA BIANCA,1,2.28,2.28,22815,LOW,High seasonal risk in Summer.
+S.S. 131 E 197,1,0.51,0.51,5131.25,LOW,High seasonal risk in Summer.
+CUC.RU PERDOSU,1,3.64,3.64,36414.1,LOW,High seasonal risk in Summer.
+SU CARRAXIU,1,14.55,14.55,145530,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PAULI ANTONI,1,15.19,15.19,151937,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CORRALIS,1,1.71,1.71,17053.7,LOW,High seasonal risk in Summer.
+TANCA GARAU,1,0.84,0.84,8440.98,LOW,High seasonal risk in Summer.
+C. PILLITU,1,3.41,3.41,34054.4,LOW,High seasonal risk in Summer.
+BENATZUS,1,3.33,3.33,33346.4,LOW,High seasonal risk in Summer.
+TRUNCU IS FOLLUS,1,10.91,10.91,109115,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PISCINA SU FENU,1,4.27,4.27,42667.8,LOW,High seasonal risk in Summer.
+CONGIAU E PRANU,1,1.03,1.03,10316.4,LOW,High seasonal risk in Summer.
+LACANA DE BIDAZZONE,1,5.68,5.68,56781.6,LOW,High seasonal risk in Summer.
+SU PRANU DE ASSEMINI,1,40.00,40.00,399963,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+IDROV.RA VASCO IMERONI,1,1.80,1.80,18035.5,LOW,High seasonal risk in Summer.
+S. S. 131 E 197,1,0.21,0.21,2085.19,LOW,High seasonal risk in Summer.
+SU MURDEGU,1,3.77,3.77,37689,LOW,High seasonal risk in Summer.
+PORCILIS,1,0.29,0.29,2854.67,LOW,High seasonal risk in Summer.
+GUARDIA SICCADA,1,4.10,4.10,40994.9,LOW,High seasonal risk in Summer.
+S'ISULA,1,0.16,0.16,1645.7,LOW,High seasonal risk in Summer.
+R. S. M.A MADDALENA,1,1.36,1.36,13585.9,LOW,High seasonal risk in Summer.
+SARGIDDA SU PRANU,1,1.04,1.04,10435.8,LOW,High seasonal risk in Summer.
+SANTU BENITTU,1,0.44,0.44,4366.03,LOW,High seasonal risk in Summer.
+N.GHE CUMBIDE PINNA,1,24.10,24.10,240992,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE SU AINGIU,1,109.67,109.67,1096686,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+SERRA PAULI MANNU,1,5.65,5.65,56512,LOW,High seasonal risk in Summer.
+COSTA MOLINO,1,0.72,0.72,7183.28,LOW,High seasonal risk in Summer.
+SEBERADROXIU,1,8.58,8.58,85780.1,LOW,High seasonal risk in Summer.
+MASONI ANNIS,1,0.18,0.18,1782.3,LOW,High seasonal risk in Summer.
+SERRA PAULI BOIS,1,0.94,0.94,9351.98,LOW,High seasonal risk in Summer.
+CUCCURU ARBANTE,1,1.98,1.98,0,LOW,High seasonal risk in Summer.
+IS CORONGIUS,1,12.59,12.59,125854,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CORTI DE FORRU,1,61.13,61.13,611342,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+PRANU SE ACQUA SANTA,1,0.29,0.29,0,LOW,High seasonal risk in Summer.
+S.S. 131,1,0.66,0.66,0,LOW,High seasonal risk in Summer.
+PRANU USSORGIA,1,12.79,12.79,127939,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CRACCARGIU,1,17.63,17.63,176320,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+LACUNEDDA,1,76.71,76.71,767074,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+CONCA LOCI,1,0.25,0.25,0,LOW,High seasonal risk in Summer.
+BACCU CABONI,1,6.99,6.99,69862.2,LOW,High seasonal risk in Summer.
+CORRUGAUS,1,0.64,0.64,6384.39,LOW,High seasonal risk in Summer.
+BACCU SCOVA,1,2.81,2.81,28098.7,LOW,High seasonal risk in Summer.
+MELIVADA,1,16.91,16.91,169136,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+ISCA SA PINGIADA,1,1.48,1.48,14830,LOW,High seasonal risk in Summer.
+C. COLLU,1,3.72,3.72,37243.3,LOW,High seasonal risk in Summer.
+CROCCOLANTI,1,13.83,13.83,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CANNIGA,1,48.24,48.24,482422,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CLAROSU,1,69.51,69.51,695142,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU BOSCU,1,29.67,29.67,296670,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+C. LECCA,1,2.34,2.34,23379.6,LOW,High seasonal risk in Summer.
+BIA SA CRUXITTA,1,5.82,5.82,58182,LOW,High seasonal risk in Summer.
+PERDU LAI,1,4.17,4.17,41729.7,LOW,High seasonal risk in Summer.
+FUNT.NA TALERIS,1,0.29,0.29,2898.34,LOW,High seasonal risk in Summer.
+MOLIFA',1,1.37,1.37,0,LOW,High seasonal risk in Summer.
+CORTE COPPIUS,1,2.00,2.00,19975.7,LOW,High seasonal risk in Summer.
+S'ISCA,1,0.13,0.13,1262.94,LOW,High seasonal risk in Summer.
+SU PERDAXIU,1,1.05,1.05,10455.2,LOW,High seasonal risk in Summer.
+PIXIXEDDU,1,2.94,2.94,29403.2,LOW,High seasonal risk in Summer.
+PESADA DON PEPPI,1,16.61,16.61,166112,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CAN.LE BONIF.CA ACQUE ALTE,1,2.71,2.71,27144.5,LOW,High seasonal risk in Summer.
+SU NURAXI,1,3.88,3.88,38846.3,LOW,High seasonal risk in Summer.
+C. MANDAS,1,3.08,3.08,30765.5,LOW,High seasonal risk in Summer.
+M. GUTTURU GIONIS,1,20.88,20.88,208819,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CASE CAMPANA,1,3.29,3.29,32894.4,LOW,High seasonal risk in Summer.
+PABARILE,1,0.20,0.20,561,LOW,High seasonal risk in Summer.
+ORTU SA CANNA,1,3.80,3.80,37962.3,LOW,High seasonal risk in Summer.
+CUC.RU SEBIS,1,0.21,0.21,2096.96,LOW,High seasonal risk in Summer.
+CORTE CADDEUS,1,0.25,0.25,2472.91,LOW,High seasonal risk in Summer.
+S'ARGIDDA,1,0.21,0.21,2103.73,LOW,High seasonal risk in Summer.
+GENNALIU,1,4.92,4.92,49212.2,LOW,High seasonal risk in Summer.
+BR.CU FRIAROSU,1,12.93,12.93,129269,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+AXIURRIDU,1,1.00,1.00,9984.18,LOW,High seasonal risk in Summer.
+MONTI TREXENTA,1,1.46,1.46,14634.3,LOW,High seasonal risk in Summer.
+NURACADA,1,0.57,0.57,5737.78,LOW,High seasonal risk in Summer.
+FOSSO TUPPA XERBU,1,5.34,5.34,53371.3,LOW,High seasonal risk in Summer.
+SA RODINA,1,0.65,0.65,6465.44,LOW,High seasonal risk in Summer.
+PIANO PORCILIS,1,29.58,29.58,295798,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+MUNTRAXIU,1,3.00,3.00,29962.5,LOW,High seasonal risk in Summer.
+S. TOMMASO,1,9.86,9.86,98620.2,LOW,High seasonal risk in Summer.
+PAULI MANNA,1,7.71,7.71,77130,LOW,High seasonal risk in Summer.
+FATT.A MANCOSU,1,11.88,11.88,118757,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+STROVINA,1,5.27,5.27,52695.7,LOW,High seasonal risk in Summer.
+CAMPU CADDAXIUS,1,1.07,1.07,10737.5,LOW,High seasonal risk in Summer.
+S'UNGRONI,1,6.07,6.07,60696.3,LOW,High seasonal risk in Summer.
+N.GHE POZZO MAIORE,1,34.23,34.23,152120,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE NURATTEDDU,1,0.57,0.57,5660.18,LOW,High seasonal risk in Summer.
+CUC.RU S. SALVATORE,1,0.74,0.74,7377.51,LOW,High seasonal risk in Summer.
+TIDOS,1,128.97,128.97,106769,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+SA GRUTTIXEDDA,1,2.56,2.56,25615,LOW,High seasonal risk in Summer.
+RIU ABIS,1,0.65,0.65,6469.9,LOW,High seasonal risk in Summer.
+PALAGAROSA,1,3.71,3.71,37052.4,LOW,High seasonal risk in Summer.
+N.GHE BUSORO,1,0.46,0.46,0,LOW,High seasonal risk in Summer.
+CORTI POLLINI,1,9.30,9.30,93032.4,LOW,High seasonal risk in Summer.
+BR.CU S. LUCIA,1,0.65,0.65,6505.24,LOW,High seasonal risk in Summer.
+GUTTURU PARDU,1,0.19,0.19,1943.32,LOW,High seasonal risk in Summer.
+TURRUCAU,1,0.47,0.47,4692.43089352,LOW,High seasonal risk in Summer.
+SA SCORISCINA,1,1.02,1.02,10229.8,LOW,High seasonal risk in Summer.
+BACCU SUERGIU,1,13.55,13.55,135488,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU MEDAU DE VOLANTINO,1,1.16,1.16,11600.8,LOW,High seasonal risk in Summer.
+N.GHE MANNU,1,0.25,0.25,2503.22,LOW,High seasonal risk in Summer.
+M. NURAGONE,1,1.40,1.40,0,LOW,High seasonal risk in Summer.
+GIDILI ARRANAS,1,1.97,1.97,19743.7,LOW,High seasonal risk in Summer.
+N.GHE CONCA SA CRESIA,1,2.05,2.05,20475.8,LOW,High seasonal risk in Summer.
+M.ZA SA FRISSA,1,21.50,21.50,214971,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BRUNCU SA GLORIA,1,146.41,146.41,1464119,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+MAURREDDA,1,43.55,43.55,435509,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+RIU DE SU LINARBU,1,9.88,9.88,98843.6,LOW,High seasonal risk in Summer.
+BENALE MURGIA,1,0.28,0.28,707,LOW,High seasonal risk in Summer.
+IS LINUS,1,3.65,3.65,36453.6,LOW,High seasonal risk in Summer.
+SU OCCIDROXIU,1,0.16,0.16,1626.08,LOW,High seasonal risk in Summer.
+MAUSINU,1,52.36,52.36,523563,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+BOI MURRU,1,0.13,0.13,1340.04,LOW,High seasonal risk in Summer.
+IS ALINUS,1,0.20,0.20,1998.14,LOW,High seasonal risk in Summer.
+CUC.RU SA UGA,1,2.20,2.20,22038.9,LOW,High seasonal risk in Summer.
+CUC.RU DI CRONTA,1,0.41,0.41,4135.28,LOW,High seasonal risk in Summer.
+CAMP GREGAS,1,0.16,0.16,1614.38,LOW,High seasonal risk in Summer.
+GORA DE SU PRANU,1,1.49,1.49,14947,LOW,High seasonal risk in Summer.
+M.ZA SU SESSINI,1,5.38,5.38,53815.5,LOW,High seasonal risk in Summer.
+IS BEGAS,1,0.35,0.35,3456.07998658,LOW,High seasonal risk in Summer.
+PAULI MANNU,1,10.36,10.36,103645,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+M. S. MAURO,1,16.95,16.95,169510.357729,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+ARRUINEDDA,1,3.15,3.15,31547.63316251,LOW,High seasonal risk in Summer.
+BR.CU SU SENSU,1,1.73,1.73,17256.4,LOW,High seasonal risk in Summer.
+POD.E SABOTINO,1,0.84,0.84,8366.23,LOW,High seasonal risk in Summer.
+DUES NURAGHES,1,1.33,1.33,13303.8,LOW,High seasonal risk in Summer.
+RIU S'OLLIONI,1,6.07,6.07,60728.2,LOW,High seasonal risk in Summer.
+M. TOVEDDU,1,3.00,3.00,24990.7,LOW,High seasonal risk in Summer.
+MARONZU,1,15.19,15.19,122687,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CUCCU AU,1,23.69,23.69,236867,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CORONA ARRUBIA,1,0.71,0.71,7078.09,LOW,High seasonal risk in Summer.
+BIA PISCINA SA MURTA,1,4.57,4.57,45680.9,LOW,High seasonal risk in Summer.
+PRANU SITZONIS,1,4.91,4.91,49138.28213532,LOW,High seasonal risk in Summer.
+CANALE,1,7.53,7.53,0,LOW,High seasonal risk in Summer.
+IS PILASTRUS,1,4.08,4.08,40784,LOW,High seasonal risk in Summer.
+BENUNZAS,1,0.30,0.30,0,LOW,High seasonal risk in Summer.
+CUC.RU M. EGHEDDA,1,2.20,2.20,4253.66,LOW,High seasonal risk in Summer.
+M. CORONAS ARRUBIAS,1,4.08,4.08,12036.3,LOW,High seasonal risk in Summer.
+CUCCURU CABONIS,1,107.76,107.76,959147,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+GENNA MENGA,1,0.62,0.62,1717.28,LOW,High seasonal risk in Summer.
+FUNT.NA MURTAS,1,20.05,20.05,89641.3,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+S'IBA MANNA,1,1.85,1.85,18483.457901,LOW,High seasonal risk in Summer.
+PALAS MINADROXIU,1,1.45,1.45,5077.12,LOW,High seasonal risk in Summer.
+PITZU MUDULU,1,12.61,12.61,13774.7,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+M. SA FRISSA,1,8.50,8.50,29575.5,LOW,High seasonal risk in Summer.
+TUPPA SA CACCALA,1,3.91,3.91,39101.709414,LOW,High seasonal risk in Summer.
+IS TAPPIAS,1,3.35,3.35,33525.670864,LOW,High seasonal risk in Summer.
+SA FRONTA,1,1.24,1.24,12371.693124,LOW,High seasonal risk in Summer.
+MARRAPEI,1,0.38,0.38,3817.236101,LOW,High seasonal risk in Summer.
+PRANU CASTEDDU,1,6.35,6.35,63460.423375,LOW,High seasonal risk in Summer.
+PRANU OLLIRI,1,3.40,3.40,33952.310966,LOW,High seasonal risk in Summer.
+MONTI ESSI,1,1.86,1.86,18578.786478,LOW,High seasonal risk in Summer.
+SU LUARGIU,1,0.43,0.43,4269.26265,LOW,High seasonal risk in Summer.
+GENNA MASSARGIA,1,1.19,1.19,11917.707295,LOW,High seasonal risk in Summer.
+M.ZA NOXIAPPIDDU,1,0.69,0.69,6924.280447,LOW,High seasonal risk in Summer.
+S'ARGIOLEDDA,1,0.29,0.29,2853.438636,LOW,High seasonal risk in Summer.
+TERRAMAINI,1,0.31,0.31,3095.511365,LOW,High seasonal risk in Summer.
+R. SADURU,1,0.76,0.76,7603.286182,LOW,High seasonal risk in Summer.
+CAMPU CADDAXIU,1,0.69,0.69,6865.061989,LOW,High seasonal risk in Summer.
+CORTE SU FENU,1,1.07,1.07,10734.392485,LOW,High seasonal risk in Summer.
+BINGIA S'OMU,1,0.70,0.70,7025.117315,LOW,High seasonal risk in Summer.
+TUVARIU,1,0.28,0.28,2753.014553,LOW,High seasonal risk in Summer.
+C. MOTTAIOLA,1,101.71,101.71,455126,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+R. LITOMBROSO,1,0.34,0.34,0,LOW,High seasonal risk in Summer.
+BAU SA TAULA,1,0.10,0.10,1003.118666,LOW,High seasonal risk in Summer.
+M. CUCCUI,1,0.63,0.63,6298.013585,LOW,High seasonal risk in Summer.
+ARREIXI,1,42.76,42.76,427603.66705,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+S.S. DI PALAU,1,0.64,0.64,0,LOW,High seasonal risk in Summer.
+M.ZA SU DUTTURU,1,1.57,1.57,15702.19334,LOW,High seasonal risk in Summer.
+CARDERAS,1,0.24,0.24,2384.047131,LOW,High seasonal risk in Summer.
+GENNA DE SERRENTI,1,0.37,0.37,3702.020372,LOW,High seasonal risk in Summer.
+C. CABRIOLU,1,0.11,0.11,1079.057709,LOW,High seasonal risk in Summer.
+SEDDUS,1,0.50,0.50,4956.953804,LOW,High seasonal risk in Summer.
+MILLAMARA,1,0.20,0.20,1958.269301,LOW,High seasonal risk in Summer.
+R. FLUMINERA,1,0.83,0.83,8349.095443,LOW,High seasonal risk in Summer.
+MITZA MODDITZI,1,5.15,5.15,51468.412296,LOW,High seasonal risk in Summer.
+C. PIANO,1,4.07,4.07,40655.140682,LOW,High seasonal risk in Summer.
+CORONGIU DE PERDU SECCI,1,17.09,17.09,63761,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PALA S'OLLASTUS,1,0.60,0.60,6020.25129669,LOW,High seasonal risk in Summer.
+GORA DON CIUCCIU,1,2.25,2.25,22484.24215506,LOW,High seasonal risk in Summer.
+FUNT.NA DE GIOSSU,1,0.51,0.51,5060.40804657,LOW,High seasonal risk in Summer.
+C. SIPPIU,1,2.63,2.63,26306.56942277,LOW,High seasonal risk in Summer.
+RIU CIXI,1,0.47,0.47,4679.09544494,LOW,High seasonal risk in Summer.
+NURAGHE CARRAXIU,1,3.02,3.02,30200.04621723,LOW,High seasonal risk in Summer.
+S'ECCA SA TRAIA,1,6.73,6.73,67250.32157599,LOW,High seasonal risk in Summer.
+M. SATURNO,1,3.42,3.42,34221.58424612,LOW,High seasonal risk in Summer.
+CUCCURU MONTE FILIPPU,1,12.29,12.29,69561.91166916,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+GORA PITANU MAXIA,1,2.54,2.54,25380.4285123,LOW,High seasonal risk in Summer.
+BACCU S'OMU,1,82.03,82.03,820347.85693837,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+BARRU,1,27.35,27.35,273537.99061316,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PABISTERIS,1,0.55,0.55,5502.68625384,LOW,High seasonal risk in Summer.
+TUPPECAVIA,1,12.57,12.57,125698.94805993,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SA TUPPA,1,221.59,221.59,1489100,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+SS. COSIMO E DAMIANO,1,1.20,1.20,11985.40159338,LOW,High seasonal risk in Summer.
+BR.CU NUREGUMINI,1,3.65,3.65,36499.06891978,LOW,High seasonal risk in Summer.
+COSTERA FUNTANA NOA,1,0.68,0.68,6835.4595244,LOW,High seasonal risk in Summer.
+GUTTURU MITZA ORRU,1,10.95,10.95,109534.8409393,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CASTANGIOLA,1,1.90,1.90,19029.79747066,LOW,High seasonal risk in Summer.
+SORIGHINA,1,11.69,11.69,116926.21043482,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+RIU PAU,1,2.61,2.61,26052.11392495,LOW,High seasonal risk in Summer.
+PAULI MELA,1,8.58,8.58,85752.1335007,LOW,High seasonal risk in Summer.
+PALA MARGIANI,1,6.86,6.86,68602.3180521,LOW,High seasonal risk in Summer.
+BR.CU SENZU,1,1.21,1.21,12138.75030654,LOW,High seasonal risk in Summer.
+CRABILIS,1,8.39,8.39,83941.75444473,LOW,High seasonal risk in Summer.
+IS ARENAS,1,2.63,2.63,26291.03511989,LOW,High seasonal risk in Summer.
+SORIGINA,1,7.94,7.94,79416.60394871,LOW,High seasonal risk in Summer.
+BACCU MUXIU,1,5.41,5.41,54134.82168636,LOW,High seasonal risk in Summer.
+GUTTURU RUINA FIGUS,1,2.38,2.38,23773.31193297,LOW,High seasonal risk in Summer.
+N.GHE ERRI,1,1.80,1.80,18049.00266019,LOW,High seasonal risk in Summer.
+PLANU MANDAS,1,1.76,1.76,17627.51933485,LOW,High seasonal risk in Summer.
+S.S. CENTRALE SARDA,1,2.48,2.48,24813.32867469,LOW,High seasonal risk in Summer.
+S'ACQUA SALIA,1,1.54,1.54,15401.12429162,LOW,High seasonal risk in Summer.
+SU PRANU EFIS,1,1.54,1.54,15352.06053217,LOW,High seasonal risk in Summer.
+RIU CANALI,1,2.10,2.10,21044.94522526,LOW,High seasonal risk in Summer.
+COSTERA SU NARBONI,1,0.48,0.48,4786.26455944,LOW,High seasonal risk in Summer.
+CAN.LE S. LUXIRIU,1,1.83,1.83,18303.61000812,LOW,High seasonal risk in Summer.
+RIU PERDOSU,1,0.40,0.40,4012.13569867,LOW,High seasonal risk in Summer.
+SURCADA,1,1.57,1.57,15716.91771451,LOW,High seasonal risk in Summer.
+FUNTANA GIORGI,1,0.21,0.21,2095.24700454,LOW,High seasonal risk in Summer.
+MURA MAIORE,1,0.23,0.23,0,LOW,High seasonal risk in Summer.
+PRANU SIARA,1,7.75,7.75,77545.49815293,LOW,High seasonal risk in Summer.
+NARIUGUS,1,5.85,5.85,58507.74997363,LOW,High seasonal risk in Summer.
+SA MARMIDDA,1,4.19,4.19,41902.65952766,LOW,High seasonal risk in Summer.
+CUCCURU FIGU,1,1.02,1.02,10206.10156294,LOW,High seasonal risk in Summer.
+PUBUXEDDU,1,2.30,2.30,22978.70015056,LOW,High seasonal risk in Summer.
+IZZURREDDOS,1,3.98,3.98,0,LOW,High seasonal risk in Summer.
+GENNIAU,1,0.20,0.20,2021.64626645,LOW,High seasonal risk in Summer.
+BR.CU SA TUVARA,1,0.22,0.22,0,LOW,High seasonal risk in Summer.
+MITZA COZZINA,1,0.27,0.27,2726.94386514,LOW,High seasonal risk in Summer.
+SU PRANI 'E SA MOLA,1,0.45,0.45,0,LOW,High seasonal risk in Summer.
+CUILI MURVONI,1,1.22,1.22,12154.3304867,LOW,High seasonal risk in Summer.
+M.ZA BACCU MORRUS,1,46.73,46.73,336187,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+M. CARROGAS,1,137.22,137.22,507219.50446324,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+C.SE S'UTTURU IS ARROLIS,1,15.56,15.56,117303,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CORTI SU SECCI,1,6.45,6.45,64511.56481001,LOW,High seasonal risk in Summer.
+M.ZA SU GRILLU,1,10.45,10.45,104523.55084622,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+C. CUCCA,1,0.30,0.30,3007.896901,LOW,High seasonal risk in Summer.
+M.ZA SISINNI BOI,1,6.67,6.67,66684.90232619,LOW,High seasonal risk in Summer.
+T. QUIRRA,1,22.07,22.07,220686.12880175,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+M.ZA FRIDDA SA COSTA,1,0.46,0.46,4623.93698012,LOW,High seasonal risk in Summer.
+C. MULAS,1,2.21,2.21,22060.92679929,LOW,High seasonal risk in Summer.
+M. ARESTI,1,49.87,49.87,239802.35718739,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+TACCU DE NURRI,1,10.28,10.28,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU BRACCU,1,0.26,0.26,2625,LOW,High seasonal risk in Summer.
+RIU SA GRUTTA,1,0.15,0.15,0,LOW,High seasonal risk in Summer.
+PARADISO,1,0.15,0.15,0,LOW,High seasonal risk in Summer.
+AXINA DE FORRA,1,0.10,0.10,0,LOW,High seasonal risk in Summer.
+PUNTA DELLE OCHE,1,0.64,0.64,0,LOW,High seasonal risk in Summer.
+RIU DI GUDURI,1,0.42,0.42,4164.1,LOW,High seasonal risk in Summer.
+SU PASSU DE BO CERBUS,1,1.91,1.91,0,LOW,High seasonal risk in Summer.
+MARROCHEDU,1,0.68,0.68,6835.54,LOW,High seasonal risk in Summer.
+CUCCURU DE MESU,1,0.62,0.62,6157.4,LOW,High seasonal risk in Summer.
+GIANCHIN,1,0.36,0.36,3559.44,LOW,High seasonal risk in Summer.
+ISCRA IS ANADES,1,2.60,2.60,11000.63770429,LOW,High seasonal risk in Summer.
+GUARDIA SU MERTI,1,1.56,1.56,15593.7,LOW,High seasonal risk in Summer.
+PISCINI,1,0.51,0.51,5078,LOW,High seasonal risk in Summer.
+BR.CU CASIDARGIU,1,1.54,1.54,0,LOW,High seasonal risk in Summer.
+RIU DE SONU,1,7.83,7.83,78308.4,LOW,High seasonal risk in Summer.
+SERRA 'E TREMINIS,1,23.20,23.20,232038,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SERRA MANDRA,1,0.96,0.96,0,LOW,High seasonal risk in Summer.
+M. ARCEDDA,1,0.37,0.37,0,LOW,High seasonal risk in Summer.
+SU MERTI,1,0.26,0.26,2626.49,LOW,High seasonal risk in Summer.
+M. NASSETTA,1,0.64,0.64,6422.07,LOW,High seasonal risk in Summer.
+C. FALCHI,1,0.31,0.31,3125.04,LOW,High seasonal risk in Summer.
+S. GIUSEPPE,1,0.53,0.53,5288.87,LOW,High seasonal risk in Summer.
+FLUMENTEPIDO,1,0.86,0.86,8643.8,LOW,High seasonal risk in Summer.
+MATTIXEDDA,1,0.16,0.16,1580.48,LOW,High seasonal risk in Summer.
+NURAXI FIGUS,1,0.95,0.95,9472.54,LOW,High seasonal risk in Summer.
+PRANU DE IDDA,1,1.19,1.19,11944.04772547,LOW,High seasonal risk in Summer.
+MASONI FRETTA,1,0.40,0.40,4036.63859532,LOW,High seasonal risk in Summer.
+MITZA ARRAMMINI,1,1.98,1.98,19820.6,LOW,High seasonal risk in Summer.
+S. LORENZO,1,0.64,0.64,6367.41,LOW,High seasonal risk in Summer.
+CAST.O DELLA FAVA,1,2.09,2.09,20852.1,LOW,High seasonal risk in Summer.
+BRUNCU PIROSU,1,1.71,1.71,17090.9,LOW,High seasonal risk in Summer.
+SANTU XENTU,1,0.15,0.15,1542.65,LOW,High seasonal risk in Summer.
+TERRESOLI,1,0.22,0.22,2207.96,LOW,High seasonal risk in Summer.
+R. S. MILANO,1,1.35,1.35,13513.7,LOW,High seasonal risk in Summer.
+IS TONEDDUS,1,0.41,0.41,4091.49,LOW,High seasonal risk in Summer.
+MITZA SU FERRU,1,0.19,0.19,1918.6,LOW,High seasonal risk in Summer.
+CANT.RA M. PERDOSU,1,8.69,8.69,86862.3,LOW,High seasonal risk in Summer.
+S'ARRUARXIU,1,2.50,2.50,24992,LOW,High seasonal risk in Summer.
+MEDAU PEDDIS,1,6.92,6.92,69159.4,LOW,High seasonal risk in Summer.
+MIZZITEDDAS,1,0.14,0.14,1405.55,LOW,High seasonal risk in Summer.
+TRUNCU DE IS TANAS,1,0.61,0.61,6059.4,LOW,High seasonal risk in Summer.
+RIU MANNU,1,0.63,0.63,6300.11,LOW,High seasonal risk in Summer.
+SEDDA UMBROSA,1,0.99,0.99,9917.05,LOW,High seasonal risk in Summer.
+SERRA LURDAGU,1,0.30,0.30,3042.21,LOW,High seasonal risk in Summer.
+BAU S'ARENA,1,16.24,16.24,162379,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+R. PALMAS,1,0.22,0.22,2223.17,LOW,High seasonal risk in Summer.
+P.TA S'ARENA,1,0.49,0.49,0,LOW,High seasonal risk in Summer.
+IS PEIS,1,0.57,0.57,5732.58,LOW,High seasonal risk in Summer.
+IS FIASCUS,1,1.37,1.37,13712.6,LOW,High seasonal risk in Summer.
+MITZOTUS,1,1.03,1.03,10326.4,LOW,High seasonal risk in Summer.
+CANNAS,1,1.16,1.16,2351,LOW,High seasonal risk in Summer.
+POD.E N. 1,1,0.63,0.63,6271.66,LOW,High seasonal risk in Summer.
+BONEGOSSIO,1,0.13,0.13,600.336,LOW,High seasonal risk in Summer.
+TERRERA,1,1.19,1.19,0,LOW,High seasonal risk in Summer.
+PARINGIANU,1,2.42,2.42,24238.6,LOW,High seasonal risk in Summer.
+FUNT.NA PEDDI'E CANI,1,8.35,8.35,0,LOW,High seasonal risk in Summer.
+MORIMENTA DE SUSU,1,19.29,19.29,117777,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SA P.TA 'E CANDIAZZUS,1,0.12,0.12,452.287,LOW,High seasonal risk in Summer.
+N.GHE DOM'E S'ORCU,1,1.48,1.48,14826.059251,LOW,High seasonal risk in Summer.
+BUSANCA,1,0.14,0.14,0,LOW,High seasonal risk in Summer.
+SU DE GANAU,1,1.62,1.62,16165.4422,LOW,High seasonal risk in Summer.
+PREDI ONNIS,1,0.15,0.15,1504.185148,LOW,High seasonal risk in Summer.
+C. MAMELI,1,3.24,3.24,32410.077972,LOW,High seasonal risk in Summer.
+C. ISCIOLUS,1,1.44,1.44,14407.648766,LOW,High seasonal risk in Summer.
+BAU FORADAS,1,0.27,0.27,2702.06827789,LOW,High seasonal risk in Summer.
+PONTE MURTAS,1,1.40,1.40,13953.51838734,LOW,High seasonal risk in Summer.
+SCHIRRU,1,0.79,0.79,7906.406937,LOW,High seasonal risk in Summer.
+TRAMALITZA,1,0.33,0.33,3333.964573,LOW,High seasonal risk in Summer.
+GUARDIA MANNA,1,1.25,1.25,12161.80449321,LOW,High seasonal risk in Summer.
+GOLERI,1,2.65,2.65,26548.139863,LOW,High seasonal risk in Summer.
+SERRA ELIAS,1,3.19,3.19,0,LOW,High seasonal risk in Summer.
+SUTTA CRESIA,1,1.47,1.47,14746,LOW,High seasonal risk in Summer.
+FUNT.NA SU CARRARGIU,1,0.50,0.50,5027,LOW,High seasonal risk in Summer.
+RIU ABBAFRIDA,1,4.04,4.04,0,LOW,High seasonal risk in Summer.
+MASONE MAORE,1,0.47,0.47,4694,LOW,High seasonal risk in Summer.
+C. PISTIS,1,1.20,1.20,10778.75737413,LOW,High seasonal risk in Summer.
+S.S. DI BUDDUSO' E DEL COR,1,147.16,147.16,0,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+SA SERRA SOZZASTRU,1,0.89,0.89,0,LOW,High seasonal risk in Summer.
+R. DE SU TETTIONI,1,5.99,5.99,0,LOW,High seasonal risk in Summer.
+SOSPINU,1,6.60,6.60,65950.8,LOW,High seasonal risk in Summer.
+S.RA DE MESU,1,1.92,1.92,19191.8,LOW,High seasonal risk in Summer.
+OZZASTREDDU,1,4.24,4.24,0,LOW,High seasonal risk in Summer.
+SA LUZZANA,1,0.45,0.45,4506.79,LOW,High seasonal risk in Summer.
+EREULAS,1,4.77,4.77,47706.3,LOW,High seasonal risk in Summer.
+C. ZOLA,1,1.08,1.08,0,LOW,High seasonal risk in Summer.
+ISPIDDOSU,1,8.25,8.25,82515.9,LOW,High seasonal risk in Summer.
+MAD.NA DELLA PACE,1,1.07,1.07,0,LOW,High seasonal risk in Summer.
+BINZA 'E SENES,1,1.53,1.53,0,LOW,High seasonal risk in Summer.
+C. CUBEDDU,1,1.37,1.37,0,LOW,High seasonal risk in Summer.
+GREMANU,1,0.64,0.64,0,LOW,High seasonal risk in Summer.
+C. BRODERI,1,0.38,0.38,0,LOW,High seasonal risk in Summer.
+ISTIUNELE,1,0.88,0.88,0,LOW,High seasonal risk in Summer.
+NURAGHE PIZZINNU,1,1.03,1.03,10301.8,LOW,High seasonal risk in Summer.
+SA TROVODDA,1,0.46,0.46,0,LOW,High seasonal risk in Summer.
+PIZZINNONE,1,0.61,0.61,6122.58,LOW,High seasonal risk in Summer.
+MURELARDU,1,5.88,5.88,58764.4,LOW,High seasonal risk in Summer.
+SOS PALONES,1,0.64,0.64,0,LOW,High seasonal risk in Summer.
+SORROTA,1,0.71,0.71,7050.7,LOW,High seasonal risk in Summer.
+PISCHINA BALENTE,1,2.39,2.39,0,LOW,High seasonal risk in Summer.
+RIU SAULE,1,0.43,0.43,0,LOW,High seasonal risk in Summer.
+C. MELONI,1,0.17,0.17,1686.06,LOW,High seasonal risk in Summer.
+MANDRA EBBAS,1,0.29,0.29,2935.98,LOW,High seasonal risk in Summer.
+SU VACCHILEDDU,1,4.28,4.28,42818.5,LOW,High seasonal risk in Summer.
+GHIRIAI,1,0.29,0.29,2863.53,LOW,High seasonal risk in Summer.
+GHISTORAI,1,2.91,2.91,29126.6,LOW,High seasonal risk in Summer.
+CAMJAI,1,0.58,0.58,5767.99,LOW,High seasonal risk in Summer.
+FERULEDDAI,1,1.53,1.53,0,LOW,High seasonal risk in Summer.
+FUNT.NA NOA,1,0.13,0.13,1281.48,LOW,High seasonal risk in Summer.
+N.GHE ISPERU,1,0.52,0.52,0,LOW,High seasonal risk in Summer.
+SA ORBANA,1,1.24,1.24,0,LOW,High seasonal risk in Summer.
+R. S. CATERINA,1,3.80,3.80,0,LOW,High seasonal risk in Summer.
+MUCCORES,1,1.80,1.80,18035.1,LOW,High seasonal risk in Summer.
+N.GHE PISCHEDDA,1,15.95,15.95,159480,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PUTTU 'E RIU,1,12.49,12.49,124899,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BARCHICHEDDA,1,0.19,0.19,1855.92,LOW,High seasonal risk in Summer.
+SU TRUNCU,1,19.00,19.00,190012,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BADU 'E DONNA,1,0.41,0.41,4072.46,LOW,High seasonal risk in Summer.
+M. INCAVADDU,1,0.18,0.18,1841.03,LOW,High seasonal risk in Summer.
+PRATO SARDO,1,7.93,7.93,27080.4,LOW,High seasonal risk in Summer.
+BINZAS ISPERDIAS,1,1.15,1.15,11493.4,LOW,High seasonal risk in Summer.
+FUNT.NA PROSPERO,1,0.79,0.79,7904.1,LOW,High seasonal risk in Summer.
+CANT.RA FUNT.NA CODA,1,0.28,0.28,2778.71,LOW,High seasonal risk in Summer.
+TERRA NOBILI,1,4.81,4.81,0,LOW,High seasonal risk in Summer.
+CANALI FILIXI,1,1.18,1.18,11849,LOW,High seasonal risk in Summer.
+MITTI,1,13.52,13.52,26727.3,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+FRUNCU SA CRAPA,1,2.45,2.45,15490.5,LOW,High seasonal risk in Summer.
+M. SU GOLZU,1,2.49,2.49,16194.4,LOW,High seasonal risk in Summer.
+M. SU NOTAIU,1,4.71,4.71,6472.91,LOW,High seasonal risk in Summer.
+N.GHE DE ORIZANNE,1,3.68,3.68,0,LOW,High seasonal risk in Summer.
+BADDE MANNA,1,10.18,10.18,95591.2,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU CRASTU,1,0.63,0.63,0,LOW,High seasonal risk in Summer.
+SA PALA'E SU TRUNCU,1,11.37,11.37,13440.1,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+TINNIAS,1,53.94,53.94,68476.5,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+R. BISANI,1,0.65,0.65,1025.53,LOW,High seasonal risk in Summer.
+M. ARGIAPIAI,1,14.10,14.10,10970.5,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CU.LE QUALBU,1,47.20,47.20,67080.2,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+RIU FUNTANA GASONES,1,134.90,134.90,1126772,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+F. TIRSO,1,8.49,8.49,69415.4,LOW,High seasonal risk in Summer.
+S. NARCISO,1,16.48,16.48,164808.22372204,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SERIGONE,1,2.14,2.14,2407,LOW,High seasonal risk in Summer.
+RISAS LUAS,1,0.73,0.73,4697.17,LOW,High seasonal risk in Summer.
+FUNT.NA CONZERI,1,11.89,11.89,39932.3,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU PRADU,1,123.18,123.18,685951,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+C. MARONGIU,1,6.58,6.58,45922,LOW,High seasonal risk in Summer.
+PRATICHEDDU,1,0.70,0.70,0,LOW,High seasonal risk in Summer.
+RIU 'E BRONTU,1,4.79,4.79,40969.2,LOW,High seasonal risk in Summer.
+P.TA SU MERCANTE,1,0.33,0.33,967.77108515,LOW,High seasonal risk in Summer.
+PRANU 'E PIRAS,1,2.91,2.91,9022,LOW,High seasonal risk in Summer.
+TORROSAI,1,0.51,0.51,0,LOW,High seasonal risk in Summer.
+SA PAULE,1,8.53,8.53,0,LOW,High seasonal risk in Summer.
+S'ADDE,1,0.32,0.32,0,LOW,High seasonal risk in Summer.
+SU PADRU,1,1.28,1.28,12814.41523588,LOW,High seasonal risk in Summer.
+BERRINAU,1,7.58,7.58,0,LOW,High seasonal risk in Summer.
+SA TANCA MANNA,1,54.58,54.58,321700.06411406,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+CANALE 'E CHERCU,1,1.41,1.41,0,LOW,High seasonal risk in Summer.
+SAE LADDIS,1,3.50,3.50,0,LOW,High seasonal risk in Summer.
+FUNT.NA PORTAIOLA,1,12.15,12.15,89348.63213342,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SA MATTA DE SA IDE,1,0.40,0.40,4047.91275587,LOW,High seasonal risk in Summer.
+TULESI,1,7.99,7.99,39309.83348776,LOW,High seasonal risk in Summer.
+CUBADDA,1,9.17,9.17,51300,LOW,High seasonal risk in Summer.
+PADRU LONGU,1,1.62,1.62,16194.3448212,LOW,High seasonal risk in Summer.
+F.TE SA PETTURINA,1,0.16,0.16,1619.7915259,LOW,High seasonal risk in Summer.
+TUTTURIGHE,1,7.02,7.02,10085.21774181,LOW,High seasonal risk in Summer.
+S'ABBAIA,1,3.06,3.06,30602.89028455,LOW,High seasonal risk in Summer.
+R. 'E S'ADDE,1,13.10,13.10,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE PEDDIO,1,0.77,0.77,7678.36770021,LOW,High seasonal risk in Summer.
+TIDDIRIS,1,2.30,2.30,23048.95791762,LOW,High seasonal risk in Summer.
+OVOLACCIO,1,0.48,0.48,0,LOW,High seasonal risk in Summer.
+MURA PRANOSA,1,0.92,0.92,9191.95911781,LOW,High seasonal risk in Summer.
+SU NOU E PEDRAMAGGIORE,1,0.08,0.08,820.14161302,LOW,High seasonal risk in Summer.
+FUNT.NA PIARZA,1,0.73,0.73,7301.4509123,LOW,High seasonal risk in Summer.
+N.GHE PISCHINARZA,1,0.21,0.21,2112.80187233,LOW,High seasonal risk in Summer.
+BIGHINZONE,1,3.98,3.98,39775.18839761,LOW,High seasonal risk in Summer.
+N.GHE PUBUTTU,1,0.25,0.25,2481.43459886,LOW,High seasonal risk in Summer.
+M. MAGURI,1,0.37,0.37,2954.58944534,LOW,High seasonal risk in Summer.
+SEDDA 'E RUGHES,1,1.52,1.52,1056.53947249,LOW,High seasonal risk in Summer.
+C. MAZZONE,1,0.57,0.57,0,LOW,High seasonal risk in Summer.
+FUNT.NA GIAGA,1,2.25,2.25,7625.6773223,LOW,High seasonal risk in Summer.
+OZZASTRERA,1,0.54,0.54,5391.51906273,LOW,High seasonal risk in Summer.
+SU NATOLU BIANCU,1,6.78,6.78,0,LOW,High seasonal risk in Summer.
+C. SCARPA,1,4.60,4.60,23728.00676109,LOW,High seasonal risk in Summer.
+TANCA SA SEDDAS,1,0.09,0.09,883,LOW,High seasonal risk in Summer.
+PRADU CANNAS,1,19.50,19.50,195023,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+FUNT.NA TOSCONO,1,13.56,13.56,135621,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+M.O ZIU PULLONE,1,0.11,0.11,1081.51225628,LOW,High seasonal risk in Summer.
+SETTE CHERCOS,1,33.43,33.43,240605.15933014,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+BURAMENE,1,9.33,9.33,93252,LOW,High seasonal risk in Summer.
+R. DE OROLATU,1,74.40,74.40,743965.1982046,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU MUZZONE,1,383.57,383.57,3426743,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+SINDALAI,1,0.82,0.82,8213,LOW,High seasonal risk in Summer.
+N.GHE S. BARBARA,1,0.10,0.10,5346612,LOW,High seasonal risk in Summer.
+ADDE IDE,1,15.23,15.23,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE URIGHE,1,1.50,1.50,14990,LOW,High seasonal risk in Summer.
+SOS PIAGHESOS,1,17.26,17.26,142478,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+P.TE OINU,1,0.26,0.26,2590,LOW,High seasonal risk in Summer.
+FUNT.NA COBERCADAS,1,0.14,0.14,0,LOW,High seasonal risk in Summer.
+RIU BINNORI,1,2.42,2.42,24224.31021594,LOW,High seasonal risk in Summer.
+PEDRALTARE,1,2.21,2.21,22116.24166,LOW,High seasonal risk in Summer.
+F.TA S. LEONARDO,1,0.22,0.22,0,LOW,High seasonal risk in Summer.
+CORTE LACANA,1,6.85,6.85,68474.12103936,LOW,High seasonal risk in Summer.
+P.TE ZIERA,1,1.42,1.42,14193.84266674,LOW,High seasonal risk in Summer.
+CRASTU ABILE,1,0.14,0.14,6030812.43198457,LOW,High seasonal risk in Summer.
+CULUVONE,1,1.19,1.19,0,LOW,High seasonal risk in Summer.
+MUNTESILE,1,2.86,2.86,28613.8,LOW,High seasonal risk in Summer.
+TURRIDANA,1,3.05,3.05,30482,LOW,High seasonal risk in Summer.
+R. DE FLUMINI DE IDE,1,5.67,5.67,56680.6,LOW,High seasonal risk in Summer.
+MATTA FRAILE,1,0.97,0.97,0,LOW,High seasonal risk in Summer.
+LODDAEDDU,1,0.23,0.23,0,LOW,High seasonal risk in Summer.
+TUDERA,1,4.02,4.02,0,LOW,High seasonal risk in Summer.
+SORG.TE BADDE PUTTU,1,0.33,0.33,3303.22,LOW,High seasonal risk in Summer.
+CASTANNURI,1,0.17,0.17,1680.06,LOW,High seasonal risk in Summer.
+SALDINU,1,5.00,5.00,49953.6,LOW,High seasonal risk in Summer.
+SANTINA MANNA,1,0.97,0.97,9687.26,LOW,High seasonal risk in Summer.
+CAMPU DE CHILIVANI,1,6.57,6.57,65681,LOW,High seasonal risk in Summer.
+GABARU,1,5.04,5.04,50442.3,LOW,High seasonal risk in Summer.
+BIUNISI,1,16.17,16.17,161653,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PETTINADU,1,0.64,0.64,6361.96,LOW,High seasonal risk in Summer.
+C.S. GIOVANNI,1,5.34,5.34,53429.9,LOW,High seasonal risk in Summer.
+SA TERRA RUJA,1,0.52,0.52,0,LOW,High seasonal risk in Summer.
+FUNT.NA CAPPAI,1,1.91,1.91,19068.8,LOW,High seasonal risk in Summer.
+CAST.O DI BURGOS,1,0.90,0.90,0,LOW,High seasonal risk in Summer.
+C. ARCA,1,1.82,1.82,18192.3,LOW,High seasonal risk in Summer.
+M. BRANCA,1,4.24,4.24,42400.6,LOW,High seasonal risk in Summer.
+M. TILEPERE,1,10.45,10.45,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+MURRUZZULU,1,0.83,0.83,8347.79,LOW,High seasonal risk in Summer.
+PEDRA MINCINA,1,0.25,0.25,0,LOW,High seasonal risk in Summer.
+SELITTU,1,0.19,0.19,1913.03,LOW,High seasonal risk in Summer.
+RAMIGHES,1,0.27,0.27,0,LOW,High seasonal risk in Summer.
+SA PEDRA LADA,1,0.21,0.21,0,LOW,High seasonal risk in Summer.
+NODU S. FRANCESCO,1,1.44,1.44,0,LOW,High seasonal risk in Summer.
+JANNA BASSA,1,0.23,0.23,0,LOW,High seasonal risk in Summer.
+N.GHE TANCA NOA,1,3.16,3.16,31634.8,LOW,High seasonal risk in Summer.
+GIUANNE PES,1,0.26,0.26,0,LOW,High seasonal risk in Summer.
+SAS ATTAS,1,3.58,3.58,0,LOW,High seasonal risk in Summer.
+SETTE CHELCOS,1,1.36,1.36,0,LOW,High seasonal risk in Summer.
+BABBANTONI,1,0.84,0.84,0,LOW,High seasonal risk in Summer.
+TOMODDOI,1,0.32,0.32,0,LOW,High seasonal risk in Summer.
+S.S. SETT.LE SARDA,1,0.22,0.22,0,LOW,High seasonal risk in Summer.
+S. LARENTU,1,1.36,1.36,0,LOW,High seasonal risk in Summer.
+PINN.TA ISTEDDOLI,1,12.33,12.33,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE ALVU,1,0.82,0.82,0,LOW,High seasonal risk in Summer.
+P.TA MELAS,1,0.41,0.41,0,LOW,High seasonal risk in Summer.
+BADDE PIRA,1,1.72,1.72,17183.5,LOW,High seasonal risk in Summer.
+SAN.RIO V.LA MANAI,1,1.09,1.09,0,LOW,High seasonal risk in Summer.
+RIU COSTA DE CALARIGHES,1,28.14,28.14,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SA ZURA,1,3.18,3.18,0,LOW,High seasonal risk in Summer.
+M. CANNAS,1,9.67,9.67,0,LOW,High seasonal risk in Summer.
+BADDE ROSA,1,3.22,3.22,32235.1,LOW,High seasonal risk in Summer.
+R. SU LOSTRU,1,0.60,0.60,0,LOW,High seasonal risk in Summer.
+N.GHE S'EBBAIA,1,3.34,3.34,0,LOW,High seasonal risk in Summer.
+FUNT.NA SA CONZA,1,0.84,0.84,0,LOW,High seasonal risk in Summer.
+STRUVINA,1,70.16,70.16,701583,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+BALZI,1,2.69,2.69,0,LOW,High seasonal risk in Summer.
+MONTIGIU CORONAS,1,1.91,1.91,19140,LOW,High seasonal risk in Summer.
+CAMEDDA,1,297.65,297.65,0,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+LACCANA 'E PEDRU,1,15.06,15.06,142134,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+RIU CANNUZZU,1,22.63,22.63,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+FRADES ISTICAS,1,4.03,4.03,24793.5,LOW,High seasonal risk in Summer.
+C.SE MARIANI,1,1.16,1.16,0,LOW,High seasonal risk in Summer.
+C. S'ALIDERRU,1,22.24,22.24,214472,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PINN.TA BOSTIFURRU,1,1.25,1.25,0,LOW,High seasonal risk in Summer.
+MURA ZEDDA,1,217.21,217.21,1695641,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+M. ZEPPARA,1,5.08,5.08,0,LOW,High seasonal risk in Summer.
+PASCIALE SIGHINIS,1,413.22,413.22,58330.5,HIGH,High seasonal risk in Summer. Propensity for large-scale events detected.
+MARRADA,1,0.91,0.91,3550.97,LOW,High seasonal risk in Summer.
+P.TA BASCIA,1,0.37,0.37,0,LOW,High seasonal risk in Summer.
+NODU ERIGHINA,1,0.53,0.53,0,LOW,High seasonal risk in Summer.
+S'AIDU DE SA FROMMA,1,7.49,7.49,0,LOW,High seasonal risk in Summer.
+MURA UPPULOS,1,25.66,25.66,256588.1,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SA MANDRA NOA,1,1.75,1.75,0,LOW,High seasonal risk in Summer.
+SU PARIS DE SEA,1,17.02,17.02,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+SU FURIGHESU,1,2.94,2.94,29395.21601374,LOW,High seasonal risk in Summer.
+TUSCANU,1,2.55,2.55,5928.56,LOW,High seasonal risk in Summer.
+M. MARZEDDU,1,5.16,5.16,10337.3,LOW,High seasonal risk in Summer.
+MONTE OE,1,3.93,3.93,0,LOW,High seasonal risk in Summer.
+PIRASTRU MELE,1,2.19,2.19,0,LOW,High seasonal risk in Summer.
+S'ASPRU,1,2.09,2.09,20906.40806098,LOW,High seasonal risk in Summer.
+BRIONIS,1,0.23,0.23,2278.42635931,LOW,High seasonal risk in Summer.
+C. URGIAS,1,0.59,0.59,5944.56337076,LOW,High seasonal risk in Summer.
+C. SINI,1,123.14,123.14,408201.29592448,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+MALTINAGHE,1,2.53,2.53,25340.53841185,LOW,High seasonal risk in Summer.
+MALA MORRER,1,0.43,0.43,4278.77515727,LOW,High seasonal risk in Summer.
+CANT.RA RUDAS,1,33.04,33.04,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE PULPAZOS,1,6.26,6.26,0,LOW,High seasonal risk in Summer.
+MATTERAGHENTU,1,2.26,2.26,22629.27911921,LOW,High seasonal risk in Summer.
+SA SEGADA,1,0.44,0.44,0,LOW,High seasonal risk in Summer.
+TANIELLE,1,37.59,37.59,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE ISCALA REALES,1,0.68,0.68,0,LOW,High seasonal risk in Summer.
+GIORZI PIRA,1,0.88,0.88,0,LOW,High seasonal risk in Summer.
+FUNTNA CANIDANULL,1,2.19,2.19,21883,LOW,High seasonal risk in Summer.
+MOLINEDDU,1,0.24,0.24,2381,LOW,High seasonal risk in Summer.
+PAULU PIZZINNU,1,26.75,26.75,142195,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+C. SA ISOLZA,1,7.87,7.87,0,LOW,High seasonal risk in Summer.
+C. DOMA,1,1.33,1.33,13258,LOW,High seasonal risk in Summer.
+N.GHE NIEDDU,1,2.48,2.48,0,LOW,High seasonal risk in Summer.
+CHENTU POLCOS,1,0.33,0.33,0,LOW,High seasonal risk in Summer.
+PAULI ANNUAS,1,1.32,1.32,0,LOW,High seasonal risk in Summer.
+SU QUADROXIU,1,3.06,3.06,30583.6,LOW,High seasonal risk in Summer.
+TERRANOVA,1,4.76,4.76,47640.3,LOW,High seasonal risk in Summer.
+NUSCAI,1,11.79,11.79,117944,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+CALCINAXIUS,1,0.31,0.31,3066.81,LOW,High seasonal risk in Summer.
+IS CUCCURUS,1,4.75,4.75,47535.3,LOW,High seasonal risk in Summer.
+N.GHE FUNTANA GRECU,1,0.49,0.49,0,LOW,High seasonal risk in Summer.
+N.GHE STAMPASIA,1,11.90,11.90,97127,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+FUNT.NA URALLA,1,0.40,0.40,3989.47,LOW,High seasonal risk in Summer.
+R. SA GRUTTA,1,0.36,0.36,3563.91,LOW,High seasonal risk in Summer.
+F.TE PIRAFERTA,1,0.40,0.40,4044.95,LOW,High seasonal risk in Summer.
+OSP.LE SCALA,1,2.98,2.98,11123,LOW,High seasonal risk in Summer.
+CHERCOS,1,0.65,0.65,704,LOW,High seasonal risk in Summer.
+GIADA DE MURU,1,1.68,1.68,16809.3,LOW,High seasonal risk in Summer.
+CAMPU SAITTA,1,2.67,2.67,26688.1,LOW,High seasonal risk in Summer.
+PERDA LADA,1,4.23,4.23,0,LOW,High seasonal risk in Summer.
+PERDA SPERRADA,1,6.81,6.81,68069.2,LOW,High seasonal risk in Summer.
+RIU SARRICIOLLU,1,8.19,8.19,81931.2,LOW,High seasonal risk in Summer.
+CANAIOBA,1,0.48,0.48,4755.8,LOW,High seasonal risk in Summer.
+S'ACQUA BIANCA,1,2.09,2.09,20928.2,LOW,High seasonal risk in Summer.
+CANA,1,0.96,0.96,9630.58,LOW,High seasonal risk in Summer.
+TRIOI,1,1.46,1.46,14623.8,LOW,High seasonal risk in Summer.
+RIU S'ISPADULA,1,1.43,1.43,14296.3,LOW,High seasonal risk in Summer.
+TIRIEDU,1,1.13,1.13,0,LOW,High seasonal risk in Summer.
+ENA TRASINO,1,131.23,131.23,525792,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+TALERI,1,8.59,8.59,85942.39438639,LOW,High seasonal risk in Summer.
+FUNT.NA CANNAS,1,157.98,157.98,524164,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+FUNTNA SUEI,1,0.10,0.10,1014.1811791,LOW,High seasonal risk in Summer.
+CUILI ARGIOLA RAMINI,1,83.37,83.37,0,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+N.GHE SONNU,1,2.76,2.76,246,LOW,High seasonal risk in Summer.
+R. ACCORO,1,0.80,0.80,8049.59355022,LOW,High seasonal risk in Summer.
+S. MARIA DELLE GRAZIE,1,2.60,2.60,13630,LOW,High seasonal risk in Summer.
+N.GHE IANA,1,20.14,20.14,201364.18573027,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PAULI BECCIA,1,0.78,0.78,7797.77354781,LOW,High seasonal risk in Summer.
+N.GHE SIAU MANNU,1,20.87,20.87,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+PALA CONI,1,0.55,0.55,5548,LOW,High seasonal risk in Summer.
+OLIVETO BUSACHI,1,2.51,2.51,25069,LOW,High seasonal risk in Summer.
+SERRA E FIGU,1,0.44,0.44,4446,LOW,High seasonal risk in Summer.
+N.GHE MURA PROCHILIS,1,7.45,7.45,0,LOW,High seasonal risk in Summer.
+N. 86,1,1.26,1.26,12593,LOW,High seasonal risk in Summer.
+PARRADEI,1,5.27,5.27,52741,LOW,High seasonal risk in Summer.
+PAULI SCAVONAI,1,5.99,5.99,59870,LOW,High seasonal risk in Summer.
+BIA ZEDDIANI,1,16.96,16.96,169626,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+GRUXI MANNA,1,0.25,0.25,2545.47149032,LOW,High seasonal risk in Summer.
+IS PISCINALIS,1,6.94,6.94,69364.1100713,LOW,High seasonal risk in Summer.
+PROCILIS,1,2.05,2.05,20513.90233826,LOW,High seasonal risk in Summer.
+SORG.TE ALVAGHES,1,8.13,8.13,11860,LOW,High seasonal risk in Summer.
+FUNT.NA 'E PADRU,1,1.08,1.08,5365.8887637,LOW,High seasonal risk in Summer.
+C. ORTU,1,19.63,19.63,59946.75952392,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+S.S. DEL TIRSO E MANDROLIS,1,2.25,2.25,22516.03585754,LOW,High seasonal risk in Summer.
+FUNT.NA PORCHEDDOSA,1,6.18,6.18,0,LOW,High seasonal risk in Summer.
+PAULI RIU PORCHEDDU,1,1.23,1.23,12285.75733027,LOW,High seasonal risk in Summer.
+POD.E N. 34,1,0.38,0.38,3769.60159295,LOW,High seasonal risk in Summer.
+FUNT.NA MURTILO,1,0.77,0.77,0,LOW,High seasonal risk in Summer.
+S'OLIVERA,1,104.07,104.07,8427.36064586,MEDIUM,High seasonal risk in Summer. Propensity for large-scale events detected.
+S.S. TRAVERSALE SARDA,1,4.33,4.33,31771.06735526,LOW,High seasonal risk in Summer.
+BACALZOS,1,0.28,0.28,0,LOW,High seasonal risk in Summer.
+S. SOFIA,1,0.50,0.50,5033.54816815,LOW,High seasonal risk in Summer.
+N.GHE MULINEDDU,1,1.48,1.48,0,LOW,High seasonal risk in Summer.
+MIRIAGHEDDU,1,1.04,1.04,0,LOW,High seasonal risk in Summer.
+MURA PILOSU,1,6.76,6.76,0,LOW,High seasonal risk in Summer.
+SUELZOLU,1,1.37,1.37,0,LOW,High seasonal risk in Summer.
+C. UNGRONI,1,14.66,14.66,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+TRIGANINO,1,2.97,2.97,0,LOW,High seasonal risk in Summer.
+MONTRABARA,1,0.14,0.14,7778659,LOW,High seasonal risk in Summer.
+CAMPOS VALZOS,1,8.77,8.77,87690.5,LOW,High seasonal risk in Summer.
+CUMITASANNA,1,0.19,0.19,1881.17,LOW,High seasonal risk in Summer.
+MONTIGGIU TUNDU,1,0.40,0.40,0,LOW,High seasonal risk in Summer.
+P.TA ANDRIOTTU,1,0.19,0.19,0,LOW,High seasonal risk in Summer.
+S. STEFANO,1,36.72,36.72,367239,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+C.LO GAMBEDDA,1,0.34,0.34,3370.66,LOW,High seasonal risk in Summer.
+S'ABBA 'E S'AINO,1,2.12,2.12,0,LOW,High seasonal risk in Summer.
+BATTIGADEDDU,1,0.39,0.39,0,LOW,High seasonal risk in Summer.
+R. TRANTALE,1,0.11,0.11,0,LOW,High seasonal risk in Summer.
+ORETTA,1,1.40,1.40,14017.5,LOW,High seasonal risk in Summer.
+BADU DE FINE,1,17.44,17.44,174435,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+MONTE LUGHENTE,1,0.29,0.29,2889.2,LOW,High seasonal risk in Summer.
+STAZ.E DI ENAS,1,0.16,0.16,0,LOW,High seasonal risk in Summer.
+LA PADULE,1,0.31,0.31,0,LOW,High seasonal risk in Summer.
+S. VITTORE,1,0.46,0.46,4594.73,LOW,High seasonal risk in Summer.
+P.TA LU SCATRUSCIU,1,1.81,1.81,2872,LOW,High seasonal risk in Summer.
+P.TA LU CARRAGGIAGGIU,1,3.86,3.86,29937.7,LOW,High seasonal risk in Summer.
+ZAPPALLI MINORE,1,7.45,7.45,68188.5,LOW,High seasonal risk in Summer.
+LI ACCHI,1,2.72,2.72,17557.4,LOW,High seasonal risk in Summer.
+LI CUNCHIGGHIOLI,1,2.72,2.72,22020.4,LOW,High seasonal risk in Summer.
+MONTE S. BARBARA,1,17.21,17.21,43092,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+ST.ZO L'AGNULU,1,30.39,30.39,139946,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+P.TA MICALE ALBANA,1,1.85,1.85,8098.5,LOW,High seasonal risk in Summer.
+CONTRA ALTA,1,2.92,2.92,29239.60251,LOW,High seasonal risk in Summer.
+MONTIAZZO,1,1.31,1.31,13052.59953,LOW,High seasonal risk in Summer.
+LA MULTA BONA,1,11.20,11.20,74036.5,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+P.TA LI CRINEDDI,1,18.87,18.87,133461,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+S. ROCCO,1,5.41,5.41,0,LOW,High seasonal risk in Summer.
+ST.ZO LA TEGGHIA,1,1.14,1.14,11353.9088892,LOW,High seasonal risk in Summer.
+LU NURACU,1,0.63,0.63,6301.87784948,LOW,High seasonal risk in Summer.
+PEDRU BELLU,1,0.70,0.70,5800.0640458,LOW,High seasonal risk in Summer.
+SARINA,1,0.42,0.42,4211.15796502,LOW,High seasonal risk in Summer.
+M. GROSSU,1,44.19,44.19,135171.79884156,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+ST.ZI CAMPOS,1,0.21,0.21,0,LOW,High seasonal risk in Summer.
+MORGONGIORI,1,0.00,0.00,0,LOW,High seasonal risk in Summer.
+GONNOSCODINA,1,0.00,0.00,0,LOW,High seasonal risk in Summer.
+ROMANA,1,1.69,1.69,16894,LOW,High seasonal risk in Summer.
+MARA,1,0.00,0.00,0,LOW,High seasonal risk in Summer.
+SCANO MONTIFERRO,1,0.00,0.00,0,LOW,High seasonal risk in Summer.
+ERULA,1,0.00,0.00,0,LOW,High seasonal risk in Summer.
+ASUNI,1,0.00,0.00,0,LOW,High seasonal risk in Summer.
+TERGU,1,0.18,0.18,0,LOW,High seasonal risk in Summer.
+BARRALI,1,3.41,3.41,0,LOW,High seasonal risk in Summer.
+PISCINAS,1,0.68,0.68,0,LOW,High seasonal risk in Summer.
+STINTINO,1,22.63,22.63,0,LOW,High seasonal risk in Summer. Propensity for large-scale events detected.
+USSASSAI,1,0.00,0.00,0,LOW,High seasonal risk in Summer.
+PAU,1,0.19,0.19,0,LOW,High seasonal risk in Summer.
+CUGLIERI,1,0.76,0.76,0,LOW,High seasonal risk in Summer.
